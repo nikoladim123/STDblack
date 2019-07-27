@@ -1,4 +1,13 @@
 @font-face {
+  font-family: 'Lato-Black';
+  src: url('../fonts/lato/Lato-Black.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Lato-Bold';
+  src: url('../fonts/lato/Lato-Black.ttf') format('truetype');
+}
+
+@font-face {
   font-family: 'Montserrat-Light';
   src: url('../fonts/Montserrat-Light.ttf') format('truetype');
 }
@@ -85,13 +94,13 @@ header nav input{
   top: 13.691vw;
   left: 2.9vw;
   color: white;
-  font-family: 'Montserrat-Bold';
+  font-family: 'Lato-Bold';
 }
 
 .bannerText h2{
   margin: 0;
   font-size: 3.48330vw;
-  margin-bottom: 1.9vw;
+  margin-bottom: 1.2vw;
   margin-left: 3.4349vw;
   transition: all 1.5s ease;
   opacity: 0;
@@ -112,6 +121,7 @@ header nav input{
   font-size: 8.22447vw;
   margin-left: 2.7576vw;
   position: absolute;
+  font-family: 'Lato-Black';
 }
 /* header end */
 
