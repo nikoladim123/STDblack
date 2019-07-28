@@ -1,4 +1,8 @@
 @font-face {
+  font-family: 'Lato-Light';
+  src: url('../fonts/lato/Lato-Light.ttf') format('truetype');
+}
+@font-face {
   font-family: 'Lato-Black';
   src: url('../fonts/lato/Lato-Black.ttf') format('truetype');
 }
@@ -133,25 +137,38 @@ header nav input{
 .cliffordSection h2{
   margin: 0;
   text-align: center;
-  font-size: 2.9027vw;
-  font-family: 'Montserrat-Bold';
+  font-size: 3.48330vw;
+  font-family: 'Lato-Light';
   color: #5b5b5b;
   margin-top: 3.870vw;
+}
+.cliffordSection b{
+  font-family: 'Lato-Bold';
 }
 .cliffordSection h3{
   margin: 0;
   text-align: center;
   font-size: 1.7416vw;
-  font-family: 'Montserrat-Regular';
+  font-family: 'Lato-Light';
   color: #5b5b5b;
-  margin-top: 1.83841vw;
+  /* margin-top: 1.83841vw; */
+}
+
+.cliffordSection h4{
+  font-family: 'Lato-Light';
+  text-align: center;
+  font-size: 3.48330vw;
+  margin-bottom: 0;
+  color: #5b5b5b;
+  font-weight: 100;
+  margin-top: 7vw;
 }
 
 .cliffImagesContainer{
   position: relative;
   display: flex;
   justify-content: center;
-  margin-top: 12.578vw;
+  margin-top: 2vw;
   margin-bottom: 4.644vw;
 }
 .cliffImagesContainer img{
