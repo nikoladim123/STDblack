@@ -88,6 +88,9 @@ header nav input{
   color: #6e6e6e;
   font-size: 0.87082vw;
 }
+.headerLinks a:hover{
+  text-decoration: underline;
+}
 .headerLinks a:nth-child(1){
   margin-right: 2vw;
 }
