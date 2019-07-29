@@ -608,7 +608,7 @@ footer{
   flex-direction: column;
 }
 .footerLogo{
-  width: 11.3691vw;
+  width: 13.449vw;
   transition: all 1.2s ease;
   filter: brightness(0.7);
   animation-name: logo;
@@ -618,7 +618,7 @@ footer{
   animation-direction: alternate;
 }
 .footerLogoBox p{
-  font-size: 1.161vw;
+  font-size: 1vw;
   font-family: 'Lato-Light';
   color: #3e3f44;
   margin: 0;
@@ -631,7 +631,7 @@ footer{
 }
 .footerRef a{
   text-decoration: none;
-  font-size: 1.161vw;
+  font-size: 1vw;
   color: #3e3f44;
   font-family: 'Lato-Light';
   margin-right: 1.74vw;
@@ -653,15 +653,15 @@ footer{
 .foterSocialMedia .fab {
   /* background: #bdbdbe; */
   transition: all 0.5s ease;
-    border: 2px solid white;
-    border-radius: 50%;
-    font-size: 1.3vh;
-    width: 3vh;
-    height: 3vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0.5vw;
+  border: 2px solid white;
+  border-radius: 50%;
+  font-size: 1.3vw;
+  width: 2.5157vw;
+  height: 2.5157vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5vw;
 }
 .foterSocialMedia .fab:hover{
   background: #bdbdbe;
