@@ -47,7 +47,7 @@ body{
 /* header start */
 header nav{
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: space-around;
   padding-top: 1.69327vw;
   padding-bottom: 1.69327vw;
@@ -55,6 +55,21 @@ header nav{
 
 .logo{
   width: 11.3691vw;
+  transition: all 1.2s ease;
+  filter: brightness(0.7);
+  animation-name: logo;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes logo {
+  0%{
+    filter: brightness(0.7);
+  }
+  100%{
+    filter: brightness(1.4);
+  }
 }
 
 .headerForm{
@@ -594,6 +609,13 @@ footer{
 }
 .footerLogo{
   width: 11.3691vw;
+  transition: all 1.2s ease;
+  filter: brightness(0.7);
+  animation-name: logo;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 .footerLogoBox p{
   font-size: 1.161vw;
