@@ -1,6 +1,15 @@
 @font-face {
+  font-family: 'Roboto-Regular';
+  src: url('../fonts/roboto/Roboto-Regular.ttf') format('truetype');
+}
+
+@font-face {
   font-family: 'Lato-Light';
   src: url('../fonts/lato/Lato-Light.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Lato-Regular';
+  src: url('../fonts/lato/Lato-Regular.ttf') format('truetype');
 }
 @font-face {
   font-family: 'Lato-Black';
@@ -181,6 +190,7 @@ header nav input{
 .featuredSection{
   position: relative;
   color: white;
+  margin-bottom: 3.43492vw;
 }
 .featuredSection img{
   width: 100%;
@@ -220,5 +230,415 @@ header nav input{
   margin: 0;
   bottom: 2.66vw;
 }
-
 /* Featured band section end */
+
+/* How it works section start */
+.howItWorks{
+  padding: 0.1px;
+  position: relative;
+  height: 64.731vw;
+  background-color: #f0f0f0;
+}
+.howItWorksTextBox{
+  /* border: 1px solid red; */
+  position: relative;
+  width: 38.7034vw;
+  color: #2b2b30;
+  margin-left: 9.337vw;
+  margin-top: 17.4165vw;
+}
+.howItWorks h2{
+  font-size: 2.9027vw;
+  font-family: 'Lato-Black';
+  margin: 0;
+  margin-bottom: 4.692vw;
+}
+
+.howItWorks p{
+  font-family: 'Lato-Regular';
+  position: relative;
+  font-size: 1.4513vw;
+  margin-bottom: 3.87vw;
+}
+.howItWorks p img{
+  position: absolute;
+  left: -2.41896vw;
+  top: 0.5vw;
+  width: 0.967vw;
+}
+
+.circleYellow{
+  position: absolute;
+  width: 44.557vw;
+  top: 11.126vw;
+  right: 5.07885vw;
+}
+
+.phoneImg{
+  width: 47.1698vw;
+  position: absolute;
+  top: 10.44vw;
+  right: 1.015vw;
+}
+/* How it works section end */
+
+
+/* bryon feedback section start */
+.bryonFeedBackSection{
+  background-color: #f9f9f9;
+  padding: 0.1px;
+  padding-top: 3.8703vw;
+  padding-bottom: 8.4663vw;
+}
+
+.feedBackContainer{
+  padding: 0.1px;
+  position: relative;
+  background-color: rgb(211,80,66);
+  width: 77.5vw;
+  height: 32vw;
+  margin-left: 50%;
+  left: -37.75vw;
+  margin-bottom: 2vw;
+}
+
+.bryonProf{
+  position: absolute;
+  width: auto;
+  height: auto;
+  text-align: center;
+  /* border: 1px solid white; */
+  left: 3vw;
+  top: 10vw;
+}
+
+.bryonProf img{
+  width: 9.66vw;
+  height: 9.66vw;
+}
+.bryonProf p{
+  font-family: 'Roboto-Regular';
+  font-size: 1.024vw;
+  color: rgb(236,181,27);
+  margin-top: -2vw;
+}
+.bryonProf a{
+  font-family: 'Roboto-Regular';
+  text-decoration: none;
+  color: rgb(236,181,27);
+  font-size: 0.878vw;
+}
+
+.feedBackContainer h2{
+  margin: 0;
+  margin-top: 4.17vw;
+  font-family: 'Roboto-Regular';
+  font-size: 2.63vw;
+  color: white;
+  text-align: center;
+  margin-bottom: 1vw;
+}
+
+.feedBackInside{
+  padding: 0.1px;
+  position: relative;
+  background: white;
+  width: 52.41vw;
+  height: 19.32vw;
+  margin-left: 12.15vw;
+  box-shadow: 1vw 0.44vw 5vw -2.59vw rgba(0,0,0,0.55);
+}
+.whiteTriangle {
+  width: 0;
+  height: 0;
+  border: 5vw solid white;
+  border-top: 1vw transparent solid;
+  border-left: 5vw transparent solid;
+  border-bottom: 2vw transparent solid;
+  transform: rotate(10deg);
+  position: absolute;
+  left: -9.5vw;
+  top: -0.90151vw;
+}
+.feedBackInside img{
+  width: 7.467vw;
+  height: 6.515vw;
+  position: absolute;
+  bottom: 0.878vw;
+  right: 0.878vw;
+}
+.feedBackInside p{
+  font-size: 1.317vw;
+  font-family: 'Roboto-Regular';
+  margin-top: 6.368vw;
+  margin-left: 2.928vw;
+  width: 37vw;
+}
+
+.halfCircle{
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 5.124vw;
+  height: 5.124vw;
+  border-radius: 50%;
+  background-color: rgb(255,255,255,0.22);
+  right: 5.563vw;
+  top: 15.95vw;
+}
+
+.half{
+  height: 100%;
+  width: 5px;
+  background-color: rgb(211,80,66);
+}
+/* bryon feedback section end */
+
+
+/* News and Events section start*/
+.newsAndEventsSection{
+  position: relative;
+  color: #555555;
+  background: #f0f0f0;
+  /* min-height: 57.0875vw; */
+  padding-bottom: 3vw;
+}
+.newsAndEventsSection img{
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.newsAndEventsSection a{
+  color: black;
+  font-size: 1.336vw;
+  color: rgb(85,85,85);
+  text-decoration: none;
+  font-family: "Lato-Bold";
+}
+.newsAndEventsSection a:hover{
+  text-decoration:underline;
+}
+.pinkBox{
+  position: relative;
+  margin-top: 6.31vw;
+  padding-top: 0.1px;
+  background-color: #f0f0f0;
+  width: 100%;
+  min-height: 74.23vw;
+}
+.newsAndEventsSection h2{
+  font-family: "Lato-Black";
+  margin: 0;
+  margin-top: 2.34vw;
+  margin-bottom: 4vw;
+  font-size: 3.4833vw;
+  text-align: center;
+}
+
+.carThreeContainer{
+  position: relative;
+  width: 91vw;
+  height: 57.5vw;
+  bottom: 0px;
+  margin-left: 50%;
+  left:-45.5vw;
+  overflow: hidden;
+}
+
+.carouselThree{
+  transition: 0.7s;
+  display: flex;
+  position: absolute;
+  width: 150%;
+  height: 100%;
+  left:0%;
+}
+.carouselThree>div{
+  width: 32%;
+  margin-right: 0.666%;
+  margin-left: 0.666%;
+}
+.carDivOne,.carDivTwo,.carDivThree{
+  position: relative;
+  width: 100%;
+  height:51.28%;
+}
+
+.yellowSquareContainer{
+  margin-top: 2.59vw;
+  display: flex;
+}
+.yellowSquareContainer h3{
+  font-size: 1.741vw;
+  font-family: "Lato-Bold";
+}
+.yellowSquareContainer p{
+  margin: 0;
+}
+.YellowSquare{
+  margin: 4px;
+  text-align: center;
+  width: 4.45vw;
+  height: 4.45vw;
+  border: 1px solid rgb(239,234,171);
+  outline: 4px solid rgb(229,225,100);
+  margin-right: 1vw;
+}
+.YellowSquare p{
+  margin: 0;
+  font-size: 1.336vw;
+}
+.YellowSquare b:nth-child(1) p{
+  margin-top: 0.6vw;
+  margin-bottom: -0.3vw;
+}
+.loremIpsumText{
+  margin-top: 2.227vw;
+}
+.loremIpsumText p{
+  font-size: 1.336vw;
+  margin: 0;
+  line-height: 1.6vw;
+  margin-bottom: 2.5vw;
+  font-family: "Lato-Regular";
+}
+
+.carThreeArrowContainer {
+    position: absolute;
+    width: 6.68vw;
+    height: 2.96vw;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    right: 5.32172vw;
+    bottom: 6.19254vw;
+}
+
+.carThreeArrowContainer>div{
+  transition: all 0.5s ease;
+  background-image: url('../images/newsAndEvents/carThreeArrow.jpg');
+  width: 45%;
+  height: 100%;
+  background-size: 100% 100%;
+}
+.carThreeArrowContainer>div:hover{
+  cursor: pointer;
+  filter: brightness(1.1);
+}
+#carThreeRightArrow{
+  transform: rotate(180deg);
+}
+/* News and events section end */
+
+
+/* Lorem Ipsum Section start*/
+.loremIpsum{
+  height: 26.85vw;
+  color: #3e3f44;
+}
+.loremIpsum h2{
+  margin-top: 2.854vw;
+  margin-bottom: 1.88679vw;
+  text-align: center;
+  font-size: 3.483vw;
+  font-family: 'Lato-Bold';
+}
+.loremIpsum p{
+  margin: 0;
+  width: 50vw;
+  margin-left: 25vw;
+  font-size: 1.161vw;
+  font-family: 'Lato-Light';
+}
+
+
+.loremIpsum form{
+  margin-top: 6.1441vw;
+  width: 30.5757vw;
+  margin-left: 50%;
+  left: -15vw;
+}
+.loremIpsum input{
+  font-size: 0.9675vw;
+  padding-left: 4vw;
+  width: 30.5757vw;
+  height: 2.9027vw;
+  border-radius: 2vw;
+  border: 1px solid black;
+}
+/* Lorem Ipsum Section end*/
+
+
+/* Footer start */
+footer{
+  display: block;
+  position: relative;
+  height: 13.49vw;
+  background-color: #e6e6e7;
+}
+.footerLogoBox{
+  position: absolute;
+  width: 100%;
+  bottom: 0.822vw;
+  left: 0;
+  /* border: 1px solid; */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.footerLogo{
+  width: 11.3691vw;
+}
+.footerLogoBox p{
+  font-size: 1.161vw;
+  font-family: 'Lato-Light';
+  color: #3e3f44;
+  margin: 0;
+}
+
+.footerRef{
+  position: absolute;
+  bottom: 0.822vw;
+  right: 17.658vw;
+}
+.footerRef a{
+  text-decoration: none;
+  font-size: 1.161vw;
+  color: #3e3f44;
+  font-family: 'Lato-Light';
+  margin-right: 1.74vw;
+}
+.footerRef a:hover{
+  text-decoration: underline;
+}
+.foterSocialMedia {
+  color: white;
+  display: flex;
+  position: absolute;
+  bottom: 1.499vw;
+  left: 8.32123vw;
+}
+.foterSocialMedia a {
+    text-decoration: none;
+    color: white;
+}
+.foterSocialMedia .fab {
+  /* background: #bdbdbe; */
+  transition: all 0.5s ease;
+    border: 2px solid white;
+    border-radius: 50%;
+    font-size: 1.3vh;
+    width: 3vh;
+    height: 3vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5vw;
+}
+.foterSocialMedia .fab:hover{
+  background: #bdbdbe;
+}
+/* Footer end */
