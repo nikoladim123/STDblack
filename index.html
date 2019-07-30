@@ -10,7 +10,14 @@
 
     <header>
       <nav>
-        <a href="#"><img class="logo" src="assets/images/logo.png" alt="THE STU"></a>
+        <a href="#">
+          <picture class="mobileHide">
+            <source media="(min-width: 1360px)" srcset="assets/images/logo.png">
+            <source media="(max-width: 1360px) and (min-width: 760px)" srcset="assets/images/logo.png">
+            <source media="(max-width: 760px)" srcset="assets/images/logo.png">
+            <img class="logo" src="assets/images/logo.png" alt="THE STU">
+          </picture>
+        </a>
         <form class="headerForm" action="index.html" method="post">
           <input type="text" name="" value="" placeholder="Try Boston">
         </form>
