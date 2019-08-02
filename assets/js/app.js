@@ -52,6 +52,27 @@ function carMoveThree(){
   }
 }
 
+// form show hide
+var loginOverlay = document.getElementsByClassName('loginOverlay');
+var closeBoxLogIn = document.getElementsByClassName('loginOverlay');
+var logInButton = document.getElementsByClassName('logInButton');
+
+logInButton[0].addEventListener('click',(e)=>{
+  e.preventDefault();
+  loginOverlay[0].style.display = 'block';
+  setTimeout(function () {
+    loginOverlay[0].style.opacity = '1';
+  }, 100);
+});
+
+closeBoxLogIn[0].addEventListener('click',(e)=>{
+  e.preventDefault();
+  loginOverlay[0].style.opacity = '0';
+  setTimeout(function () {
+    loginOverlay[0].style.display = 'none';
+  }, 500);
+});
+
 
 // window events
 window.addEventListener('load',()=>{

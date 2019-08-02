@@ -42,6 +42,178 @@ body{
   margin: 0;
 }
 
+/* Login in overlay start*/
+.loginOverlay{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.95);
+  z-index: 1;
+  transition: all 0.5s ease;
+  opacity: 0;
+  display: none;
+}
+
+.closeBoxLogIn{
+  position: absolute;
+  /* border: 1px solid red; */
+  width: 5vw;
+  height: 5vw;
+  right: 5vw;
+  top: 5vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.closeBoxLogIn:hover{
+  cursor: pointer;
+}
+
+.closeBoxLogIn p{
+  color: white;
+  font-size: 5vw;
+  font-family: 'Lato-Bold';
+  margin: 0;
+  padding-bottom: 1vw;
+  user-select: none;
+}
+
+.logInContainer{
+  box-sizing: border-box;
+  top: 7vw;
+  position: relative;
+  background: white;
+  width: 41.942vw;
+  height: 32.6137vw;
+  border: 1px solid #c2d926;
+  outline: 0.771vw solid white;
+  left: 50%;
+  margin-left:-21vw;
+  padding-top: 1.3878vw;
+  padding-left: 1.542vw;
+  padding-right: 1.542vw;
+}
+
+.pleaseLogIn{
+  width: 100%;
+  height: 4.0863vw;
+  background: #fdd4de;
+  border: 1px solid #f30039;
+  display: flex;
+  align-items: center;
+}
+.pleaseLogIn p{
+  margin: 0;
+  margin-left: 2.158vw;
+  font-size: 2.31303vw;
+  color: #333333;
+}
+
+.noAccYet{
+  font-size: 1.0794vw;
+  text-align: right;
+  margin-right: 3.4695vw;
+  color: #333333;
+  margin-top: 0.8481vw;
+  margin-bottom: 4.626vw;
+}
+
+.noAccYet a{
+  text-decoration: none;
+  color: #20497a;
+  transition: all 0.4s ease;
+  opacity: 0.9;
+}
+
+.noAccYet a:hover{
+  text-decoration: underline;
+  opacity: 1;
+}
+
+
+.formContainer{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5.8596vw;
+  /* border: 1px solid blue; */
+}
+form{
+  /* border: 1px solid red; */
+  width: 23.129vw;
+}
+form input{
+  border: 1px solid #c2d926;
+  padding-left: 1.233vw;
+  width: 21.896vw;
+  height: 3.238vw;
+  margin-bottom: 1.0023vw;
+  font-size: 1.3878vw;
+}
+form input::placeholder{
+  color: #a5a5a5;
+}
+form button{
+  background-color: #c2d926;
+  width: 23.129vw;
+  height: 3.238vw;
+  color: white;
+  font-size: 1.850vw;
+  font-family: 'Lato-Bold';
+  border: none;
+  transition: all 0.4s ease;
+  filter: brightness(1);
+}
+form button:hover{
+  cursor: pointer;
+  filter: brightness(1.1);
+}
+
+
+.loginAPI{
+  /* border: 1px solid yellow; */
+  width: 13.338vw;
+}
+
+.loginAPI div{
+  height: 3.238vw;
+  width: 100%;
+  background-size: 100% 100%;
+  height: 3.238vw;
+  border: 1px solid transparent;
+  transition: all 0.4s ease;
+  filter: brightness(1);
+}
+.loginAPI div:hover{
+  cursor: pointer;
+  filter: brightness(1.1);
+}
+
+.fbLogIn{
+  margin-bottom: 1.0023vw;
+  background-image: url('../images/loginForm/fb.jpg');
+}
+.twLogIn{
+  margin-bottom: 1.0023vw;
+  background-image: url('../images/loginForm/tw.jpg');
+}
+.gLogIn{
+  background-image: url('../images/loginForm/g.jpg');
+}
+
+.forgotPassword{
+  margin: 0;
+  text-decoration: none;
+  font-size: 0.9252vw;
+  color: #20497a;
+  opacity: 0.9;
+  transition: all 0.4s ease;
+}
+.forgotPassword:hover{
+  opacity: 1;
+  text-decoration: underline;
+}
+/* Login in overlay end */
+
 
 
 /* header start */
