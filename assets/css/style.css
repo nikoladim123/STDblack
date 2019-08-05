@@ -38,6 +38,7 @@
 }
 
 body{
+  background: black;
   padding: 0;
   margin: 0;
 }
@@ -121,7 +122,7 @@ body{
 .noAccYet a{
   text-decoration: none;
   color: #20497a;
-  transition: all 0.4s ease;
+  transition: all 0.6s ease;
   opacity: 0.9;
 }
 
@@ -160,7 +161,7 @@ form button{
   font-size: 1.850vw;
   font-family: 'Lato-Bold';
   border: none;
-  transition: all 0.4s ease;
+  transition: all 0.6s ease;
   filter: brightness(1);
 }
 form button:hover{
@@ -180,7 +181,7 @@ form button:hover{
   background-size: 100% 100%;
   height: 3.238vw;
   border: 1px solid transparent;
-  transition: all 0.4s ease;
+  transition: all 0.6s ease;
   filter: brightness(1);
 }
 .loginAPI div:hover{
@@ -206,7 +207,7 @@ form button:hover{
   font-size: 0.9252vw;
   color: #20497a;
   opacity: 0.9;
-  transition: all 0.4s ease;
+  transition: all 0.6s ease;
 }
 .forgotPassword:hover{
   opacity: 1;
@@ -221,12 +222,13 @@ header nav{
   display: flex;
   align-items: flex-end;
   justify-content: space-around;
-  padding-top: 1.69327vw;
-  padding-bottom: 1.69327vw;
+  padding-top: 1.5vw;
+  padding-bottom: 0.26vw;
+  border-bottom: 1px solid #005e48;
 }
 
 .logo{
-  width: 11.3691vw;
+  width: 12vw;
   transition: all 1.2s ease;
   filter: brightness(0.7);
   animation-name: logo;
@@ -234,6 +236,8 @@ header nav{
   animation-timing-function: ease;
   animation-iteration-count: infinite;
   animation-direction: alternate;
+  position: relative;
+  left: -2vw;
 }
 @keyframes logo {
   0%{
@@ -245,7 +249,11 @@ header nav{
 }
 
 .headerForm{
+  /* padding-left: 5vw; */
   position: relative;
+  left: 4vw;
+  width: 10vw;
+  /* color: red; */
 }
 
 .headerForm::after{
@@ -254,32 +262,73 @@ header nav{
   content: '';
   left: 1vw;
   top: 0.9vw;
-  width: 1.5vw;
-  height: 1.5vw;
+  width: 1.2vw;
+  height: 1.2vw;
   background-image: url('../images/searchIcon.png');
   background-size:  100% 100%;
 }
 
 header nav input{
-  font-size: 0.9675vw;
-  padding-left: 4vw;
-  width: 30.5757vw;
+  font-size: 1.1650vw;
+  padding-left: 3vw;
+  width: 9.5757vw;
   height: 2.9027vw;
+  color: white;
   border-radius: 2vw;
+  background: black;
   border: 1px solid black;
+}
+.headerLinks{
+  /* margin-left: 10vw; */
+  margin-right: -3vw;
+  border: 1px solid #29072b;
+  height: 3.1vw;
+  display: flex;
+  align-items: center;
+  padding-left: 1.31vw;
+  padding-right: 1.31vw;
+  position: relative;
+  left: 2vw;
+  top: -1vw;
 }
 
 .headerLinks a{
   font-family: 'Montserrat-Regular';
   text-decoration: none;
-  color: #6e6e6e;
-  font-size: 0.87082vw;
+  color: #fff;
+  font-size: 1.165vw;
+  transition: all 0.6s ease;
 }
 .headerLinks a:hover{
   text-decoration: underline;
+  cursor: pointer;
+  color: #00ecb4;
 }
 .headerLinks a:nth-child(1){
   margin-right: 2vw;
+}
+
+.featuredNav{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 0.679vw;
+  padding-bottom: 2.7669vw;
+}
+.featuredNav a{
+  margin: 0;
+  font-family: 'Lato-Bold';
+  transition: all 0.6s ease;
+  color: white;
+  text-decoration: none;
+  font-size: 1.747vw;
+  margin-left: 0.436vw;
+  margin-right: 0.436vw;
+}
+.featuredNav a:hover{
+  cursor: pointer;
+  color: #00ecb4;
 }
 
 .bannerArea{
@@ -294,20 +343,22 @@ header nav input{
 .bannerText{
   position: absolute;
   /* border: 1px solid; */
-  top: 13.691vw;
-  left: 2.9vw;
+  top: 4.2vw;
+  /* left: 20.9vw; */
+  text-align: center;
+  width: 100%;
   color: white;
   font-family: 'Lato-Bold';
 }
 
 .bannerText h2{
   margin: 0;
-  font-size: 3.48330vw;
+  font-size: 3.2vw;
   margin-bottom: 1.2vw;
-  margin-left: 3.4349vw;
+  /* margin-left: 3.4349vw; */
   transition: all 1.5s ease;
-  opacity: 0;
-  filter: blur(10px);
+  /* opacity: 0; */
+  /* filter: blur(10px); */
 }
 
 .studiosContainer{
@@ -326,6 +377,38 @@ header nav input{
   position: absolute;
   font-family: 'Lato-Black';
 }
+
+.banerButtonsContainer{
+  position: absolute;
+  top: 14.2233vw;
+  width: 100%;
+}
+
+.banerButtonsContainer button{
+  color: white;
+  font-size: 1.4563vw;
+  font-family: 'Lato-Bold';
+  width: 20.8252vw;
+  height: 4.0291vw;
+  border: 2px solid white;
+  background-color: rgba(0,0,0,0.55);
+  transition: all 0.5s ease;
+  margin-left: 0.8737vw;
+  margin-right: 0.8737vw;
+  margin-bottom: 2.4757vw;
+}
+.banerButtonsContainer button:hover{
+  cursor: pointer;
+  background-color: #00ecb5;
+}
+.buttonRowOne{
+  display: flex;
+  justify-content: center;
+}
+.buttonRowTwo{
+  display: flex;
+  justify-content: center;
+}
 /* header end */
 
 /* clifford Section start */
@@ -333,41 +416,51 @@ header nav input{
   position: relative;
 }
 
-.cliffordSection h2{
+.cliffordSection h2 {
   margin: 0;
   text-align: center;
   font-size: 3.48330vw;
   font-family: 'Lato-Light';
-  color: #5b5b5b;
-  margin-top: 3.870vw;
+  color: white;
+  background-color: rgba(0,0,0,0.8);
+  margin-top: -12.8vw;
+  padding-top: 2vw;
+  padding-bottom: 6.3vw;
 }
 .cliffordSection b{
   font-family: 'Lato-Bold';
 }
-.cliffordSection h3{
-  margin: 0;
-  text-align: center;
-  font-size: 1.7416vw;
-  font-family: 'Lato-Light';
-  color: #5b5b5b;
-  /* margin-top: 1.83841vw; */
+.hthreeHolder{
+  width: 100%;
+  height: 28vw;
+  background-color: #1d1e1f;
+}
+.cliffordSection h3 {
+    margin: 0;
+    text-align: justify;
+    font-size: 1.7416vw;
+    font-family: 'Lato-Bold';
+    color: white;
+    width: 66.553vw;
+    margin-left: 15vw;
+    /* margin-top: 1.83841vw; */
 }
 
 .cliffordSection h4{
-  font-family: 'Lato-Light';
+  font-family: 'Lato-Bold';
   text-align: center;
   font-size: 3.48330vw;
   margin-bottom: 0;
-  color: #5b5b5b;
+  color: #fff;
   font-weight: 100;
-  margin-top: 7vw;
+  margin-top: 2vw;
 }
 
 .cliffImagesContainer{
   position: relative;
   display: flex;
   justify-content: center;
-  margin-top: 2vw;
+  margin-top: 3vw;
   margin-bottom: 4.644vw;
 }
 .cliffImagesContainer img{
@@ -475,7 +568,7 @@ header nav input{
 
 /* bryon feedback section start */
 .bryonFeedBackSection{
-  background-color: #f9f9f9;
+  background-color: #28282a;
   padding: 0.1px;
   padding-top: 3.8703vw;
   padding-bottom: 8.4663vw;
@@ -587,8 +680,9 @@ header nav input{
 
 /* News and Events section start*/
 .newsAndEventsSection{
+      padding: 0.1px;
   position: relative;
-  color: #555555;
+  color: #333333;
   background: #f0f0f0;
   /* min-height: 57.0875vw; */
   padding-bottom: 3vw;
@@ -613,7 +707,7 @@ header nav input{
 }
 .pinkBox{
   position: relative;
-  margin-top: 6.31vw;
+  /* margin-top: 6.31vw; */
   padding-top: 0.1px;
   background-color: #f0f0f0;
   width: 100%;
@@ -727,7 +821,7 @@ header nav input{
 /* Lorem Ipsum Section start*/
 .loremIpsum{
   height: 26.85vw;
-  color: #3e3f44;
+  color: #a8a8a8;
 }
 .loremIpsum h2{
   margin-top: 2.854vw;
@@ -767,7 +861,7 @@ footer{
   display: block;
   position: relative;
   height: 13.49vw;
-  background-color: #e6e6e7;
+  background-color: black;
 }
 .footerLogoBox{
   position: absolute;
@@ -792,7 +886,7 @@ footer{
 .footerLogoBox p{
   font-size: 1vw;
   font-family: 'Lato-Light';
-  color: #3e3f44;
+  color: #a8a8a8;
   margin: 0;
 }
 
@@ -804,7 +898,7 @@ footer{
 .footerRef a{
   text-decoration: none;
   font-size: 1vw;
-  color: #3e3f44;
+  color: #a8a8a8;
   font-family: 'Lato-Light';
   margin-right: 1.74vw;
 }

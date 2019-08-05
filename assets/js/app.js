@@ -1,14 +1,14 @@
 // header section animations and functions and vars
-var discoverAbook = document.getElementsByClassName('discoverAbook');
-var studiosContainer = document.getElementsByClassName('studiosContainer');
-
-function discoverAbookFun() {
-  discoverAbook[0].style.opacity = '1';
-  discoverAbook[0].style.filter = 'blur(0px)';
-  setTimeout(function () {
-    studiosContainer[0].style.width = '50.0725vw';
-  }, 1000);
-}
+// var discoverAbook = document.getElementsByClassName('discoverAbook');
+// var studiosContainer = document.getElementsByClassName('studiosContainer');
+//
+// function discoverAbookFun() {
+//   discoverAbook[0].style.opacity = '1';
+//   discoverAbook[0].style.filter = 'blur(0px)';
+//   setTimeout(function () {
+//     studiosContainer[0].style.width = '50.0725vw';
+//   }, 1000);
+// }
 
 
 // featured band (the new boys)
@@ -76,7 +76,7 @@ closeBoxLogIn[0].addEventListener('click',(e)=>{
 
 // window events
 window.addEventListener('load',()=>{
-  discoverAbookFun();
+  // discoverAbookFun();
 });
 
 window.addEventListener('scroll',()=>{
