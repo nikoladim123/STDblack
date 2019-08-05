@@ -227,7 +227,7 @@ header nav{
   display: flex;
   align-items: flex-end;
   justify-content: space-around;
-  padding-top: 1.5vw;
+  padding-top: 0.5vw;
   padding-bottom: 0.26vw;
   border-bottom: 1px solid #005e48;
 }
