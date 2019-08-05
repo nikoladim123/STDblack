@@ -291,6 +291,15 @@ header nav input{
   left: 2vw;
   top: -1vw;
 }
+.navSocialMedias {
+  position: absolute;
+  bottom: 3.5vw;
+  right: 2.6vw;
+}
+.navSocialMedias a {
+  margin-right: 0.5vw;
+  font-size: 1vw !important;
+}
 
 .headerLinks a{
   font-family: 'Montserrat-Regular';
@@ -304,7 +313,7 @@ header nav input{
   cursor: pointer;
   color: #00ecb4;
 }
-.headerLinks a:nth-child(1){
+.headerLinksOne{
   margin-right: 2vw;
 }
 
