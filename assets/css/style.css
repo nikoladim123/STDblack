@@ -1,4 +1,9 @@
 @font-face {
+  font-family: 'AlexBrush-Regular';
+  src: url('../fonts/AlexBrush-Regular.ttf') format('truetype');
+}
+
+@font-face {
   font-family: 'Roboto-Regular';
   src: url('../fonts/roboto/Roboto-Regular.ttf') format('truetype');
 }
@@ -322,8 +327,8 @@ header nav input{
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 0.679vw;
-  padding-bottom: 2.7669vw;
+  /* padding-top: 0.679vw; */
+  padding-bottom: 0.7669vw;
 }
 .featuredNav a{
   margin: 0;
@@ -338,6 +343,14 @@ header nav input{
 .featuredNav a:hover{
   cursor: pointer;
   color: #00ecb4;
+}
+
+.featuredNonLink {
+    color: #00ecb4 !important;
+    font-family: 'AlexBrush-Regular' !important;
+    font-size: 2.7vw !important;
+    padding-top: 0.4vw;
+    pointer-events: none;
 }
 
 .bannerArea{
@@ -426,15 +439,15 @@ header nav input{
 }
 
 .cliffordSection h2 {
-  margin: 0;
-  text-align: center;
-  font-size: 3.48330vw;
-  font-family: 'Lato-Light';
-  color: white;
-  background-color: rgba(0,0,0,0.8);
-  margin-top: -12.8vw;
-  padding-top: 2vw;
-  padding-bottom: 6.3vw;
+    margin: 0;
+    text-align: center;
+    font-size: 3.28330vw;
+    font-family: 'Lato-Light';
+    color: white;
+    background-color: rgba(0,0,0,0.8);
+    margin-top: -7.8vw;
+    padding-top: 0vw;
+    padding-bottom: 3.3vw;
 }
 .cliffordSection b{
   font-family: 'Lato-Bold';
