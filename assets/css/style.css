@@ -367,7 +367,7 @@ header nav input{
   /* margin-left: 3.4349vw; */
   transition: all 1.5s ease;
   /* opacity: 0; */
-  filter: blur(100px);
+  filter: blur(200px);
 }
 
 .studiosContainer{
