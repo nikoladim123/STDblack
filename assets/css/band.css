@@ -1,0 +1,55 @@
+/* selected bands */
+#bands{
+  color: #00ecb4 !important;
+}
+
+.gridContainer{
+  /* border: 1px solid red; */
+  display: flex;
+  margin-top: 2.560vw;
+}
+
+.leftGrid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(35,5vw);
+  /* border: 1px solid blue; */
+  width: 59vw;
+  grid-gap: 18px;
+  margin-right: 18px;
+}
+.leftGrid div{
+  overflow: hidden;
+}
+.leftGrid img{
+  min-height: 100%;
+  min-width: 100%;
+}
+
+.gridWide{
+  grid-column: span 3;
+  grid-row: span 7;
+}
+.gridMiddle{
+  grid-column: span 2;
+  grid-row: span 5;
+}
+.gridSmall{
+  grid-column: span 1;
+  grid-row: span 5;
+}
+
+/* RightGrid */
+.RightGrid{
+  width: 40vw;
+  /* border: 1px solid red; */
+}
+
+.rightGridBox{
+  position: relative;
+  /* border: 1px solid green; */
+}
+.rightGridBox img{
+  width: 100%;
+  margin-bottom: 15px;
+}
