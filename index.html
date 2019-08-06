@@ -41,68 +41,81 @@
     </div>
 
     <header>
-      <nav>
-        <a href="#">
-          <picture class="mobileHide">
-            <source media="(min-width: 1367px)" srcset="assets/images/logo.png">
-            <source media="(max-width: 1367px) and (min-width: 766px)" srcset="assets/images/logo.png">
-            <source media="(max-width: 766px)" srcset="assets/images/logo.png">
-            <img class="logo" src="assets/images/logo.png" alt="THE STU">
-          </picture>
-        </a>
-        <form class="headerForm" action="index.html" method="post">
-          <input type="text" name="" value="" placeholder="Try Boston">
-        </form>
-        <div class="headerLinks">
-          <a href="#" class="headerLinksOne">+ ADD YOUR STUDIO</a>
-          <a href="#">SIGN UP /</a>
-          <a class="logInButton" href="#">LOGIN</a>
+      <div class="navArea">
+        <nav>
+          <a href="#">
+            <picture class="mobileHide">
+              <source media="(min-width: 1367px)" srcset="assets/images/logo.png">
+              <source media="(max-width: 1367px) and (min-width: 766px)" srcset="assets/images/logo.png">
+              <source media="(max-width: 766px)" srcset="assets/images/logo.png">
+              <img class="logo" src="assets/images/logo.png" alt="THE STU">
+            </picture>
+          </a>
+          <form class="headerForm" action="index.html" method="post">
+            <input type="text" name="" value="" placeholder="Try Boston">
+          </form>
+          <div class="headerLinks">
+            <a href="#" class="headerLinksOne">+ ADD YOUR STUDIO</a>
+            <a href="#">SIGN UP /</a>
+            <a class="logInButton" href="#">LOGIN</a>
+          </div>
           <div class="navSocialMedias">
             <a href="#"><i class="fab fa-facebook-f"></i></a>
               <a href="#"><i class="fab fa-instagram"></i></a>
               <a href="#"><i class="fab fa-twitter"></i></a>
               <a href="#"><i class="fab fa-youtube"></i></a>
           </div>
+        </nav>
+        <div class="featuredNav">
+          <a href="#" class="featuredNonLink">Featured</a>
+          <a href="#">Artists</a>
+          <a href="#">Studios</a>
+          <a href="#">Engineers</a>
         </div>
-      </nav>
-      <div class="featuredNav">
-        <a href="#" class="featuredNonLink">Featured</a>
-        <a href="#">Artists</a>
-        <a href="#">Studios</a>
-        <a href="#">Engineers</a>
       </div>
       <div class="bannerArea">
         <picture class="mobileHide">
           <source media="(min-width: 1367px)" srcset="assets/images/baner.jpg">
           <source media="(max-width: 1367px) and (min-width: 766px)" srcset="assets/images/baner.jpg">
           <source media="(max-width: 766px)" srcset="assets/images/baner.jpg">
-          <img src="assets/images/baner.jpg" alt="">
+          <img class="baner" src="assets/images/baner.jpg" alt="">
         </picture>
+        <img class="banerCircle" src="assets/images/banerCircle.png" alt="">
         <div class="bannerText">
-          <h2 class="discoverAbook">DISCOVER AND BOOK STUDIOS</h2>
-          <!-- <div class="studiosContainer">
+          <h2 class="discoverAbook">DISCOVER AND BOOK</h2>
+          <div class="studiosContainer">
             <h1>STUDIOS</h1>
+          </div>
+        </div>
+          <div class="bannerButtonContainer">
+            <div class="BookASkew">
+              <p class="BookA">Book a:</p>
+            </div>
+            <button type="button" name="button">Recording Studios</button>
+            <button type="button" name="button">Photography Studios</button>
+            <button type="button" name="button">Videography Studios</button>
+            <button type="button" name="button">Dance Studios</button>
+            <button type="button" name="button">Event Studios</button>
+          </div>
+          <div class="bannerAnimArrow">
+            <div class="bannerAnimInnerArrow"></div>
+          </div>
+          <!-- <div class="buttonRowTwo">
+            <button type="button" name="button">Book Recording Studios</button>
           </div> -->
-        </div>
-        <div class="banerButtonsContainer">
-          <div class="buttonRowOne">
-            <button type="button" name="button">Book Recording Studios</button>
-            <button type="button" name="button">Book Photography Studios</button>
-          </div>
-          <div class="buttonRowTwo">
-            <button type="button" name="button">Book Recording Studios</button>
-          </div>
-        </div>
       </div>
     </header>
 
-    <section class="cliffordSection" defer>
-      <h2><b>THE STU IS</b></h2>
+    <section class="loremVersionSeciton">
+      <h2>versions of Lorem ipsum</h2>
       <div class="hthreeHolder">
         <h3>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
            It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
            and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</h3>
       </div>
+    </section>
+
+    <section class="cliffordSection" defer>
       <h4>Featured Studios</h4>
       <div class="cliffImagesContainer">
         <picture class="mobileHide">

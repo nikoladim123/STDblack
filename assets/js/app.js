@@ -1,13 +1,14 @@
 // header section animations and functions and vars
+// header section animations and functions and vars
 var discoverAbook = document.getElementsByClassName('discoverAbook');
-// var studiosContainer = document.getElementsByClassName('studiosContainer');
+var studiosContainer = document.getElementsByClassName('studiosContainer');
 
 function discoverAbookFun() {
   discoverAbook[0].style.opacity = '1';
   discoverAbook[0].style.filter = 'blur(0px)';
-  // setTimeout(function () {
-  //   studiosContainer[0].style.width = '50.0725vw';
-  // }, 1000);
+  setTimeout(function () {
+    studiosContainer[0].style.width = '50.0725vw';
+  }, 800);
 }
 
 
@@ -73,12 +74,34 @@ closeBoxLogIn[0].addEventListener('click',(e)=>{
   }, 500);
 });
 
+// bannerButtonContainer
+var bannerButtonContainer = document.getElementsByClassName('bannerButtonContainer');
+
+function bannerButtonContainerFun() {
+  bannerButtonContainer[0].style.right = '0vw';
+}
+
+
+// baner area height
+var bannerArea = document.getElementsByClassName('bannerArea');
+var navArea = document.getElementsByClassName('navArea');
+
+function bannerAreaFun() {
+  // bannerArea[0].style.height = '10vw'
+  bannerArea[0].style.height = 'calc(100vh - '+ navArea[0].getBoundingClientRect().height +'px)';
+}
 
 // window events
 window.addEventListener('load',()=>{
+  bannerAreaFun();
   discoverAbookFun();
+  bannerButtonContainerFun();
 });
 
 window.addEventListener('scroll',()=>{
   theNewBoysTextCoontainerFun();
+});
+
+window.addEventListener('resize',()=>{
+  bannerAreaFun();
 });

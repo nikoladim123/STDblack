@@ -229,6 +229,8 @@ header nav{
   justify-content: space-around;
   padding-top: 0.5vw;
   padding-bottom: 0.26vw;
+  z-index: 1;
+  background: black;
   border-bottom: 1px solid #005e48;
 }
 
@@ -258,6 +260,7 @@ header nav{
   position: relative;
   left: 4vw;
   width: 10vw;
+  z-index: -1;
   /* color: red; */
 }
 
@@ -298,12 +301,19 @@ header nav input{
 }
 .navSocialMedias {
   position: absolute;
-  bottom: 3.5vw;
-  right: 2.6vw;
+  /* bottom: 3.5vw; */
+  /* right: 2.6vw; */
+  top: 1.7725vw;
 }
 .navSocialMedias a {
+  color: white;
   margin-right: 0.5vw;
   font-size: 1vw !important;
+  font-size: 1.165vw;
+  transition: all 0.6s ease;
+}
+.navSocialMedias a:hover{
+  color: #00ecb4;
 }
 
 .headerLinks a{
@@ -328,7 +338,9 @@ header nav input{
   align-items: center;
   justify-content: center;
   /* padding-top: 0.679vw; */
+  z-index: 1;
   padding-bottom: 0.7669vw;
+  background: black;
 }
 .featuredNav a{
   margin: 0;
@@ -354,39 +366,161 @@ header nav input{
 }
 
 .bannerArea{
+  overflow: hidden;
   position: relative;
 }
 
-.bannerArea img{
+.baner{
   width: 100%;
   position: relative;
+  /* z-index: -1; */
+  /* height: 100%; */
+  transition: all 2s ease;
+  transform: scale(1);
+  animation-name: baner;
+  animation-duration: 20s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+@keyframes baner {
+  0%{
+    transform: scale(1);
+  }
+  100%{
+    transform: scale(1.1);
+  }
 }
 
-.bannerText{
+.banerCircle{
+  position: absolute;
+  width: 17.3313vw;
+  height: 17.3313vw;
+  top: 5.8099vw;
+  left: 3.855vw;
+  opacity: 0.5;
+  animation-delay: 2s;
+  animation-name: banerCircle;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes banerCircle {
+  0%{
+    opacity: 0.5;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+/* arrow */
+.bannerAnimArrow{
+  opacity: 0.8;
+  top: 50vh;
+  position: absolute;
+  width: 1.4px;
+  height: 11.11vw;
+  background-color: #e0a116;
+  margin-left: 50%;
+  animation-name: bannerAnimArrow;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+.bannerAnimInnerArrow{
+  opacity: 0.8;
+  position: absolute;
+  bottom: 0px;
+  left: -5px;
+  transform: rotate(-45deg);
+  width: 10px;
+  height: 10px;
+  border-bottom: 1px solid #e0a116;
+  border-left: 1px solid #e0a116;
+}
+@keyframes bannerAnimArrow{
+  0%{
+    height: 1vw;
+  }
+  100%{
+    height: 10vw;
+  }
+}
+/* arrow */
+.bannerButtonContainer{
+  position: absolute;
+  top: 6.489vw;
+  width: 22.3728vw;
+  padding-top: 3.5835vw;
+  /* border: 1px solid red; */
+  /* right: 0; */
+  right: -28vw;
+  /* transition-delay: 0.5s; */
+  transition: all 2s ease;
+  padding-bottom: 0.9685vw;
+  background-color: rgba(255,255,255,0.09);
+}
+.BookASkew{
+  transform: skew(-6deg);
+}
+.BookA{
+  pointer-events: none;
+  position: absolute;
+  transform-origin: left bottom;
+  top: -2vw;
+  margin: 0;
+  left: -2vw;
+  color: #3bce81;
+  font-size: 2.508vw;
+  font-family: 'AlexBrush-Regular';
+  font-weight: 100;
+  transform: rotate(-28deg);
+}
+
+.bannerButtonContainer button{
+  float: right;
+  color: white;
+  font-size: 1.4527vw;
+  font-family: 'Lato-Regular';
+  width: 20.8252vw;
+  height: calc(3.249vw - 2px);
+  border: 2px solid transparent;
+  /* background-color: rgba(0,0,0,0.55); */
+  background-color: #15b19a;
+  transition: all 0.5s ease;
+  margin-bottom: 0.6779vw;
+  text-align: left;
+  padding-left: 2.6634vw;
+  font-weight: 400;
+}
+.bannerButtonContainer button:hover{
+  cursor: pointer;
+  background-color: rgba(0,0,0,0.55);
+  border: 2px solid white;
+}
+
+.bannerText {
   position: absolute;
   /* border: 1px solid; */
-  top: 4.2vw;
-  /* left: 20.9vw; */
-  text-align: center;
-  width: 100%;
+  top: 7.45vw;
+  left: 3.9vw;
   color: white;
   font-family: 'Lato-Bold';
 }
 
 .bannerText h2{
   margin: 0;
-  font-size: 3.2vw;
+  font-size: 2.166vw;
   margin-bottom: 1.2vw;
-  /* margin-left: 3.4349vw; */
+  margin-left: 3.4349vw;
   transition: all 1.5s ease;
-  /* opacity: 0; */
-  filter: blur(200px);
+  opacity: 0;
+  filter: blur(10px);
 }
 
 .studiosContainer{
   width: 50.0725vw;
   height: 10.0628vw;
-  background: rgba(255,61,69,0.45);
+  /* background: rgba(255,61,69,0.45); */
   position: relative;
   overflow: hidden;
   width: 0vw;
@@ -394,78 +528,54 @@ header nav input{
 }
 .bannerText h1{
   margin: 0;
-  font-size: 8.22447vw;
+  font-size: 5.9vw;
   margin-left: 2.7576vw;
   position: absolute;
   font-family: 'Lato-Black';
 }
 
-.banerButtonsContainer{
-  position: absolute;
-  top: 14.2233vw;
-  width: 100%;
+/* header end */
+
+/* loremVersionSeciton start */
+.loremVersionSeciton{
+  position: relative;
+  background: #1d1e1f;
+  padding: 0.1px;
 }
 
-.banerButtonsContainer button{
-  color: white;
-  font-size: 1.4563vw;
+.loremVersionSeciton h2 {
+  margin: 0;
+  text-align: center;
+  font-size: 2.9542vw;
   font-family: 'Lato-Bold';
-  width: 20.8252vw;
-  height: 4.0291vw;
-  border: 2px solid white;
-  background-color: rgba(0,0,0,0.55);
-  transition: all 0.5s ease;
-  margin-left: 0.8737vw;
-  margin-right: 0.8737vw;
-  margin-bottom: 2.4757vw;
+  color: white;
+  margin-top: 7vw;
+  margin-bottom: 2.6vw;
 }
-.banerButtonsContainer button:hover{
-  cursor: pointer;
-  background-color: #00ecb5;
+
+.hthreeHolder{
+  width: 100%;
+  height: 25.5vw;
+  background-color: #1d1e1f;
 }
-.buttonRowOne{
-  display: flex;
-  justify-content: center;
+
+.loremVersionSeciton h3 {
+    margin: 0;
+    text-align: justify;
+    font-size: 1.7725vw;
+    font-family: 'Lato-Regular';
+    color: white;
+    width: 63.815vw;
+    margin-left: 17vw;
+    /* margin-top: 1.83841vw; */
 }
-.buttonRowTwo{
-  display: flex;
-  justify-content: center;
-}
-/* header end */
+/* loremVersionSeciton end */
 
 /* clifford Section start */
 .cliffordSection{
   position: relative;
-}
-
-.cliffordSection h2 {
-    margin: 0;
-    text-align: center;
-    font-size: 3.28330vw;
-    font-family: 'Lato-Light';
-    color: white;
-    background-color: rgba(0,0,0,0.8);
-    margin-top: -7.8vw;
-    padding-top: 0vw;
-    padding-bottom: 3.3vw;
-}
-.cliffordSection b{
-  font-family: 'Lato-Bold';
-}
-.hthreeHolder{
-  width: 100%;
-  height: 28vw;
-  background-color: #1d1e1f;
-}
-.cliffordSection h3 {
-    margin: 0;
-    text-align: justify;
-    font-size: 1.7416vw;
-    font-family: 'Lato-Bold';
-    color: white;
-    width: 66.553vw;
-    margin-left: 15vw;
-    /* margin-top: 1.83841vw; */
+  /* background: #1d1e1f; */
+  padding: 0.1px;
 }
 
 .cliffordSection h4{
