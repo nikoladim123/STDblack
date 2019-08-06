@@ -344,7 +344,7 @@ header nav input{
 }
 .featuredNav a{
   margin: 0;
-  font-family: 'Lato-Bold';
+  font-family: 'Lato-Regular';
   transition: all 0.6s ease;
   color: white;
   text-decoration: none;
