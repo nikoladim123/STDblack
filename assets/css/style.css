@@ -227,7 +227,7 @@ header nav{
   display: flex;
   align-items: flex-end;
   justify-content: space-around;
-  padding-top: 0.5vw;
+  padding-top: 1.5vw;
   padding-bottom: 0.26vw;
   z-index: 1;
   background: black;
@@ -289,7 +289,7 @@ header nav input{
 .headerLinks{
   /* margin-left: 10vw; */
   margin-right: -3vw;
-  border: 1px solid #29072b;
+  border: 2px solid #29072b;
   height: 3.1vw;
   display: flex;
   align-items: center;
@@ -297,7 +297,7 @@ header nav input{
   padding-right: 1.31vw;
   position: relative;
   left: 2vw;
-  top: -1vw;
+  top: -0.4vw;
 }
 .navSocialMedias {
   position: absolute;
@@ -317,7 +317,7 @@ header nav input{
 }
 
 .headerLinks a{
-  font-family: 'Montserrat-Regular';
+  font-family: 'Lato-Regular';
   text-decoration: none;
   color: #fff;
   font-size: 1.165vw;
@@ -332,6 +332,12 @@ header nav input{
   margin-right: 2vw;
 }
 
+.loginRegister{
+  position: absolute;
+  right: 1.5vw;
+  top: -2.5vw;
+}
+
 .featuredNav{
   position: relative;
   display: flex;
@@ -339,7 +345,7 @@ header nav input{
   justify-content: center;
   /* padding-top: 0.679vw; */
   z-index: 1;
-  padding-bottom: 2vw;
+  padding-bottom: 0.7vw;
   background: black;
 }
 .featuredNav a{
@@ -483,7 +489,7 @@ header nav input{
   font-family: 'Lato-Regular';
   width: 20.8252vw;
   height: calc(3.249vw - 2px);
-  border: 2px solid transparent;
+  border: 2px solid white;
   /* background-color: rgba(0,0,0,0.55); */
   background-color: #15b19a;
   transition: all 0.5s ease;

@@ -8,6 +8,11 @@
   display: flex;
   /* margin-top: 2.560vw; */
 }
+.gridContainer video{
+  width: 100%;
+  height: 100%;
+  object-fit: none;
+}
 
 .leftGrid{
   display: grid;
@@ -15,8 +20,8 @@
   grid-template-rows: repeat(35,5vw);
   /* border: 1px solid blue; */
   width: 59vw;
-  grid-gap: 8px;
-  margin-right: 8px;
+  grid-gap: 0.3925vw;
+  margin-right: 0.3925vw;
 }
 .leftGrid div{
   overflow: hidden;
@@ -51,5 +56,18 @@
 }
 .rightGridBox img{
   width: 100%;
-  margin-bottom: 6px;
+  margin-bottom: 0.2944vw;
+}
+
+
+iframe{
+  width: 100%;
+  height: 100%;
+}
+iframe video{
+  object-fit: fill;
+}
+
+iframe .ytp-chrome-top, .ytp-chrome-bottom{
+  display: none !important;
 }
