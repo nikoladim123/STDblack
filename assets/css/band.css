@@ -1,3 +1,86 @@
+/* morph box */
+.blackOverlayheader{
+  width: 100%;
+  height: 100%;
+  background: black;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  transition: all 1s ease;
+  opacity: 0;
+  display: none;
+}
+.morphBox{
+  transition: all 2s ease;;
+  position: absolute;
+  width: 13.779vw;
+  max-height: 3.69094vw;
+  border-radius: 5vw;
+  border: 2px solid #ffae7f;
+  top: 2.60vw;
+  z-index: 5;
+  overflow: hidden;
+}
+.butonContainer{
+  transition: all 2s ease;;
+  opacity: 0;
+}
+
+.morphPClicked{
+  border-color: transparent;
+  max-height: 50vw;
+  border-radius: 0vw;
+  position: absolute;
+  width: 22.3728vw;
+  padding-top: 3.5835vw;
+  padding-right: 1.6vw;
+  transition: all 2s ease;
+  padding-bottom: 0.9685vw;
+  background-color: rgba(255,255,255,0.09);
+}
+.morphPClicked .butonContainer{
+  opacity: 1;
+}
+.morphPClicked .morphP{
+  opacity: 0;
+}
+
+.morphBox button{
+ float: right;
+ color: white;
+ font-size: 1.4527vw;
+ font-family: 'Lato-Regular';
+ width: 20.8252vw;
+ height: calc(3.249vw - 2px);
+ border: 2px solid white;
+ /* background-color: rgba(0,0,0,0.55); */
+ background-color: #15b19a;
+ transition: all 0.5s ease;
+ margin-bottom: 0.6779vw;
+ text-align: left;
+ padding-left: 2.6634vw;
+ font-weight: 400;
+}
+.morphBox button:hover{
+ cursor: pointer;
+ background-color: rgba(0,0,0,0.55);
+ border: 2px solid white;
+}
+
+.morphP{
+  transition: 0.5s;
+  position: absolute;
+  color: #ffae7f;
+  font-size: 1.181vw;
+  font-family: 'Roboto-Regular';
+  text-align: center;
+  width: 100%;
+}
+
+
+/* morph box */
+
 /* selected bands */
 #bands{
   color: #00ecb4 !important;
