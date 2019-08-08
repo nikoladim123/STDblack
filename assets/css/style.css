@@ -235,6 +235,7 @@ header nav{
 }
 
 .logo{
+  z-index: 6;
   width: 12vw;
   transition: all 1.2s ease;
   filter: brightness(0.7);
@@ -287,6 +288,7 @@ header nav input{
   border: 1px solid black;
 }
 .headerLinks{
+  z-index: 6;
   /* margin-left: 10vw; */
   margin-right: -3vw;
   border: 2px solid #29072b;

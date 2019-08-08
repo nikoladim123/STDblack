@@ -7,7 +7,7 @@ morphboxID.addEventListener('click',()=>{
     morphboxID.style.overflow = "visible";
   }, 1000);
   blackOverlayheader[0].style.display = 'block';
-  blackOverlayheader[0].style.opacity = '0.95';
+  blackOverlayheader[0].style.opacity = '0.75';
 });
 
 blackOverlayheader[0].addEventListener('click',()=>{
