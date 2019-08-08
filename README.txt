@@ -1,1 +1,1 @@
-https://github.com/nikoladim123/STDblack.git
+https://nikoladim123.github.io/STDblack/
