@@ -1,0 +1,214 @@
+div{
+  position: relative;
+}
+
+main{
+  background: #33cca0;
+  padding: 0.1px;
+  /* border: 1px solid red; */
+  padding-left: 6.6962vw;
+  padding-right: 6.6962vw;
+  padding-bottom: 59vw;
+}
+
+main form{
+  display: flex;
+  margin-top: 0.2vw;
+}
+
+.formBoxText{
+  color: white;
+  text-align: right;
+}
+
+.formBoxText p{
+  margin: 0;
+}
+
+main h2{
+  margin: 0;
+  color: white;
+  font-size: 1.96947vw;
+  margin-top: 2.7vw;
+  font-family: 'Lato-Bold';
+  font-weight: 100;
+}
+main h3{
+  color: white;
+  font-size: 1.4771vw;
+  font-family: 'Lato-Bold';
+  font-weight: 100;
+  margin: 0;
+  margin-top: 1.3vw;
+}
+.formBoxText p{
+  font-family: 'Lato-Regular';
+  font-size: 1.181vw;
+  margin-bottom: 0.4vw;
+}
+
+.formBoxInput input{
+  font-family: 'Lato-Bold';
+  margin-left: 0.7vw;
+  height: 1.329394vw;
+  width: 4.8252vw;
+  border: 1px solid white;
+  background: #d6f5ec;
+  font-size: 1.081vw;
+  color: rgba(80,80,80,0.8);
+}
+
+.formBoxInput input:nth-child(3){
+  margin-top: 0.4vw;
+  width: 9.3vw;
+}
+
+/* searchResultContainer start */
+.searchResultContainer{
+  margin-top: 1.477vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.resultBox{
+  position: relative;
+  width: 26.9817vw;
+  /* height: 25.25vw; */
+  background: white;
+  box-shadow: 0px 0px 37px 15px rgba(0,0,0,0.2);
+}
+
+.resultImageBox{
+  position: relative;
+  height: 18.21vw;
+  width: 100%;
+  overflow: hidden;
+  /* border: 1px solid; */
+}
+
+.resultImageBox:hover > .resultBoxInsideLayer{
+  opacity: 1;
+}
+
+.resultMainImage{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.resultBoxInsideLayer{
+  transition: all 0.5s ease;
+  opacity: 0;
+  padding: 0.1px;
+  position: relative;
+  width: calc(100% - 0.9354vw * 2);
+  height: calc(100% - 0.9354vw * 2);
+  margin: 0.9354vw;
+  background: rgba(51,204,160,0.9);
+}
+
+.visitStudioPage{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border-top: 1px solid white;
+  height: 2.46184vw;
+  background: #ff975c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.visitStudioPage:hover > .visitStudioPageText{
+  text-decoration: underline;
+}
+
+.visitStudioPage P{
+  color: white;
+  font-size: 1.181vw;
+  font-family: 'Lato-Bold';
+}
+
+.resultBoxSocialMedia{
+  width: 100%;
+  /* border: 1px solid; */
+  display: flex;
+  justify-content: center;
+  margin-top: 3.4958vw;
+}
+
+.resultBoxSocialMedia a{
+  text-decoration: none;
+}
+
+.resultBoxSocialMedia .fab{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background: black;
+  width: 3.0034vw;
+  height: 3.0034vw;
+  border-radius: 50%;
+  font-size: 1.3vw;
+  margin-left: 0.17232vw;
+  margin-right: 0.17232vw;
+  text-decoration: none;
+}
+.resultBoxSocialMedia .fab:hover{
+  filter: brightness(1.5);
+}
+
+.resultInfoBox{
+  display: flex;
+  /* border: 1px solid red; */
+  justify-content: space-between;
+  padding: 0.6893vw 0 0.98473vw 0.915vw;
+  height: 5.2vw;
+}
+
+.priceBox{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background: #ffd5be;
+  width: 6.59773vw;
+}
+
+.priceBox p{
+  color: #998478;
+  font-size: 1.477vw;
+  font-family: "Lato-Black";
+}
+
+.resultInfoText {
+    /* border: 1px solid; */
+    width: 18.217vw;
+    /* float: right; */
+}
+
+.resultInfoText p{
+  color: black;
+  font-size: 1.624vw;
+  margin: 0;
+  font-family: 'Lato-Regular';
+}
+
+.rating{
+  transition: all 0.3s ease;
+  margin-top: 0.4vw;
+  color: #ffd5be;
+}
+.rating .fas:hover{
+  filter: brightness(1.1);
+}
+
+.rating a{
+  color: #ffd5be;
+  text-decoration: none;
+}
+/* searchResultContainer end */
