@@ -11,63 +11,34 @@
   opacity: 0;
   display: none;
 }
-.morphBox{
-  transition: all 2s ease;;
+
+#morphboxID{
+  transition: all 1s ease;
+  /* border: 1px solid red; */
+  position: absolute;
+  width: 22.3728vw;
+  top: 0;
+  left: 1;
+  z-index: 2;
+  height: 6vw;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  top: 2vw;
+}
+
+.bookAStudio{
+  transition: all 2s ease;
   position: absolute;
   width: 13.779vw;
+  min-height: 3.69094vw;
   max-height: 3.69094vw;
   border-radius: 5vw;
   border: 2px solid #ffae7f;
-  top: 2.60vw;
+  top: 1.4vw;
   z-index: 5;
   overflow: hidden;
 }
-.butonContainer{
-  transition: all 2s ease;;
-  opacity: 0;
-}
-
-.morphPClicked{
-  border-color: transparent;
-  max-height: 50vw;
-  border-radius: 0vw;
-  position: absolute;
-  width: 22.3728vw;
-  padding-top: 3.5835vw;
-  padding-right: 1.6vw;
-  transition: all 2s ease;
-  padding-bottom: 0.9685vw;
-  background-color: rgba(255,255,255,0.09);
-}
-.morphPClicked .butonContainer{
-  opacity: 1;
-}
-.morphPClicked .morphP{
-  opacity: 0;
-}
-
-.morphBox button{
- float: right;
- color: white;
- font-size: 1.4527vw;
- font-family: 'Lato-Regular';
- width: 20.8252vw;
- height: calc(3.249vw - 2px);
- border: 2px solid white;
- /* background-color: rgba(0,0,0,0.55); */
- background-color: #15b19a;
- transition: all 0.5s ease;
- margin-bottom: 0.6779vw;
- text-align: left;
- padding-left: 2.6634vw;
- font-weight: 400;
-}
-.morphBox button:hover{
- cursor: pointer;
- background-color: rgba(0,0,0,0.55);
- border: 2px solid white;
-}
-
 .morphP{
   transition: 0.5s;
   position: absolute;
@@ -76,6 +47,44 @@
   font-family: 'Roboto-Regular';
   text-align: center;
   width: 100%;
+}
+
+
+.bannerButtonContainer {
+  opacity: 0;
+  position: absolute;
+  z-index: 4;
+  top: 0;
+  width: 22.3728vw;
+  padding-top: 6.5835vw;
+  /* margin-left: 50%; */
+  left: 0;
+  transition: all 2s ease;
+  padding-bottom: 0.9685vw;
+  background-color: rgba(255,255,255,0.09);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bannerButtonContainer button{
+  color: white;
+  font-size: 1.4527vw;
+  font-family: 'Lato-Regular';
+  width: 20.8252vw;
+  height: calc(3.249vw - 2px);
+  border: 2px solid white;
+  /* background-color: rgba(0,0,0,0.55); */
+  background-color: #15b19a;
+  transition: all 0.5s ease;
+  margin-bottom: 0.6779vw;
+  text-align: left;
+  padding-left: 2.6634vw;
+  font-weight: 400;
+}
+.bannerButtonContainer button:hover{
+  cursor: pointer;
+  background-color: rgba(0,0,0,0.55);
+  border: 2px solid white;
 }
 
 
