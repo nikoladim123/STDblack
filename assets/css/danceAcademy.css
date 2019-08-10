@@ -90,6 +90,10 @@ main{
   width: 28%;
 }
 
+.bookThisStud a{
+  text-decoration: none;
+}
+
 .bookThisStud h2{
   font-family: 'Lato-Bold';
   font-size: 2.363vw;
