@@ -461,6 +461,9 @@ header nav input{
   cursor: pointer;
   color: #00ecb4;
 }
+.featuredNav a:nth-child(1){
+  margin-right: -0.15vw;
+}
 
 .featuredNonLink {
     color: #00ecb4 !important;
