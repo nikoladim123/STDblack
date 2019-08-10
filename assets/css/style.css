@@ -59,7 +59,7 @@
     z-index: 4;
     top: 0;
     width: 24.3728vw;
-    padding-top: 6.5835vw;
+    padding-top: 6vw;
     /* margin-left: 50%; */
     left: 0;
     transition: all 2s ease;
@@ -551,57 +551,7 @@ header nav input{
   }
 }
 /* arrow */
-.bannerButtonContainer{
-  position: absolute;
-  top: 6.489vw;
-  width: 22.3728vw;
-  padding-top: 3.5835vw;
-  /* border: 1px solid red; */
-  /* right: 0; */
-  right: -28vw;
-  /* transition-delay: 0.5s; */
-  transition: all 2s ease;
-  padding-bottom: 0.9685vw;
-  background-color: rgba(255,255,255,0.09);
-}
-.BookASkew{
-  transform: skew(-6deg);
-}
-.BookA{
-  pointer-events: none;
-  position: absolute;
-  transform-origin: left bottom;
-  top: -2vw;
-  margin: 0;
-  left: -2vw;
-  color: #3bce81;
-  font-size: 2.508vw;
-  font-family: 'AlexBrush-Regular';
-  font-weight: 100;
-  transform: rotate(-28deg);
-}
 
-.bannerButtonContainer button{
-  float: right;
-  color: white;
-  font-size: 1.4527vw;
-  font-family: 'Lato-Regular';
-  width: 20.8252vw;
-  height: calc(3.249vw - 2px);
-  border: 2px solid white;
-  /* background-color: rgba(0,0,0,0.55); */
-  background-color: #15b19a;
-  transition: all 0.5s ease;
-  margin-bottom: 0.6779vw;
-  text-align: left;
-  padding-left: 2.6634vw;
-  font-weight: 400;
-}
-.bannerButtonContainer button:hover{
-  cursor: pointer;
-  background-color: rgba(0,0,0,0.55);
-  border: 2px solid white;
-}
 
 .bannerText {
   position: absolute;

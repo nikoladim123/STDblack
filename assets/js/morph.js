@@ -17,6 +17,16 @@ bookAStudio[0].addEventListener('click',()=>{
     bannerButtonContainer[0].style.opacity = '1'
     morphboxID.style.height = "29vw";
   }
+  if(!tick){
+    morphboxID.className = ' morphBox';
+    blackOverlayheader[0].style.opacity = '0';
+    setTimeout(function () {
+      blackOverlayheader[0].style.display = 'none';
+      tick = 1;
+    }, 1100);
+    bannerButtonContainer[0].style.opacity = '0'
+    morphboxID.style.height = "6vw";
+  }
 });
 
 blackOverlayheader[0].addEventListener('click',()=>{
@@ -31,5 +41,6 @@ blackOverlayheader[0].addEventListener('click',()=>{
     morphboxID.style.height = "6vw";
   }
 });
+
 
 console.log('hello');
