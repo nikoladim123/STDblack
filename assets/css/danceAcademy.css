@@ -1,0 +1,98 @@
+.featuredNav{
+  box-shadow: 0px 10px 29px -9px rgba(0,0,0,0.75);
+  padding-bottom: 0.2vw;
+}
+
+main{
+  background: white;
+  padding-bottom: 47vw;
+}
+.danceBaner{
+  width: 100%;
+  position: relative;
+}
+
+.content{
+  display: flex;
+  padding-left: 7vw;
+      margin-top: 2.75vw;
+}
+
+.resultInfoBox{
+  display: flex;
+  padding: 0.6893vw 0 0.98473vw 0.915vw;
+  /* border: 1px solid red; */
+  width: 60%;
+}
+
+.priceBox{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.3vw;
+  height: 7.5vw;
+  background: #ffd5be;
+  width: 7.59773vw;
+  margin-right: 1.23vw;
+}
+
+.priceBox p{
+  color: #998478;
+  font-size: 1.477vw;
+  font-family: "Lato-Black";
+}
+
+.resultInfoText {
+    /* border: 1px solid; */
+    /* width: 18.217vw; */
+    /* float: right; */
+}
+
+.resultInfoText p:nth-child(1){
+  color: black;
+  font-size: 3.545vw;
+  margin: 0;
+  font-family: 'Lato-Bold';
+}
+
+.resultInfoText p:nth-child(2){
+  color: black;
+  font-size: 1.4771vw;
+  margin: 0;
+  font-family: 'Lato-Regular';
+}
+
+.rating{
+  transition: all 0.3s ease;
+  margin-top: -0.1vw;
+  color: #ffd5be;
+  display: flex;
+  align-items: center;
+}
+.rating .fas:hover{
+  filter: brightness(1.1);
+}
+
+.rating a{
+  color: #ffd5be;
+  text-decoration: none;
+}
+
+.rating p{
+  margin-left: 1vw;
+  color: #998478;
+  font-size: 0.886vw;
+  font-family: 'Lato-Regular';
+}
+
+.bookThisStud{
+  /* border: 1px solid black; */
+  width: 28%;
+}
+
+.bookThisStud h2{
+  font-family: 'Lato-Bold';
+  font-size: 2.363vw;
+  text-align: center;
+  color: #ff975c;
+}
