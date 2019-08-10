@@ -95,7 +95,7 @@ function bannerAreaFun() {
 window.addEventListener('load',()=>{
   bannerAreaFun();
   discoverAbookFun();
-  bannerButtonContainerFun();
+  // bannerButtonContainerFun();
 });
 
 window.addEventListener('scroll',()=>{
