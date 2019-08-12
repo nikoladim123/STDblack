@@ -22,13 +22,13 @@ var talent = document.getElementsByClassName('talent');
 
 
 function videoLoadFun() {
-  theStu[0].style.fontSize = '4vw';
+  theStu[0].style.fontSize = '7vw';
   talent[0].style.filter = 'blur(0px)';
     setTimeout(function () {
       loadingVid[0].style.opacity = '0';
       setTimeout(function () {
         loadingVid[0].style.display = 'none';
-      }, 3000);
+      }, 4000);
     }, 3000);
 }
 

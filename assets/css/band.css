@@ -23,7 +23,8 @@
 }
 
 .theStu {
-  transition: all 3s ease;
+  filter: blur(1px);
+  transition: all 2s ease;
   font-family: 'Montserrat-Black';
   font-size: 1vw;
   top: 35vh;
