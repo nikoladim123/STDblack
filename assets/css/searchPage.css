@@ -24,10 +24,12 @@ main{
   height: 100%;
   background-color: rgba(0,0,0,0.6);
 }
-.dateOverlay img{
+.dateImg{
+  transition: all 1.5s ease;
   width: 72.1811vw;
   margin-top: 5.76vw;
-  margin-left: 13.4229vw;
+  /* margin-left: 13.4229vw; */
+  margin-left: 10.4229vw;
 }
 
 .closeDateBox {
