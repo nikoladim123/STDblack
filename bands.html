@@ -10,7 +10,15 @@
   </head>
   <body>
 
-    <header>
+    <div class="loadingVid">
+      <video class="videoForLoad" src="assets/videos/intro.mp4" muted autoplay>
+
+      </video>
+      <p class="theStu">THE STU</p>
+      <p class="talent">WHERE TALENT MEETS SUCCESS</p>
+    </div>
+
+    <header defer>
       <div class="navArea">
         <nav>
           <a href="index.html">
@@ -95,7 +103,7 @@
         </div>
         <div class="RightGrid">
           <div class="rightGridBox">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/t3tsMEhlvwM?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/t3tsMEhlvwM?rel=0&controls=1&showinfo=0&modestbranding=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
           <div class="rightGridBox">
             <img src="assets/images/bands/3.jpg" alt="">
@@ -106,6 +114,7 @@
     </header>
 
 
+    <script src="assets/js/loadingJS.js" charset="utf-8"></script>
     <script src="assets/js/morph.js" charset="utf-8"></script>
   </body>
 </html>
