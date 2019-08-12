@@ -28,7 +28,7 @@ function videoLoadFun() {
       loadingVid[0].style.opacity = '0';
       setTimeout(function () {
         loadingVid[0].style.display = 'none';
-      }, 4000);
+      }, 3500);
     }, 3000);
 }
 
@@ -40,6 +40,7 @@ videoForLoad[0].addEventListener("playing", function() {
         videoLoadFun();
     }
 });
+
 videoForLoad[0].addEventListener("suspend", function(e) {
     console.log("[Suspended] loading of video");
     if ( videoForLoad[0].readyState == 4 ) {
@@ -47,6 +48,10 @@ videoForLoad[0].addEventListener("suspend", function(e) {
         videoLoadFun();
     }
 });
+
+setTimeout(function () {
+  videoLoadFun();
+}, 7000);
 
 
 
