@@ -1,3 +1,51 @@
+
+
+
+
+@font-face {
+  font-family: 'AlexBrush-Regular';
+  src: url('../fonts/AlexBrush-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: url('../fonts/roboto/Roboto-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato-Light';
+  src: url('../fonts/lato/Lato-Light.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Lato-Regular';
+  src: url('../fonts/lato/Lato-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Lato-Black';
+  src: url('../fonts/lato/Lato-Black.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Lato-Bold';
+  src: url('../fonts/lato/Lato-Black.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat-Light';
+  src: url('../fonts/Montserrat-Light.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat-Regular';
+  src: url('../fonts/Montserrat-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat-Bold';
+  src: url('../fonts/Montserrat-Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat-Black';
+  src: url('../fonts/Montserrat-Black.ttf') format('truetype');
+}
+
 /* morph box */
 .blackOverlayheader{
   width: 100%;
@@ -90,52 +138,6 @@
   border: 2px solid white;
 }
 /* morph box */
-
-
-
-@font-face {
-  font-family: 'AlexBrush-Regular';
-  src: url('../fonts/AlexBrush-Regular.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'Roboto-Regular';
-  src: url('../fonts/roboto/Roboto-Regular.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'Lato-Light';
-  src: url('../fonts/lato/Lato-Light.ttf') format('truetype');
-}
-@font-face {
-  font-family: 'Lato-Regular';
-  src: url('../fonts/lato/Lato-Regular.ttf') format('truetype');
-}
-@font-face {
-  font-family: 'Lato-Black';
-  src: url('../fonts/lato/Lato-Black.ttf') format('truetype');
-}
-@font-face {
-  font-family: 'Lato-Bold';
-  src: url('../fonts/lato/Lato-Black.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'Montserrat-Light';
-  src: url('../fonts/Montserrat-Light.ttf') format('truetype');
-}
-@font-face {
-  font-family: 'Montserrat-Regular';
-  src: url('../fonts/Montserrat-Regular.ttf') format('truetype');
-}
-@font-face {
-  font-family: 'Montserrat-Bold';
-  src: url('../fonts/Montserrat-Bold.ttf') format('truetype');
-}
-@font-face {
-  font-family: 'Montserrat-Black';
-  src: url('../fonts/Montserrat-Black.ttf') format('truetype');
-}
 
 body{
   background: black;

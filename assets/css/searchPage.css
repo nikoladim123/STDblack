@@ -3,12 +3,53 @@ div{
 }
 
 main{
+  position: relative;
   background: #33cca0;
   padding: 0.1px;
   /* border: 1px solid red; */
   padding-left: 6.6962vw;
   padding-right: 6.6962vw;
   padding-bottom: 59vw;
+}
+
+.dateOverlay{
+  display: none;
+  opacity: 0;
+  transition: all 0.9s ease;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+}
+.dateOverlay img{
+  width: 72.1811vw;
+  margin-top: 5.76vw;
+  margin-left: 13.4229vw;
+}
+
+.closeDateBox {
+  height: 5vw;
+  width: 5vw;
+  font-family: 'Montserrat-Black';
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0vw;
+  left: 81vw;
+}
+.closeDateBox:hover{
+  cursor: pointer;
+}
+
+.closeDateBox p{
+  color: white;
+  font-size: 5vw;
+  margin: 0;
+  pointer-events: none;
 }
 
 main form{
@@ -109,6 +150,35 @@ main h3{
   background: rgba(51,204,160,0.9);
 }
 
+.checkAvailability{
+  font-family: 'Montserrat-Bold';
+  position: absolute;
+  width: 8vw;
+  height: 2.4vw;
+  transform: scaleX(1.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid white;
+  border-radius: 5vw;
+  left: 9vw;
+  bottom: 3vw;
+  background: #33cca0;
+  transition: all 0.5s ease;
+}
+
+.checkAvailability:hover{
+  cursor: pointer;
+  filter: brightness(1.15);
+}
+
+.checkAvailability p{
+  color: white;
+  font-size: 1vw;
+  transform: scaleX(0.7);
+  white-space: nowrap;
+}
+
 .visitStudioPage{
   position: absolute;
   bottom: 0;
@@ -128,7 +198,7 @@ main h3{
 
 .visitStudioPage P{
   color: white;
-  font-size: 1.181vw;
+  font-size: 1.481vw;
   font-family: 'Lato-Bold';
 }
 
