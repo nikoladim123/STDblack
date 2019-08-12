@@ -5,7 +5,7 @@
 
 main{
   background: white;
-  padding-bottom: 47vw;
+  padding-bottom: 4.6728vw;
 }
 .danceBaner{
   width: 100%;
@@ -18,11 +18,18 @@ main{
       margin-top: 2.75vw;
 }
 
+.resultInfoBoxWraper{
+  background: #f8f8f8;
+  width: 36.2vw;
+  height: 18.691vw;
+  margin-left: 0.73782vw;
+  margin-right: 0.73782vw;
+
+}
 .resultInfoBox{
   display: flex;
-  padding: 0.6893vw 0 0.98473vw 0.915vw;
+  padding: 2.3610vw 0 0.98473vw 0.915vw;
   /* border: 1px solid red; */
-  width: 60%;
 }
 
 .priceBox{
@@ -34,6 +41,7 @@ main{
   background: #ffd5be;
   width: 7.59773vw;
   margin-right: 1.23vw;
+  flex-shrink: 0;
 }
 
 .priceBox p{
@@ -43,14 +51,11 @@ main{
 }
 
 .resultInfoText {
-    /* border: 1px solid; */
-    /* width: 18.217vw; */
-    /* float: right; */
 }
 
 .resultInfoText p:nth-child(1){
   color: black;
-  font-size: 3.545vw;
+  font-size: 2.213vw;
   margin: 0;
   font-family: 'Lato-Bold';
 }
@@ -85,9 +90,70 @@ main{
   font-family: 'Lato-Regular';
 }
 
+.locationP{
+  font-size: 1.4756vw;
+  color: #555555;
+  font-family: 'Lato-Bold';
+}
+.locationP span{
+  color: #ff975c;
+}
+
+.avatarBox{
+  width: 17.707vw;
+  height: 18.691vw;
+  background: #f8f8f8;
+  margin-left: 0.73782vw;
+  margin-right: 0.73782vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #555555;
+}
+
+.avatarimg{
+  width: 11.0181vw;
+  margin-top: -1.4vw;
+  margin-bottom: -1.2vw;
+}
+
+.avatarBox p{
+  font-size: 1.180vw;
+  font-family: 'Lato-Light';
+  margin: 0;
+  margin-bottom: 0.2vw;
+}
+
+.avatarBox h3{
+  margin: 0;
+  font-size: 1.180vw;
+  font-family: 'Lato-Bold';
+}
+
+.MessageDavid{
+  border:1px solid #bdbdbd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10.1328vw;
+  height: 2.1642vw;
+  margin-top: 1.9675vw;
+}
+
+.MessageDavid p{
+  font-family: 'Lato-Regular';
+}
+
+
 .bookThisStud{
   /* border: 1px solid black; */
-  width: 28%;
+  width: 30.742vw;
+  background: #f8f8f8;
+  margin-left: 0.73782vw;
+  margin-right: 0.73782vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .bookThisStud a{
@@ -95,8 +161,87 @@ main{
 }
 
 .bookThisStud h2{
+  margin: 0;
   font-family: 'Lato-Bold';
   font-size: 2.363vw;
   text-align: center;
   color: #ff975c;
+  margin-top: 5.75vw;
 }
+
+.bookThisStud h4{
+  font-family: 'Lato-Bold';
+  color: #ff975c;
+  font-size: 1.4756vw;
+  margin: 0;
+}
+
+.bookThisStud p{
+  font-size: 1.180vw;
+  font-family: 'Lato-Light';
+  color: #555555;
+  font-weight: 800;
+  margin: 0;
+}
+
+.bookThisStud h3{
+  font-size: 1.180vw;
+  font-family: 'Lato-Light';
+  color: #555555;
+}
+
+/* whatIsIncludedSection start */
+.whatIsIncludedSection{
+  position: relative;
+  color: #555555;
+  background: white;
+  padding: 0.1px;
+}
+
+.includedTextBox{
+  padding-left: 3vw
+}
+
+.includedTextBox h2{
+  font-size: 1.7707vw;
+  font-family: 'Lato-Bold';
+}
+
+.includedTextBox h3{
+  font-size: 1.18vw;
+  font-family: 'Lato-Bold';
+  margin-top: 3vw;
+  margin-bottom: 0.5vw;
+}
+
+.includedTextBox h4{
+  font-size: 1.18vw;
+  font-family: 'Lato-Light';
+  margin-top: 0;
+  /* margin-bottom: 3vw; */
+  margin-bottom: 2vw;
+}
+
+.includedTextBox h4:nth-last-child(1){
+  margin-top: -2vw;
+}
+
+.location{
+  width: 51.5vw;
+  margin-left: 23.75vw;
+}
+
+.location h2{
+  font-size: 1.18vw;
+  font-family: 'Lato-Bold';
+  margin-top: 3vw;
+  margin-bottom: 1.8691vw;
+  margin-top: 5.9517vw;
+}
+
+.locationImg{
+  width: 100%;
+  margin-bottom: 30vw;
+}
+
+/* whatIsIncludedSection end */
