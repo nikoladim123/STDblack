@@ -94,17 +94,17 @@ main h3{
   font-family: 'Lato-Bold';
   margin-left: 0.7vw;
   height: 1.329394vw;
-  width: 4.8252vw;
+  width: 10.5vw;
   border: 1px solid white;
   background: #d6f5ec;
   font-size: 1.081vw;
   color: rgba(80,80,80,0.8);
 }
 
-.formBoxInput input:nth-child(3){
+/* .formBoxInput input:nth-child(3){
   margin-top: 0.4vw;
   width: 9.3vw;
-}
+} */
 
 /* searchResultContainer start */
 .searchResultContainer{
@@ -163,7 +163,7 @@ main h3{
   justify-content: center;
   border: 1px solid white;
   border-radius: 5vw;
-  left: 9vw;
+  left: 8.5vw;
   bottom: 3vw;
   background: #33cca0;
   transition: all 0.5s ease;
