@@ -19,7 +19,7 @@ var theWayWeAre = document.getElementsByClassName('theWayWeAre');
 function theNewBoysTextCoontainerFun() {
   if(theWayWeAre[0].getBoundingClientRect().top < window.innerHeight / 1.5){
     theWayWeAre[0].style.top = '0vw';
-    console.log(123);
+    theWayWeAre[1].style.top = '0vw';
   }
 }
 
