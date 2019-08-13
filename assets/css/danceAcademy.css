@@ -15,16 +15,16 @@ main{
 .content{
   display: flex;
   padding-left: 7vw;
-      margin-top: 2.75vw;
+  margin-top: 2.75vw;
 }
 
 .resultInfoBoxWraper{
   background: #f8f8f8;
-  width: 36.2vw;
+  width: 34.5vw;
   height: 18.691vw;
+  padding-left: 1vw;
   margin-left: 0.73782vw;
   margin-right: 0.73782vw;
-
 }
 .resultInfoBox{
   display: flex;
@@ -36,10 +36,10 @@ main{
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 0.3vw;
-  height: 7.5vw;
+  /* margin-top: 0.3vw; */
+  height: 6vw;
   background: #ffd5be;
-  width: 7.59773vw;
+  width: 6vw;
   margin-right: 1.23vw;
   flex-shrink: 0;
 }
@@ -94,6 +94,9 @@ main{
   font-size: 1.4756vw;
   color: #555555;
   font-family: 'Lato-Bold';
+  margin: 0;
+  margin-top: -0.8vw;
+  margin-left: 1vw;
 }
 .locationP span{
   color: #ff975c;
@@ -241,7 +244,53 @@ main{
 
 .locationImg{
   width: 100%;
-  margin-bottom: 30vw;
+  margin-bottom: 2vw;
 }
 
 /* whatIsIncludedSection end */
+
+/* cancelation policy section */
+.cancelPolicySection{
+  position: relative;
+  background: white;
+  padding: 0.1px;
+  padding-left: 3vw;
+}
+
+.cancelContainer{
+  width: 38.40vw;
+  color: #555555;
+}
+
+.cancelContainer h2{
+  font-size: 1.18vw;
+  font-family: 'Lato-Bold';
+  margin-top: 3vw;
+  margin-bottom: 0.5vw;
+}
+
+.cancelContainer h4{
+  font-size: 1.18vw;
+  font-family: 'Lato-Light';
+  margin-top: 0;
+  /* margin-bottom: 3vw; */
+  margin-bottom: 2vw;
+}
+/* cancelation policy section end*/
+
+/* reviewSectionstart start*/
+.reviewSection{
+  padding: 0.1px;
+  position: relative;
+  background: white;
+  padding-left: 3vw;
+}
+.reviewSection img{
+  width: 100%;
+}
+
+.reviewContainer{
+  width: 47.5vw;
+  border: 1px solid red;
+}
+/* reviewSectionstart end*/

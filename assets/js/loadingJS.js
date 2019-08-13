@@ -28,7 +28,7 @@ function videoLoadFun() {
       loadingVid[0].style.opacity = '0';
       setTimeout(function () {
         loadingVid[0].style.display = 'none';
-      }, 3500);
+      }, 3000);
     }, 3000);
 }
 
