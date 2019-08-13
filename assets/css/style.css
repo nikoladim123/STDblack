@@ -710,6 +710,7 @@ header nav input{
 .cliffDivBox{
   width: 29.027vw;
   margin:0.338vw;
+  height: 29vw;
 }
 .cliffImagesContainer iframe{
   width: 100%;
@@ -726,6 +727,11 @@ header nav input{
 }
 .featuredSection img{
   width: 100%;
+}
+
+.featuredSection iframe{
+  width: 100%;
+  height: 46vw;
 }
 
 .theNewBoysTextCoontainer{
