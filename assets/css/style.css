@@ -706,6 +706,16 @@ header nav input{
   width: 29.027vw;
   margin:0.338vw;
 }
+
+.cliffDivBox{
+  width: 29.027vw;
+  margin:0.338vw;
+}
+.cliffImagesContainer iframe{
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
 /* clifford Section end */
 
 /* Featured band section start */
