@@ -100,19 +100,19 @@ var talent = document.getElementsByClassName('talent');
 
 
 
-if ( loadingVid[0].readyState === 4 ) {
-  theStu[0].style.fontSize = '2.5vw';
-  theStu[0].style.filter = 'blur(50px)';
-  talent[0].style.;
-  console.log(123);
-}
-
-loadingVid[0].addEventListener("suspend", function(e) {
-    console.log("[Suspended] loading of video");
-    if ( video.readyState == 4 ) {
-        console.log("[Finished] loading of video");
-    }
-});
+// if ( loadingVid[0].readyState === 4 ) {
+//   theStu[0].style.fontSize = '2.5vw';
+//   theStu[0].style.filter = 'blur(50px)';
+//   talent[0].style.;
+//   console.log(123);
+// }
+//
+// loadingVid[0].addEventListener("suspend", function(e) {
+//     console.log("[Suspended] loading of video");
+//     if ( video.readyState == 4 ) {
+//         console.log("[Finished] loading of video");
+//     }
+// });
 
 
 
