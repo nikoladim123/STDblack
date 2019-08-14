@@ -726,6 +726,7 @@ header nav input{
   margin-bottom: 7.3206vw;
 }
 .featuredBandTextContainer,.featuredSectionTwoTextContainer{
+  pointer-events: none;
   transition: all 1s ease;
   width: 100%;
   opacity: 0.1;
