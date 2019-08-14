@@ -15,12 +15,45 @@ function discoverAbookFun() {
 // featured band (the new boys)
 var theNewBoysTextCoontainer = document.getElementsByClassName('theNewBoysTextCoontainer');
 var theWayWeAre = document.getElementsByClassName('theWayWeAre');
+var featuredBandTextContainer = document.getElementsByClassName('featuredBandTextContainer');
+var featuredSection = document.getElementsByClassName('featuredSection');
 
 function theNewBoysTextCoontainerFun() {
   if(theWayWeAre[0].getBoundingClientRect().top < window.innerHeight / 1.5){
     theWayWeAre[0].style.top = '0vw';
     theWayWeAre[1].style.top = '0vw';
   }
+}
+
+var timer;
+featuredSection[0].addEventListener('mousemove',()=>{
+  featuredBandTextContainer[0].style.opacity = '1';
+  console.log(123);
+  window.clearTimeout(timer);
+  endAndStartTimer();
+});
+
+function endAndStartTimer() {
+  timer = window.setTimeout(function(){
+    featuredBandTextContainer[0].style.opacity = '0.1';
+    console.log(456);
+  },3000);
+}
+
+// featuredSectionTwoTextContainer two
+var timerTwo;
+featuredSection[1].addEventListener('mousemove',()=>{
+  featuredBandTextContainer[1].style.opacity = '1';
+  console.log(123);
+  window.clearTimeout(timerTwo);
+  endAndStartTimerTwo();
+});
+
+function endAndStartTimerTwo() {
+  timerTwo = window.setTimeout(function(){
+    featuredBandTextContainer[1].style.opacity = '0.1';
+    console.log(456);
+  },3000);
 }
 
 // carousel

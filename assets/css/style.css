@@ -725,6 +725,17 @@ header nav input{
   color: white;
   margin-bottom: 7.3206vw;
 }
+.featuredBandTextContainer,.featuredSectionTwoTextContainer{
+  transition: all 1s ease;
+  width: 100%;
+  opacity: 0.1;
+  height: 100%;
+  /* border: 1px solid red; */
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
 .featuredSection img{
   width: 100%;
 }
