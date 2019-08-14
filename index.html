@@ -166,14 +166,18 @@
       </div>
     </section>
 
-    <section class="featuredSection">
+    <section class="featuredSection ytFeaturedSec">
       <!-- <picture class="mobileHide">
         <source media="(min-width: 1367px)" srcset="assets/images/featuredBand.jpg">
         <source media="(max-width: 1367px) and (min-width: 766px)" srcset="assets/images/tablet/featuredBand.jpg">
         <source media="(max-width: 766px)" srcset="assets/images/tablet/featuredBand.jpg">
         <img src="assets/images/featuredBand.jpg" alt="">
       </picture> -->
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/dy_TXvnF9RU?rel=0&controls=1&showinfo=0&modestbranding=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+      <div id="featuredVid">
+
+      </div>
+      <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/dy_TXvnF9RU?rel=0&controls=1&showinfo=0&modestbranding=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
 
       <div class="featuredBandTextContainer">
         <div class="theNewBoysTextCoontainer">
@@ -207,20 +211,41 @@
     </section>
 
     <section class="howItWorks" defer>
+      <img class="howItWorksBG" src="assets/images/howItWorks/howItWorksBG.jpg" alt="">
       <div class="howItWorksTextBox">
         <h2>How it works</h2>
-        <p> <img src="assets/images/howItWorks/searchYellow.png" alt="">Search your perfect space
-          You can easily browse our complete portfolio using our search page. If you cannot find what you are looking for or feel like you need some help.
-          Rent the perfect space</p>
+        <div class="howItWorksTextContent">
+          <h3>As an Artist:</h3>
+          <div class="howItWorksSubTextBox">
+            <div class="howBigNumbers">
+              <p>1</p>
+              <p>2</p>
+            </div>
+            <p class="howitWorksFirstText"> Search your perfect space
+              You can easily browse our complete portfolio using our search page. If you cannot find what you are looking for or feel like you need some help.
+              Rent the perfect space</p>
 
-        <p> <img src="assets/images/howItWorks/squareYellow.png" alt="">You can easily browse our complete portfolio using our search page. If you cannot find what you are looking for or feel like you need some help.
-            List your own space</p>
+            <p class="howItWorksLastText"> You can easily browse our complete portfolio using our search page. If you cannot find what you are looking for or feel like you need some help.
+                List your own space</p>
+          </div>
 
-        <p> <img src="assets/images/howItWorks/barsYellow.png" alt="">You can easily browse our complete portfolio using our search page. If you cannot find what
-          you are looking for or feel like you need some help.</p>
+          <p class="creativeJuice">Put your creative juice to work, <br>
+          produce good results and get featured on the site.</p>
+
+          <p class="studioHostText">As a studio host:</p>
+
+          <div class="howItWorksSubTextBox">
+            <p> You can easily browse our complete portfolio using our search page. If you cannot find what
+              you are looking for or feel like you need some help.</p>
+          </div>
+
+          <p class="prepYourStudioTxt">Prep your studio, be helpful to the artists, <br>
+          get featured on the site and increase your bottom line. </p>
+
+        </div>
       </div>
 
-      <picture class="mobileHide">
+      <!-- <picture class="mobileHide">
         <source media="(min-width: 1367px)" srcset="assets/images/howItWorks/circleYellow.png">
         <source media="(max-width: 1367px) and (min-width: 766px)" srcset="assets/images/tablet/howItWorks/circleYellow.png">
         <source media="(max-width: 766px)" srcset="assets/images/tablet/howItWorks/circleYellow.png">
@@ -232,7 +257,7 @@
         <source media="(max-width: 1367px) and (min-width: 766px)" srcset="assets/images/tablet/howItWorks/phone.png">
         <source media="(max-width: 766px)" srcset="assets/images/tablet/howItWorks/phone.png">
         <img class="phoneImg" src="assets/images/howItWorks/phone.png" alt="">
-      </picture>
+      </picture> -->
 
     </section>
 
@@ -269,12 +294,13 @@
           <div class="carouselThree" id="carouselThree">
             <div class="">
               <div class="carDivOne">
-                <picture class="mobileHide">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/nZObMvBZjKw?rel=0&controls=1&showinfo=0&modestbranding=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <!-- <picture class="mobileHide">
                   <source media="(min-width: 1367px)" srcset="assets/images/newsAndEvents/picOne.jpg">
                   <source media="(max-width: 1367px) and (min-width: 766px)" srcset="assets/images/tablet/newsAndEvents/picOne.jpg">
                   <source media="(max-width: 766px)" srcset="assets/images/tablet/newsAndEvents/picOne.jpg">
                   <img src="assets/images/newsAndEvents/picOne.jpg" alt="makeup">
-                </picture>
+                </picture> -->
               </div>
               <div class="carThreeTextBox">
                 <div class="yellowSquareContainer">
@@ -369,7 +395,7 @@
       </div>
     </section>
 
-    <section class="loremIpsum" defer>
+    <!-- <section class="loremIpsum" defer>
       <h2>Lorem Ipsum</h2>
       <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
          remaining essentially unchanged</p>
@@ -377,28 +403,56 @@
        <form class="headerForm" action="index.html" method="post">
         <input type="text" name="" value="" placeholder="Try Boston">
       </form>
-    </section>
+    </section> -->
 
     <footer defer>
+
+      <div class="footerLinks">
+        <h2>Book a Studio</h2>
+        <a href="searchPage.html">Recording Studios</a> <br>
+        <a href="searchPage.html">Photography Studios</a> <br>
+        <a href="searchPage.html">Videography Studios</a> <br>
+        <a href="searchPage.html">Dance Studios</a> <br>
+        <a href="searchPage.html">Event Studios</a>
+      </div>
+
       <div class="footerLogoBox">
         <a href="#"><img class="footerLogo" src="assets/images/logo.png" alt="THE STU"></a>
         <p>2019 all rights reserved</p>
       </div>
-      <div class="footerRef">
+
+      <!-- <div class="footerRef">
         <a href="#">Privacy Policy</a>
         <a href="#">Terms of Use</a>
-      </div>
+      </div> -->
 
-      <div class="foterSocialMedia">
-          <a href="#"><i class="fab fa-linkedin-in"></i></a>
-          <a href="#"><i class="fab fa-facebook-f"></i></a>
-          <a href="#"><i class="fab fa-google-plus-g"></i></a>
-          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      <div class="footerRightContainer">
+        <h3>The Stu</h3>
+        <p>150-34,14th Avenue</p>
+        <p>Whitestone, Queens</p>
+        <p>New York 11357</p>
+        <p>Phone:347-356-4838</p>
+        <p>Email: <a href="#">multisoundgroup@yahoo.com</a> </p>
+        <div class="paymentMethodContainer">
+          <img class="paymentSprites" src="assets/images/paymentSprites.png" alt="">
+          <div title="Visa Card" class="cardSpriteDiv"></div>
+          <div title="Master Card" class="cardSpriteDiv"></div>
+          <div title="" class="cardSpriteDiv"></div>
+          <div title="Discover Card" class="cardSpriteDiv"></div>
+        </div>
+        <h4>CONNECT WITH US</h4>
+        <div class="foterSocialMedia">
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-google-plus-g"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
       </div>
     </footer>
 
 
     <script src="assets/js/app.js" charset="utf-8"></script>
     <script src="assets/js/morph.js" charset="utf-8"></script>
+    <script src="assets/js/yt.js" charset="utf-8"></script>
   </body>
 </html>
