@@ -61,7 +61,7 @@ div{
 .leftGrid{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: repeat(35,5vw);
+  grid-template-rows: repeat(5,5vw);
   /* border: 1px solid blue; */
   width: 59vw;
   grid-gap: 0.3925vw;
