@@ -28,18 +28,18 @@ main{
   height: 3.348vw;
   border-right: .1969vw solid transparent;
   user-select: none;
-  box-shadow: 5px 5px 69px -33px rgba(0,0,0,0);
+  box-shadow: 0.2469135vw 0.2469135vw 3.407407vw -1.53086vw rgba(0,0,0,0);
 }
 .addSpaceLeft p:hover{
   border-right: .1969vw solid rgba(96,210,131,0.35);
   cursor: pointer;
   filter: brightness(1.04);
-  box-shadow: 5px 5px 69px -31px rgba(0,0,0,0.75);
+  box-shadow: 0.2469135vw 0.2469135vw 3.407407vw -1.53086vwx rgba(0,0,0,0.75);
 }
 
 [data-selected="1"]{
   color: black !important;
   border-right: .1969vw solid #60d283 !important;
-  box-shadow: 1px 1px 69px -30px rgba(0,0,0,0.75) !important;
+  box-shadow: 1px 1px 3.407407vw -1.53086vw rgba(0,0,0,0.75) !important;
   z-index: 1;
 }
