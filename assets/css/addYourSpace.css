@@ -11,6 +11,11 @@ main{
   display: flex;
 }
 
+.content input, .content textarea{
+  font-size: 1.165vw;
+  color: #555555;
+}
+
 .addSpaceLeft{
   padding: 0.1px;
   background-color: #eaeaea;
@@ -129,7 +134,7 @@ main{
 
 .contFormContainer{
   position: relative;
-  margin-left: 1.355vw;
+  /* margin-left: 1.355vw; */
 }
 .contTwo h3{
   font-family: 'Lato-Light';
@@ -184,6 +189,7 @@ main{
   color: #555555;
   font-family: 'Lato-Regular';
   margin-left: 1.2vw;
+  font-weight: 100;
 }
 
 .codeInput{
@@ -246,11 +252,19 @@ width: 13.3vw;
   margin: 0;
 }
 .contThree input{
-  width: 29.4174vw;
+  width: 28.4174vw;
   height: 2.5699vw;
   margin-top: 1.3vw;
   border: 1px solid #555555;
   margin-bottom: 1.6vw;
+  padding-left: 1vw;
+  font-size: 1.165vw;
+  color: #555555;
+}
+.contThreeInput::placeholder{
+  color: #8f8f96;
+  font-size: 1.165vw;
+  font-family: 'Lato-Regular';
 }
 .describeHtwo{
   margin-top: 2vw !important!
@@ -264,6 +278,8 @@ width: 13.3vw;
   resize: none;
   width: 44.66vw;
   height: 13.3495vw;
+  font-size: 1.165vw;
+  color: #555555;
 }
 
 .howBig{
@@ -341,10 +357,17 @@ width: 13.3vw;
 .contFive .continueButton{
   margin-left: 14vw;
   margin-top: 3vw;
+  padding-left: 0.728vw
 }
 
 .city, .state{
-  width: 13.656vw;
+  width: 12.9vw;
+  padding-left: 0.728vw
+}
+
+.zipCode{
+  width: 7.258vw;
+  padding-left: 0.728vw
 }
 
 
