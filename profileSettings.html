@@ -3,22 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title></title>
-    <link rel="stylesheet" href="assets/css/style.css" >
-    <link rel="stylesheet" href="assets/css/band.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/profileSettings.css">
     <link rel="icon" type="image/png" href="assets/images/logo.png">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" onload="if(media!='all')media='all'" defer media="all">
   </head>
   <body>
-
-    <div class="loadingVid">
-      <video class="videoForLoad" src="assets/videos/intro.mp4" muted autoplay>
-
-      </video>
-      <p class="theStu">THE STU</p>
-      <p class="talent">WHERE TALENT MEETS SUCCESS</p>
-    </div>
-
-    <header media="none" onload="if(media!='all')media='all'" defer>
+    <header>
       <div class="navArea">
         <nav>
           <a href="index.html">
@@ -98,74 +89,126 @@
           <a href="#">ENGINEERS</a>
         </div>
       </div>
-
-      <div class="gridContainer">
-        <div class="leftGrid">
-          <div class="gridWide">
-            <div class="gridBoxContent">
-              <h2>FULL PARTY <br>
-              IN BOSTON </h2>
-              <hr>
-              <p>Local Boys were fantastic <br>
-              At the Burkley Performance Center</p>
-            </div>
-            <video src="assets/videos/1.mp4" muted autoplay controls loop>
-
-            </video>
-          </div>
-          <div  class="gridMiddle">
-            <div class="gridBoxContentOne">
-              <h2>THE BAND <br>
-              DIDN'T SHOW UP! </h2>
-              <hr>
-            </div>
-            <video src="assets/videos/2.mp4" muted autoplay controls loop>
-
-            </video>
-          </div>
-          <div class="gridSmall">
-            <img  src="assets/images/bands/4.jpg" alt="">
-          </div>
-          <div class="gridWide">
-            <div class="gridBoxContent">
-              <h2>FULL PARTY <br>
-              IN BOSTON </h2>
-              <hr>
-              <p>Local Boys were fantastic <br>
-              At the Burkley Performance Center</p>
-            </div>
-            <img src="assets/images/bands/1.jpg" alt="">
-          </div>
-        </div>
-
-        <div class="RightGrid">
-          <div class="rightGridBox">
-            <div class="gridBoxContentTwo">
-              <h2>FULL PARTY <br>
-              IN BOSTON </h2>
-              <hr>
-              <p>Local Boys were fantastic <br>
-              At the Burkley Performance Center</p>
-            </div>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/t3tsMEhlvwM?rel=0&controls=1&showinfo=0&modestbranding=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
-          <div class="rightGridBox">
-            <div class="gridBoxContentTwo">
-              <h2>FULL PARTY <br>
-              IN BOSTON </h2>
-              <hr>
-              <p>Local Boys were fantastic <br>
-              At the Burkley Performance Center</p>
-            </div>
-            <img src="assets/images/bands/3.jpg" alt="">
-          </div>
-        </div>
-
-      </div>
     </header>
 
-    <footer defer>
+    <main>
 
+      <div class="basicInfoContainer">
+        <div class="basicInformation">
+          <div class="avatarContainer">
+            <img class="avatar" src="assets/images/settings/avatar.png" alt="">
+            <p>Cesar Kumar</p>
+          </div>
+          <h2 class="basicInfo">Basic Information</h2>
+          <hr>
+          <div class="contInputContainer">
+            <div class="inputText">
+              <h3 class=" bold">First Name</h3>
+              <h3 class=" bold">Last Name</h3>
+              <h3 class=" bold">Phone Number</h3>
+              <h3 class=" bold">Email</h3>
+            </div>
+            <div class="inputFields">
+              <input type="text" name="" value=""> <br>
+              <input type="text" name="" value=""> <br>
+              <input type="text" name="" value=""> <br>
+              <input type="text" name="" value="">
+            </div>
+          </div>
+          <div class="shareInfo">
+            <h3>Share the email related to your PayPal account</h3>
+            <h4>This will be used to make payments for your studio's rental</h4>
+          </div>
+          <input class="payPallInput" type="text" name="" value="">
+          <button class="saveButton" type="button" name="button">Save</button>
+        </div>
+        <h3 class="nextPage">Next page</h3>
+      </div>
+
+      <!-- <div class="reviewsContainer">
+        <div class="avatarContainer">
+          <img class="avatar" src="assets/images/settings/avatar.png" alt="">
+          <p>Cesar Kumar</p>
+        </div>
+        <p class="paymentsCount">5 payments, <span>2 New</span></p>
+        <div class="threImageBox">
+          <div class="imgBoxOne">
+            <img class="reviewimg" src="assets/images/reviews/1.jpg" alt="">
+            <p class="reviewDesc">Boston's Premiere Dance Studio</p>
+          </div>
+          <div class="imgBoxOne">
+            <img class="reviewimg" src="assets/images/reviews/2.jpg" alt="">
+            <p class="reviewDesc">Boston's Premiere Dance Studio</p>
+          </div>
+          <div class="imgBoxOne">
+            <img class="reviewimg" src="assets/images/reviews/3.jpg" alt="">
+            <p class="reviewDesc">Boston's Premiere Dance Studio</p>
+          </div>
+        </div>
+
+        <div class="clientReviewsContainer">
+          <div class="clientRevBox">
+            <img class="clientRevAvatar" src="assets/images/reviews/user1.png" alt="">
+            <div class="clientRevTextBox">
+              <h2>Linda Nola <span>2/23/2019</span></h2>
+              <p class="clientRevTxt">The space was great with everything we needed.Michael ws a geat host, would definitely recommend!</p>
+              <div class="clientRevRateBox">
+                <div class="rating">
+                  <a href="#"><i class="fas fa-star"></i></a>
+                  <a href="#"><i class="fas fa-star"></i></a>
+                  <a href="#"><i class="fas fa-star"></i></a>
+                  <a href="#"><i class="fas fa-star"></i></a>
+                  <a href="#"><i class="fas fa-star"></i></a>
+                </div>
+                <img class="checkImg" src="assets/images/reviews/checkYes.png" alt="">
+                <p class="clientRevAnswer">Yes, I would book again.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="clientRevBox">
+            <img class="clientRevAvatar" src="assets/images/reviews/user2.png" alt="">
+            <div class="clientRevTextBox">
+              <h2>Michael Brown <span>6/11/2019</span></h2>
+              <p class="clientRevTxt">The space was great with everything we needed.Michael ws a geat host, would definitely recommend!</p>
+              <div class="clientRevRateBox">
+                <div class="rating">
+                  <a href="#"><i class="fas fa-star"></i></a>
+                  <a href="#"><i class="fas fa-star"></i></a>
+                  <a href="#"><i class="fas fa-star"></i></a>
+                  <a href="#"><i class="fas fa-star"></i></a>
+                  <a href="#"><i class="fas fa-star"></i></a>
+                </div>
+                <img class="checkImg" src="assets/images/reviews/checkYes.png" alt="">
+                <p class="clientRevAnswer">Yes, I would book again.</p>
+              </div>
+            </div>
+          </div>
+          <h3 class="nextPage">Next page</h3>
+        </div>
+      </div> -->
+
+      <!-- <div class="studCont">
+        <div class="avatarContainer">
+          <img class="avatar" src="assets/images/settings/avatar.png" alt="">
+          <p>Cesar Kumar</p>
+        </div>
+        <div class="twoImageFlexStud">
+          <div class="imgBox">
+            <img src="assets/images/studiosOrSpaces/1.jpg" alt="">
+            <p>Boston's Premiere Dance Studio</p>
+          </div>
+          <div class="imgBox">
+            <img src="assets/images/studiosOrSpaces/2.jpg" alt="">
+            <p>Boston's Premiere Dance Studio</p>
+          </div>
+        </div>
+      </div> -->
+
+
+    </main>
+
+    <footer defer>
       <div class="footerLinks">
         <h2>Book a Studio</h2>
         <a href="searchPage.html">Recording Studios</a> <br>
@@ -176,7 +219,7 @@
       </div>
 
       <div class="footerLogoBox">
-        <a href="#"><img class="footerLogo" src="assets/images/logo.png" alt="THE STU"></a>
+        <a href="index.html"><img class="footerLogo" src="assets/images/logo.png" alt="THE STU"></a>
         <p>2019 all rights reserved</p>
       </div>
 
@@ -209,9 +252,7 @@
       </div>
     </footer>
 
-
-    <script src="assets/js/loadingJS.js" charset="utf-8"></script>
-    <script src="assets/js/header.js" charset="utf-8"></script>
     <script src="assets/js/morph.js" charset="utf-8"></script>
+    <script src="assets/js/header.js" charset="utf-8"></script>
   </body>
 </html>

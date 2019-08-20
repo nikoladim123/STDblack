@@ -1,0 +1,283 @@
+main{
+  background: white;
+  padding-top: 3.8834vw;
+  padding-bottom: 3vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* basicInfoContainer start */
+.basicInformation{
+  width: 46.019vw;
+  background-color: #f8f9fa;
+}
+
+.avatarContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.avatar{
+  width: 9.514vw;
+  position: relative;
+  margin-top: -1vw;
+}
+
+.avatarContainer p{
+  font-size: 1.165vw;
+  font-family: 'Lato-Bold';
+  margin: 0;
+  margin-top: -1.5vw;
+  color: #555555;
+}
+
+.basicInfo{
+  margin: 0;
+  font-size: 1.7475vw;
+  font-family: 'Lato-Bold';
+  text-align: center;
+  margin-top: 2.3vw;
+  color: #333333;
+  margin-bottom: 0.8vw;
+}
+.basicInformation hr{
+  border: 1px solid #eef0f3;
+  /* background: red; */
+  width: 43vw;
+  margin-bottom: 1.2vw;
+}
+.contInputContainer{
+  /* padding-right: 5vw; */
+  display: flex;
+  /* flex-direction: column; */
+}
+
+.inputText{
+  /* border: 1px solid; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-left: 5vw;
+  padding-bottom: 0.6vw;
+}
+.inputFields{
+  /* border: 1px solid; */
+  margin-left: 2.5vw;
+}
+.inputFields input{
+  border: 1px solid #d1d5dd;
+  background: white;
+  width: 19.815vw;
+  height: 2.266vw;
+  border-radius: 5px;
+  margin-bottom: 0.5vw;
+}
+.inputText  h3{
+  font-family: 'Lato-Bold';
+  display: flex;
+  line-height: 1.5;
+  margin-bottom: 0;
+  align-items: center;
+  margin: 0;
+  margin-right: 3vw;
+}
+
+.shareInfo h3{
+  color: #555555;
+  font-size: 1.4563vw;
+  font-family: 'Lato-Bold';
+  margin: 0;
+  margin-top: 3.2vw;
+  margin-bottom: 0.1vw;
+}
+
+.shareInfo h4{
+  font-size: 0.97vw;
+  font-family: 'Lato-Regular';
+  color: #555555;
+  margin: 0;
+}
+
+.shareInfo{
+  margin-left: 5vw;
+}
+
+.payPallInput{
+  width: 19.174vw;
+  height: 3.0582vw;
+  background: transparent;
+  margin-left: 16.4vw;
+  border: 1px solid #bbbbbb;
+  display: block;
+  margin-top: 1.1vw;
+}
+
+.saveButton{
+  transition: all 0.4s ease;
+  width: 9.1262vw;
+  height: 2.9126vw;
+  color: white;
+  background-color: #66d673;
+  border: none;
+  font-size: 1.747vw;
+  font-family: 'Lato-Bold';
+  margin-left: 22.3vw;
+  margin-top: 3.45vw;
+  margin-bottom: 2.6vw;
+}
+
+.saveButton:hover{
+  filter: brightness(1.15);
+  cursor: pointer;
+}
+
+.nextPage{
+  font-size: 1.7475vw;
+  color: #454648;
+  font-family: 'Lato-Black';
+  text-align: center;
+  margin-top: 10vw;
+  margin-bottom: 7vw;
+}
+/* basicInfoContainer end */
+
+/* reviewsContainer */
+.reviewsContainer{
+  position: relative;
+  width: 100%;
+  /* border: 1px solid red; */
+}
+
+.paymentsCount{
+  font-size: 0.8737vw;
+  font-family: 'Lato-Bold';
+  margin-left: 42.3vw;
+  /* margin: 0; */
+  margin-top: 2.9vw;
+  margin-bottom: 0.25vw;
+}
+.threImageBox{
+  display: flex;
+  justify-content: center;
+}
+.paymentsCount span{
+  color: #d40000;
+}
+
+.imgBoxOne{
+  transition: all 0.5s ease;
+  padding: 0.4368vw 0.533vw;
+}
+.imgBoxOne:hover{
+  background: #ffeda3;
+  cursor: pointer;
+}
+
+.reviewimg{
+  width: 16.067vw;
+}
+
+.reviewDesc{
+  text-align: center;
+  margin: 0;
+  font-family: 'Lato-Bold';
+  font-size: 0.87378vw;
+  color: #505050;
+}
+
+.clientReviewsContainer{
+  margin-top: 3.05825vw;
+  /* border: 1px solid green; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.clientRevBox{
+  display: flex;
+  margin-bottom: 3.5vw;
+}
+
+.clientRevAvatar{
+  width: 3.883vw;
+  height: 3.883vw;
+  flex-shrink: 0;
+  margin-right: 0.922vw;
+}
+
+.clientRevTextBox{
+  width: 41.796vw;
+  border-bottom: 2px solid #e6e8ec;
+}
+.clientRevTextBox h2{
+  font-family: 'Lato-Bold';
+  font-size: 1.2vw;
+}
+
+.clientRevTextBox h2 span{
+  color: #666666;
+  font-size: 0.64vw;
+  margin-left: 1vw;
+  opacity: 0.7;
+}
+
+.clientRevTxt{
+  font-family: 'Lato-Regular';
+  color: #423a54;
+  font-weight: 00;
+  font-size: 1.03vw;
+  margin-bottom: 0.4vw;
+}
+
+.clientRevRateBox{
+  display: flex;
+  align-items: center;
+}
+.clientRevRateBox .fas{
+  color: #f9c64e;
+  font-size: 0.77vw;
+}
+
+.rating{
+
+}
+.checkImg{
+  margin-left: 2vw;
+  width: 1.2135vw;
+  margin-right: 0.5vw;
+}
+.clientRevAnswer{
+  font-family: 'Lato-Regular';
+  font-size: 0.95vw;
+  color: #737d85;
+}
+/* reviewsContainer end */
+
+/* studCont start*/
+.studCont{
+  position: relative;
+}
+
+.twoImageFlexStud{
+  display: flex;
+  justify-content: center;
+  margin-top: 4vw;
+}
+
+.imgBox{
+  margin-left: 1.1vw;
+  margin-right: 1.1vw;
+}
+
+.imgBox img{
+  width: 38.883vw;
+}
+
+.imgBox p{
+  font-size: 1.7475vw;
+  font-family: 'Lato-Regular';
+  margin: 0;
+  font-weight: 600;
+  margin-top: 1.2vw;
+}
+/* studCont end */

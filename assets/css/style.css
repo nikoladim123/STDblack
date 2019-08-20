@@ -1,4 +1,7 @@
-
+/* * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+} */
 @font-face {
   font-family: 'AlexBrush-Regular';
   src: url('../fonts/AlexBrush-Regular.ttf') format('truetype');
@@ -427,14 +430,99 @@ header nav input{
   margin-right: 2vw;
 }
 
-.loginRegister{
+.userMenuContainer{
+  position: absolute;
+  top: 1vw;
+  right: 3.75vw;
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  z-index: 6;
+}
+
+.userIcon{
+  /* border:1px solid white; */
+  width: 2.330vw;
+  height: 2.330vw;
+  border-radius: 50%;
+  margin-right: 1.019vw;
+}
+.userIcon img{
+  width: 100%;
+  height: 100%;
+}
+
+.userInitials{
+  color: white;
+  font-family: 'Lato-Bold';
+  font-size: 1vw;
+  margin-right: 0.5825vw;
+}
+
+.userDropDownArrow{
+  transition: all 0.3s ease;
+  width: 0vw;
+  height: 0vw;
+  border: 0.5vw solid #6bc299;
+  border-bottom: 0.5vw solid transparent;
+  border-left: 0.35vw solid transparent;
+  border-right: 0.35vw solid transparent;
+  position: relative;
+  top: 0.3vw;
+  filter: brightness(1);
+}
+
+.userDropDownArrow:hover{
+  cursor: pointer;
+  filter: brightness(1.3);
+}
+
+.userDropDownBox{
+  transition: all 1s ease;
+  overflow: hidden;
+  position: absolute;
+  border: 0px solid white;
+  top: 100%;
+  width: 13.689vw;
+  right: 0;
+  background: #e9e9e9;
+  box-shadow: 0px 0px 100px -36px rgba(0,0,0,0.75);
+  max-height: 0vw;
+}
+.userDropDownBox a{
+  padding-left: 1.553vw;
+  transition: all 0.5s ease;
+  display: flex;
+  font-family: 'Lato-Regular';
+  color: #555555;
+  font-size: 1.16vw;
+  text-decoration: none;
+  /* border: 1px solid; */
+  height: 3.155vw;
+  align-items: center;
+}
+.userDropDownBox a:hover{
+  background-color: white;
+}
+
+.profileLink{
+  margin-top: 0.8252vw;
+}
+
+.listYourSpace{
+  color: #6ba5b0 !important;
+  border-top: 1px solid #ccced3;
+  border-bottom: 1px solid #ccced3;
+  height: 5vw !important;
+}
+/* .loginRegister{
   position: absolute;
   right: 1.5vw;
   top: -2.5vw;
 }
 .loginRegister a{
   opacity: 0.5;
-}
+} */
 
 .featuredNav{
   position: relative;
