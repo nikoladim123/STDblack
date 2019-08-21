@@ -2,7 +2,7 @@ var userDropDownArrow = document.getElementsByClassName('userDropDownArrow');
 var userDropDownBox = document.getElementsByClassName('userDropDownBox');
 
 userDropDownArrow[0].addEventListener('click',()=>{
-  userDropDownBox[0].style.maxHeight = '30vw';
+  userDropDownBox[0].style.maxHeight = '35vw';
   userDropDownBox[0].style.border = '2px solid white';
 });
 
