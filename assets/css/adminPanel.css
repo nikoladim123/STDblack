@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Roboto-Regular';
-  src: url('../fonts/roboto/Roboto-Regular.ttf') format('truetype');
+  src: url('../fonts/lato/Lato-Regular.ttf') format('truetype');
 }
 a{
   text-decoration: none;
@@ -77,6 +77,7 @@ header nav h2{
   display: flex;
   align-items: center;
   background: #3c3c3c;
+  height: 9.2vw;
   justify-content: space-between;
 }
 
@@ -133,7 +134,7 @@ header nav h2{
   margin: 0;
   color: white;
   font-family: 'Roboto-Regular';
-  margin-top: 1vw;
+  /* margin-top: 1vw; */
   font-size: 1.6vw;
 }
 .managementNav h3:nth-child(1){
@@ -196,7 +197,7 @@ header nav h2{
   border-left: 1px solid #dbdbdb;
   height: 1.5vw;
   color: #949494;
-  font-weight: 800;
+  /* font-weight: 800; */
 }
 .contentContainer table tbody td a{
   color: #949494;
