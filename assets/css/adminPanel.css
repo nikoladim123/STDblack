@@ -1,0 +1,278 @@
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: url('../fonts/roboto/Roboto-Regular.ttf') format('truetype');
+}
+a{
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: underline;
+}
+body{
+  /* padding: 0; */
+  margin: 0;
+}
+
+header nav{
+  position: relative;
+  background: #5b5e65;
+  padding: 0.1px;
+  height: 3vw;
+}
+header nav h2{
+  text-align: center;
+  color: white;
+  font-size: 1.065vw;
+  font-family: 'Roboto-Regular';
+  letter-spacing: 0.15vw;
+  word-spacing: 0.1vw;
+}
+.loginAccBox{
+  position: absolute;
+  right: 0;
+  height: 100%;
+  display: flex;
+  top: 0;
+  /* border: 1px solid red; */
+}
+.loginAccBox p{
+  color: white;
+  font-family: 'Roboto-Regular';
+  font-size: 1.0866vw;
+}
+
+.account{
+  display: flex;
+  align-items: center;
+  margin-right: 3vw;
+}
+.accTriangle{
+  width: 0;
+  height: 0;
+  border: 0.5vw solid transparent;
+  border-top: 0.8vw solid white;
+  position: relative;
+  top: 0.4vw;
+  margin-left: 0.3vw;
+}
+
+.account img{
+  width: 1.2vw;
+  margin-right: 0.3vw;
+}
+.logOut{
+  display: flex;
+  align-items: center;
+  margin-right: 9vw;
+}
+.logOut img{
+  width: 1.2vw;
+  margin-right: 0.3vw;
+}
+.account:hover, .logOut:hover{
+  cursor: pointer;
+}
+
+.headerContent{
+  display: flex;
+  align-items: center;
+  background: #3c3c3c;
+  justify-content: space-between;
+}
+
+.logo{
+  position: relative;
+  width: 13.365vw;
+  left: 9.2978vw;
+}
+.user{
+  position: relative;
+  width: 16.9vw;
+  right: 8vw;
+}
+
+.contentContainer{
+  padding-top: 4vw;
+  padding-left: 3.5vw;
+  padding-right: 3.5vw;
+  padding-bottom: 6.3vw;
+  position: relative;
+  margin-left: 15vw;
+  margin-top: 2.7vw;
+  width: 73.3vw;
+  height:;
+  /* border: 1px solid red; */
+  box-shadow: 0px 0px 4.5758vw -3.404vw rgba(0,0,0,0.75);
+}
+
+.contentBox{
+  position: relative;
+}
+
+/* contentContainer start */
+/* allRegisteredSpacesContainer */
+.allRegisteredSpacesContainer{
+  display: none;
+}
+.bookedSpacesContainer{
+  display: none;
+}
+.newlyAddedSpaces{
+  display: block;
+}
+.managementNav{
+  border-top: 1px solid black;
+  background: #494949;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 4.5036vw;
+}
+.managementNav h3{
+  transition: all 0.4s ease;
+  margin: 0;
+  color: white;
+  font-family: 'Roboto-Regular';
+  margin-top: 1vw;
+  font-size: 1.6vw;
+}
+.managementNav h3:nth-child(1){
+  color: #5ad0a2;
+}
+
+.managementNav h3:hover{
+  cursor: pointer;
+  color: #5ad0a2;
+  text-decoration: underline;
+}
+
+.spaceManageSearchBox{
+  display: flex;
+  padding: 0.2vw 0 0.1vw 0;
+  align-items: center;
+  border-right: 1px solid #dbdbdb;
+  border-left: 1px solid #dbdbdb;
+}
+.spaceManageSearchBox input{
+  height: 1.4vw;
+  border: 2px solid #d4d4d4;
+  border-radius: 4vw;
+  margin-left: 2vw;
+  padding-left: 1vw;
+  outline: none;
+  font-family: 'Roboto-Regular';
+  font-size: 0.85vw;
+  box-shadow: inset 0px 20px 31px -29px rgba(0,0,0,0.75);
+  width: 24vw;
+}
+.spaceManageSearchBox p{
+  color:;
+  font-size: 0.8716vw;
+  font-family: 'Roboto-Regular';
+  color: #959595;
+  margin-left: 1vw;
+}
+
+/* table */
+.contentContainer table{
+  font-family: 'Roboto-Regular';
+  border-collapse: collapse;
+  border: 1px solid #dbdbdb;
+  width: 100%;
+}
+.contentContainer table thead tr{
+  background: #c1c1c1;
+  text-align: left;
+  font-size: 1.065vw;
+  font-family: 'Roboto-Regular';
+  height: 1.8886vw;
+}
+.contentContainer table thead th{
+  padding-left: 0.5vw;
+}
+.contentContainer table tbody td{
+  /* text-align: center; */
+  padding-left: 0.5vw;
+  border-left: 1px solid #dbdbdb;
+  height: 1.5vw;
+  color: #949494;
+  font-weight: 800;
+}
+.contentContainer table tbody td a{
+  color: #949494;
+  text-decoration: none;
+}
+.contentContainer table tbody td a:hover{
+  text-decoration: underline;
+}
+.contentContainer table tbody td span a{
+  color: #f48948;
+  text-decoration: none;
+  margin-right: 3vw;
+}
+.contentContainer table tbody tr:nth-child(2n+0){
+  background-color: #fcfcfc;
+}
+.contentContainer table tbody td:nth-child(1){
+  width: 34%;
+}
+.contentContainer table tbody td:nth-child(2){
+
+width: 13%;
+}
+.contentContainer table tbody td:nth-child(3){
+
+width: 22%;
+}
+.contentContainer table tbody td:nth-child(4){
+
+width: 11%;
+}
+.contentContainer table tbody td:nth-child(5){
+
+display: flex;
+
+justify-content: space-between;
+
+padding-right: 0.5vw;
+}
+
+.spaceManageNav {
+  display: flex;
+  justify-content: center;
+  background: #f4f4f4;
+}
+
+.spaceManageNav p {
+  transition: all 0.4s ease;
+  margin-left: 3vw;
+  margin-right: 3vw;
+  font-size: 1.1vw;
+  font-family: 'Roboto-Regular';
+  font-weight: 900;
+  color: #555555;
+}
+.spaceManageNav p:hover{
+  cursor: pointer;
+  color: #59c99d;
+  text-decoration: underline;
+}
+.spaceManageNav p:nth-child(1){
+  color: ;
+}
+.spaceManageNav p:nth-child(2){
+  color: ;
+}
+.spaceManageNav p:nth-child(3){
+  /* color: #59c99d; */
+}
+
+.spaceManageNav p span{
+  color: #e30000;
+}
+[data-space-manage-nav="1"]{
+  color: #59c99d !important;
+}
+/* allRegisteredSpacesContainer  */
+
+/* contentContainer end */
