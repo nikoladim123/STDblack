@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title></title>
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/profileSettings.css">
+    <link rel="stylesheet" href="assets/css/newsApproval.css">
     <link rel="icon" type="image/png" href="assets/images/logo.png">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" onload="if(media!='all')media='all'" defer media="all">
   </head>
@@ -49,7 +49,7 @@
 
           <div class="headerLinks">
             <a href="addYourSpace.html" class="headerLinksOne">ADD YOUR STUDIO</a>
-            <a href="news.html">SUBMIT NEWS FLASH</a>
+            <a href="#">SUBMIT NEWS FLASH</a>
             <!-- <div class="loginRegister">
               <a href="#">About us </a>
               <a href="#">&nbsp Contact</a>
@@ -94,68 +94,30 @@
     </header>
 
     <main>
-      <div class="studCont">
-        <div class="avatarContainer">
-          <img class="avatar" src="assets/images/settings/avatar.png" alt="">
-          <p>Cesar Kumar</p>
-        </div>
-        <div class="twoImageFlexStud">
-          <div class="imgBox">
-            <img src="assets/images/studiosOrSpaces/1.jpg" alt="">
-            <p>Boston's Premiere Dance Studio</p>
-          </div>
-          <div class="imgBox">
-            <img src="assets/images/studiosOrSpaces/2.jpg" alt="">
-            <p>Boston's Premiere Dance Studio</p>
-          </div>
-        </div>
+      <div class="avatarContainer">
+        <img class="avatar" src="assets/images/settings/avatar.png" alt="">
+        <h3>Cesar Kumar</h3>
+        <h2>Submiting NewsFlash</h2>
+        <p>Total News submited<span>: 9</span></p>
+        <p>Reflected stories<span>: 1</span></p>
+        <p>Accepted stories<span>: 8</span></p>
       </div>
-      <h3 class="nextPage">Next page</h3>
+
+      <div class="formsContainer">
+        <form class="formsBox" action="index.html" method="post">
+          <p>Newsflash description text:</p>
+          <textarea class="storyArea" name="name" rows="8" cols="80" maxlength="700"></textarea>
+          <p>Upload up to 3 photos:</p>
+          <textarea class="uploadImageArea" name="name" rows="8" cols="80" maxlength="700"></textarea>
+          <button class="fromSubmitButton red" type="button" name="button">Reject News flash</button>
+          <div class="buttonContainer">
+            <button class="fromSubmitButton" type="button" name="button">Send to News</button>
+            <button class="fromSubmitButton" type="button" name="button">Send to F. Artists</button>
+            <button class="fromSubmitButton" type="button" name="button">Send to F. Bands</button>
+          </div>
+        </form>
+      </div>
     </main>
-
-    <footer defer>
-      <div class="footerLinks">
-        <h2>Book a Studio</h2>
-        <a href="searchPage.html">Recording Studios</a> <br>
-        <a href="searchPage.html">Photography Studios</a> <br>
-        <a href="searchPage.html">Videography Studios</a> <br>
-        <a href="searchPage.html">Dance Studios</a> <br>
-        <a href="searchPage.html">Event Studios</a>
-      </div>
-
-      <div class="footerLogoBox">
-        <a href="index.html"><img class="footerLogo" src="assets/images/logo.png" alt="THE STU"></a>
-        <p>2019 all rights reserved</p>
-      </div>
-
-      <!-- <div class="footerRef">
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms of Use</a>
-      </div> -->
-
-      <div class="footerRightContainer">
-        <h3>The Stu</h3>
-        <p>150-34,14th Avenue</p>
-        <p>Whitestone, Queens</p>
-        <p>New York 11357</p>
-        <p>Phone:347-356-4838</p>
-        <p>Email: <a href="#">multisoundgroup@yahoo.com</a> </p>
-        <div class="paymentMethodContainer">
-          <img class="paymentSprites" src="assets/images/paymentSprites.png" alt="">
-          <div title="Visa Card" class="cardSpriteDiv"></div>
-          <div title="Master Card" class="cardSpriteDiv"></div>
-          <div title="" class="cardSpriteDiv"></div>
-          <div title="Discover Card" class="cardSpriteDiv"></div>
-        </div>
-        <h4>CONNECT WITH US</h4>
-        <div class="foterSocialMedia">
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-google-plus-g"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-        </div>
-      </div>
-    </footer>
 
     <script src="assets/js/morph.js" charset="utf-8"></script>
     <script src="assets/js/header.js" charset="utf-8"></script>

@@ -98,7 +98,7 @@ header nav h2{
   padding-right: 3.5vw;
   padding-bottom: 6.3vw;
   position: relative;
-  margin-left: 15vw;
+  /* margin-left: 15vw; */
   margin-top: 2.7vw;
   width: 73.3vw;
   height:;
@@ -111,6 +111,10 @@ header nav h2{
 }
 
 /* contentContainer start */
+main{
+  display: flex;
+  justify-content: center;
+}
 /* allRegisteredSpacesContainer */
 .allRegisteredSpacesContainer{
   display: none;
