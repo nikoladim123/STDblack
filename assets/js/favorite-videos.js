@@ -1,11 +1,18 @@
 var searchContainerInput = document.getElementsByClassName('searchContainerInput');
 var ytSearchMenu = document.getElementsByClassName('ytSearchMenu');
+var searchContainer = document.getElementsByClassName('searchContainer');
+var searchButton = document.getElementsByClassName('searchButton');
+
 
 searchContainerInput[0].addEventListener('focus',()=>{
   ytSearchMenu[0].style.maxHeight = '41vw';
 });
 
-searchContainerInput[0].addEventListener('focusout',()=>{
+searchButton[0].addEventListener('focus',()=>{
+  ytSearchMenu[0].style.maxHeight = '41vw';
+});
+
+searchContainer[0].addEventListener('mouseleave',()=>{
   ytSearchMenu[0].style.maxHeight = '0vw';
 });
 
