@@ -1,3 +1,47 @@
+
+/* addToPopUp */
+.popUpExitBLackBox{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,0.75);
+}
+.addToPopUp{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 7;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.popUpBox{
+  width: 31.956vw;
+  height: 14.5652vw;
+  background: #484848;
+  overflow: hidden;
+}
+.popupHeader{
+  width: 100%;
+   height: 2.75362vw;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #68ca9b;
+  box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.75);
+}
+.popupHeader p{
+  color: white;
+  font-family: 'Lato-Regular';
+  margin: 0;
+}
+/* addToPopUp */
 body{
   padding: 0;
   margin: 0;
@@ -47,12 +91,13 @@ div{
 .searchContainer{
   display: flex;
   height: 3vw;
+  z-index: 1;
 }
-.searchContainer input{
+.searchContainerInput{
   color: white;
   padding: 0;
   height: 100%;
-  width: 40.3vw;
+  width: 51.3vw;
   background-clip: content-box;
   border-left: 0.36231vw solid rgba(255,255,255,0.5);
   border-top: 0.36231vw solid rgba(255,255,255,0.5);
@@ -66,7 +111,7 @@ div{
   font-size: 1.2843vw;
   background-clip: padding-box;
 }
-.searchContainer input::placeholder{
+.searchContainerInput::placeholder{
   color: white;
   font-size: 1.3043vw;
   /* padding-left: 1vw; */
@@ -99,6 +144,88 @@ div{
   flex-shrink: 0;
 }
 
+.ytSearchMenu{
+  transition: all 0.4s ease;
+  position: absolute;
+  width: 50vw;
+  left: 0;
+  top: 3vw;
+  background: #282828;
+  padding-left: 1.37681vw;
+  padding-right: 5.5072vw;
+  height: auto;
+  overflow: hidden;
+  overflow-y: auto;
+  /* max-height: 41vw; */
+  max-height: 0vw;
+}
+
+.ytSearchMenuItem{
+  display: flex;
+  height: 5.72463vw;
+  margin-bottom: 1.3043vw;
+}
+.ytSearchMenuItem:nth-child(1){
+  margin-top: 1.7391vw;
+}
+.ytSearchItemImage{
+  height: 100%;
+  border: 1px solid #858585;
+  flex-shrink: 0;
+}
+
+.ytSearchContent{
+  /* width: 27vw; */
+  margin-left: 2vw;
+}
+
+.ytSearchContent a{
+  font-size: 1.159vw;
+  color: white;
+  font-family: 'Lato-Regular';
+  text-decoration: none;
+}
+.ytSearchContent a:hover{
+  text-decoration: underline;
+}
+.searchVidDescription{
+  color: #aaaaaa;
+  font-family: 'Lato-Regular';
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 1.0144vw;
+}
+
+.searchVidMakeThisVidBG{
+  margin: 0;
+  margin-left: 1vw;
+  font-family: 'Lato-Regular';
+  color: #345da7;
+  font-weight: 700;
+}
+
+.searchVidMakeThisVidBG input{
+  position: relative;
+  top: 0.15vw;
+}
+
+.AddTo{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-family: 'Lato-Regular';
+  margin: 0;
+  font-size: 1.01449vw;
+  color: #68ca9b;
+  margin-bottom: 1.2vw;
+}
+
+.AddTo:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* main */
 main{
   width: 100%;
   display: flex;
@@ -119,6 +246,8 @@ main{
   /* border: 1px solid green; */
   display: flex;
   margin-bottom: 1.3vw;
+  border: 1px solid #606060;
+  /* padding-right: 0px; */
 }
 .videoContentBox:hover .vidTitleBox{
   background: linear-gradient(to bottom, rgba(255,255,255,0.35) 0%, rgba(255,255,255,0) 100%);
@@ -160,6 +289,10 @@ main{
   color: #659bfd;
   font-family: 'Lato-Regular';
 }
+.vidTitleBox h3:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
 .vidTitleBox p{
   position: relative;
   left: -0.86956vw;
@@ -185,7 +318,7 @@ main{
 }
 
 .vidNav{
-  width: 100%;
+  width: 99.5%;
   height: 2.24637vw;
   border-top: 2px solid black;
   box-shadow: inset 0px 1px 0px 0px rgba(72,72,72,0.75);
@@ -195,6 +328,7 @@ main{
   align-items: center;
   display: flex;
   justify-content: space-evenly;
+  /* margin-right: 24vw; */
 }
 .vidNav p{
   color: #345da7;

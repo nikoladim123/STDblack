@@ -7,6 +7,29 @@
     <link rel="stylesheet" href="assets/css/favorite-videos.css">
   </head>
   <body>
+    <div class="addToPopUp">
+      <div class="popUpExitBLackBox">
+
+      </div>
+      <div class="popUpBox">
+        <div class="popupHeader">
+          <p>Add Video to a Playlist</p>
+        </div>
+        <div class="selectAPlaylist">
+          <p>Select a Playlist</p>
+          <div class="popupInputBox">
+            <input type="text" name="" value="">
+            <button type="button" name="button"></button>
+            <p>or <a href="#">Create a New Playlist</a></p>
+            <div class="popupButtonBox">
+              <button type="button" name="button"></button>
+              <button type="button" name="button"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="bgVidDiv">
       <iframe class="bgVid" width="560" height="315" src="https://www.youtube.com/embed/6dOwHzCHfgA?controls=0&autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       <div class="blackOverlay"></div>
@@ -18,8 +41,44 @@
         <p>&nbsp >> Favorite Videos</p>
       </div> -->
       <div class="searchContainer">
-        <input placeholder="Search YouTube" type="text" name="" value="">
+        <input class="searchContainerInput" placeholder="Search YouTube" type="text" name="" value="">
         <button type="submit" name="button"> <img src="assets/images/searchIconBlack.png" alt=""></button>
+        <div class="ytSearchMenu">
+
+          <div class="ytSearchMenuItem">
+            <img class="ytSearchItemImage" src="assets/images/favoriteVideos/1.jpg" alt="">
+            <div class="ytSearchContent">
+              <a href="#">Space Exploration - Deep Space Disaster supper dupper Documentary |
+              HD 720p</a>
+              <p class="searchVidDescription">by DocumentaryPlanetHD 11 months ago 651,054 views</p>
+                <p class="searchVidMakeThisVidBG">Make this video background video <input type="checkbox" name="" value=""></p>
+                <p class="AddTo">Add to</p>
+            </div>
+          </div>
+
+          <div class="ytSearchMenuItem">
+            <img class="ytSearchItemImage" src="assets/images/favoriteVideos/1.jpg" alt="">
+            <div class="ytSearchContent">
+              <a href="#">Space Exploration - Deep Space Disaster supper dupper Documentary |
+              HD 720p</a>
+              <p class="searchVidDescription">by DocumentaryPlanetHD 11 months ago 651,054 views</p>
+                <p class="searchVidMakeThisVidBG">Make this video background video <input type="checkbox" name="" value=""></p>
+                <p class="AddTo">Add to</p>
+            </div>
+          </div>
+
+          <div class="ytSearchMenuItem">
+            <img class="ytSearchItemImage" src="assets/images/favoriteVideos/1.jpg" alt="">
+            <div class="ytSearchContent">
+              <a href="#">Space Exploration - Deep Space Disaster supper dupper Documentary |
+              HD 720p</a>
+              <p class="searchVidDescription">by DocumentaryPlanetHD 11 months ago 651,054 views</p>
+                <p class="searchVidMakeThisVidBG">Make this video background video <input type="checkbox" name="" value=""></p>
+                <p class="AddTo">Add to</p>
+            </div>
+          </div>
+
+        </div>
       </div>
 
       <div class="userMenuContainer">
@@ -191,5 +250,6 @@
 
 
     <script src="assets/js/header.js" charset="utf-8"></script>
+    <script src="assets/js/favorite-videos.js" charset="utf-8"></script>
   </body>
 </html>
