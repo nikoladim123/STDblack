@@ -1,0 +1,229 @@
+body{
+  padding: 0;
+  margin: 0;
+  background: black;
+}
+
+div{
+  position: relative;
+}
+
+.bgVid{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.bgVidDiv, .blackOverlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+}
+.bgVidDiv{
+  height: 104vh;
+  top: -4vh;
+}
+
+.blackOverlay{
+  background-color: rgba(0,0,0,0.5);
+}
+
+.nav{
+  display: flex;
+  margin-top: 1.75vw;
+  justify-content: center;
+  align-items: center;
+}
+
+.destinationNav{
+  color: white;
+  display: flex;
+  font-family: 'Lato-Regular';
+  font-size: 1.171vw;
+}
+
+.searchContainer{
+  display: flex;
+  height: 3vw;
+}
+.searchContainer input{
+  color: white;
+  padding: 0;
+  height: 100%;
+  width: 40.3vw;
+  background-clip: content-box;
+  border-left: 0.36231vw solid rgba(255,255,255,0.5);
+  border-top: 0.36231vw solid rgba(255,255,255,0.5);
+  border-bottom: 0.36231vw solid rgba(255,255,255,0.5);
+  border-top-left-radius: 0.4vw;
+  border-bottom-left-radius: 0.4vw;
+  border-right: 0;
+  box-sizing: border-box;
+  background: #212121;
+  padding-left: 1vw;
+  font-size: 1.2843vw;
+  background-clip: padding-box;
+}
+.searchContainer input::placeholder{
+  color: white;
+  font-size: 1.3043vw;
+  /* padding-left: 1vw; */
+}
+
+.searchContainer button{
+  transition: all 0.4s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 5.5652vw;
+  height: 100%;
+  background-color: #68ca9b;
+  background-clip: content-box;
+  padding: 0;
+  border: 0.36231vw solid rgba(255,255,255,0.5);
+  border-top-right-radius: 0.4vw;
+  border-bottom-right-radius: 0.4vw;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  background-clip: padding-box;
+}
+.searchContainer button:hover{
+  cursor: pointer;
+
+  background-color: #98cf9f;
+}
+.searchContainer button img{
+  width: 1.5217vw;
+  flex-shrink: 0;
+}
+
+main{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.videosContainer{
+  width: 88.6231vw;
+  /* border: 1px solid red; */
+  margin-top: 5vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.videoContentBox{
+  background: #333333;
+  width: 43.478vw;
+  height: 7.8985vw;
+  /* border: 1px solid green; */
+  display: flex;
+  margin-bottom: 1.3vw;
+}
+.videoContentBox:hover .vidTitleBox{
+  background: linear-gradient(to bottom, rgba(255,255,255,0.35) 0%, rgba(255,255,255,0) 100%);
+}
+.favVidImage{
+  height: 100%;
+  width: 13.4vw;
+  /* border: 1px solid black; */
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.favVidImage img{
+  height: 100%;
+}
+.favVidImage img:hover{
+  cursor: pointer;
+}
+
+.videoContentInside{
+  width: 100%;
+}
+
+.vidTitleBox{
+  transition: all 0.5s ease;
+  background-position: 0 -5%;
+  background: linear-gradient(to bottom, rgba(255,255,255,0.25) 0%, rgba(255,255,255,0) 105%);
+  /* border: 1px solid purple; */
+  display: flex;
+  height: 2.1014vw;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.vidTitleBox h3{
+  position: relative;
+  left: 1.6666vw;
+  font-size: 1.1594vw;
+  margin: 0;
+  color: #659bfd;
+  font-family: 'Lato-Regular';
+}
+.vidTitleBox p{
+  position: relative;
+  left: -0.86956vw;
+  font-size: 0.8695vw;
+  margin: 0;
+  color: #659bfd;
+  font-family: 'Lato-Regular';
+}
+
+.vidDescriptionBox{
+
+}
+.vidDescriptionBox input {
+  width: 94%;
+  padding-left: 6%;
+  padding-right: 0;
+  height: 2vw;
+  background: #333333;
+  font-size: 0.85vw;
+  border: none;
+  outline: none;
+  color: #797979;
+}
+
+.vidNav{
+  width: 100%;
+  height: 2.24637vw;
+  border-top: 2px solid black;
+  box-shadow: inset 0px 1px 0px 0px rgba(72,72,72,0.75);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+}
+.vidNav p{
+  color: #345da7;
+  margin: 0;
+  /* margin-bottom: 0.2vw; */
+  font-family: 'Lato-Regular';
+  font-weight: 700;
+}
+.vidNav p:hover{
+  cursor: pointer;
+}
+.vidNav p:nth-child(1){
+  color: #aaaaaa;
+}
+
+.vidNav p:hover{
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+/* custom style.css */
+.userMenuContainer{
+  top: auto;
+}
