@@ -344,6 +344,7 @@ function dragula (initialContainers, options) {
     removeMirrorImage();
     if (item) {
       classes.rm(item, 'gu-transit');
+      classes.rm(item, 'selected');
     }
     if (_renderTimer) {
       clearTimeout(_renderTimer);
