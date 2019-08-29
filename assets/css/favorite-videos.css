@@ -386,6 +386,9 @@ main{
 .videoContentInside{
   width: 100%;
 }
+.videoContentInside:hover{
+  cursor: grab;
+}
 
 .vidTitleBox{
   transition: all 0.5s ease;
