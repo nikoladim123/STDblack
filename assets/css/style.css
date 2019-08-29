@@ -515,14 +515,14 @@ header nav input{
   border-bottom: 1px solid #ccced3;
   height: 5vw !important;
 }
-/* .loginRegister{
+.loginRegister{
   position: absolute;
   right: 1.5vw;
   top: -2.5vw;
 }
 .loginRegister a{
   opacity: 0.5;
-} */
+}
 
 .featuredNav{
   position: relative;
@@ -641,6 +641,47 @@ header nav input{
   }
 }
 /* arrow */
+.bookASpaceBanerArea{
+  position: absolute;
+  right: 2.9112vw;
+  top: 23.9737vw;
+  width: 29.765vw;
+  height: 17.531vw;
+  color: white;
+  background: rgba(255,255,255,0.14);
+}
+
+.bookASpaceBanerArea h3{
+  font-size: 2.13488vw;
+  font-family: 'Lato-Black';
+  margin: 0;
+  margin-top: 1.6vw;
+  margin-left: 2.4260vw;
+}
+.bookASpaceBanerArea p{
+  margin: 0;
+  font-size: 1.16448vw;
+  font-family: 'Lato-Regular';
+}
+.bookASpaceBanerArea p:nth-child(2){
+  margin-top: 1.64vw;
+  margin-left: 6.2vw;
+}
+.bookASpaceBanerArea p:nth-child(3){
+  margin-top: 2vw;
+  margin-left: 2.6vw;
+}
+.bookASpaceBanerArea p:nth-child(4){
+  margin-top: 0.5vw;
+  margin-left: 2.7vw;
+}
+.bookASpaceBanerArea p:nth-child(5){
+  margin-top: 1.4vw;
+  margin-left: 3.1vw;
+font-family: 'Lato-Bold';
+}
+
+
 .bannerButtonContainerIndex{
   position: absolute;
   top: 6.489vw;

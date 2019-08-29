@@ -18,11 +18,16 @@ searchContainer[0].addEventListener('mouseleave',()=>{
 
 
 // popup
+var poUpCancelButton = document.getElementsByClassName('poUpCancelButton');
 var popUpExitBLackBox = document.getElementsByClassName('popUpExitBLackBox');
 var addToPopUp = document.getElementsByClassName('addToPopUp');
 var AddTo = document.getElementsByClassName('AddTo');
 
 popUpExitBLackBox[0].addEventListener('click',()=>{
+  addToPopUp[0].style.display = 'none';
+});
+
+poUpCancelButton[0].addEventListener('click',()=>{
   addToPopUp[0].style.display = 'none';
 });
 

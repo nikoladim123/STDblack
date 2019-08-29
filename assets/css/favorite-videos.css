@@ -9,6 +9,7 @@
   background: rgba(0,0,0,0.75);
 }
 .addToPopUp{
+  font-family: 'Lato-Regular';
   position: fixed;
   width: 100%;
   height: 100%;
@@ -40,7 +41,115 @@
   color: white;
   font-family: 'Lato-Regular';
   margin: 0;
+  font-size: 1.3vw;
 }
+.selectAPlaylist p{
+  font-size: 0.9420vw;
+  color: #ababab;
+  margin: 0;
+}
+.selectAPlaylist{
+  display: flex;
+  margin-top: 1.47vw;
+  align-items: center;
+  padding-left: 2.4vw;
+}
+.popupInputBox{
+  /* border: 1px solid red; */
+  height: 1.666vw;
+  display: flex;
+  margin-left: 1.2vw;
+}
+.popupInputBox input{
+  width: 17.231vw;
+  height: 100%;
+  padding: 0;
+  box-sizing: border-box;
+  background: #565656;
+  border: none;
+  border-radius: 0.3vw;
+}
+
+.popupInputBox button{
+  transition: all 0.5s ease;
+  height: 100%;
+  padding: 0;
+  box-sizing: border-box;
+  width: 2.53623vw;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #707070;
+  filter: brightness(1);
+}
+
+.popupInputBox button:hover{
+  cursor: pointer;
+  filter: brightness(1.2);
+}
+
+.popUpButonTriangle{
+  width: 0;
+  height: 0;
+  border: 0.25vw solid transparent;
+  border-top:0.25vw solid #b9b9b9;
+  position: relative;
+  top: 0.125vw;
+}
+.popupCreateNewPlaylist{
+  font-size: 0.9420vw;
+  margin-left: 2.4vw;
+  color: #ababab;
+  margin-top: 1.3vw;
+}
+.popupCreateNewPlaylist a{
+  font-size: 0.9420vw;
+  text-decoration: none;
+  color: #7878d1;
+}
+.popupCreateNewPlaylist a:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.popupButtonBox{
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.popupButtonBox button{
+  transition: all 0.5s ease;
+  border: 1px solid white;
+  width: 4.855vw;
+  height: 1.739vw;
+  color: white;
+  font-size: 1.0144vw;
+  margin-bottom: 1.594vw;
+}
+
+.popupButtonBox button:nth-child(1){
+  background: transparent;
+  margin-right: 0.7971vw;
+}
+
+.popupButtonBox button:nth-child(2){
+  background: #68ca9b;
+  margin-right: 2.60869vw;
+}
+.popupButtonBox button:nth-child(1):hover{
+  background: #68ca9b;
+  cursor: pointer;
+}
+.popupButtonBox button:nth-child(2):hover{
+  background: transparent;
+  cursor: pointer;
+}
+
 /* addToPopUp */
 body{
   padding: 0;
