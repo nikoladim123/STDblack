@@ -36,3 +36,9 @@ for (var i = 0; i < AddTo.length; i++) {
     addToPopUp[0].style.display = 'flex';
   })
 }
+
+window.addEventListener('load',()=>{
+  dragula([document.getElementsByClassName('videosContainer')[0]]);
+})
+
+// drag and drop

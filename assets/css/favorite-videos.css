@@ -354,13 +354,21 @@ main{
   height: 7.8985vw;
   /* border: 1px solid green; */
   display: flex;
-  margin-bottom: 1.3vw;
+  /* margin-bottom: 1.3vw; */
   border: 1px solid #606060;
   /* padding-right: 0px; */
 }
 .videoContentBox:hover .vidTitleBox{
   background: linear-gradient(to bottom, rgba(255,255,255,0.35) 0%, rgba(255,255,255,0) 100%);
 }
+.videoContentBoxHolder{
+  width: 43.478vw;
+  height: 7.8985vw;
+  /* border: 1px solid red; */
+  margin-bottom: 1.3vw;
+  order: auto;
+}
+
 .favVidImage{
   height: 100%;
   width: 13.4vw;
@@ -456,11 +464,6 @@ main{
 .vidNav p:hover{
   text-decoration: underline;
 }
-
-
-
-
-
 
 
 
