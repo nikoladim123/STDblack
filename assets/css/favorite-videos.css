@@ -389,6 +389,9 @@ main{
 .videoContentInside:hover{
   cursor: move;
 }
+.selected{
+  border: 1px solid orange;
+}
 
 .vidTitleBox{
   transition: all 0.5s ease;
