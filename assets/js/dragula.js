@@ -144,7 +144,7 @@ function dragula (initialContainers, options) {
     _grabbed = context;
     eventualMovements();
     if (e.type === 'mousedown') {
-      if (isInput(item)) { // see also: 
+      if (isInput(item)) { // see also:
         item.focus(); // fixes
       } else {
         e.preventDefault(); // fixes
@@ -181,7 +181,7 @@ function dragula (initialContainers, options) {
 
     var offset = getOffset(_item);
     _offsetX = getCoord('pageX', e) - offset.left;
-    _offsetY = getCoord('pageY', e) - offset.top + window.innerWidth / 100 * 30;
+    _offsetY = getCoord('pageY', e) - offset.top + window.innerWidth / 100 * 35;
 
     classes.add(_copy || _item, 'gu-transit');
     renderMirrorImage();
