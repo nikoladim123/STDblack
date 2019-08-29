@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="assets/css/style.css" >
     <link rel="stylesheet" href="assets/css/favorite-videos.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" onload="if(media!='all')media='all'" defer media="all">
   </head>
   <body>
 
@@ -31,12 +32,18 @@
     </div>
 
     <div class="bgVidDiv">
-      <iframe id="tubular-player"  frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; loop; encrypted-media; gyroscope; picture-in-picture" title="YouTube video player" width="2111" height="1188" src="https://www.youtube.com/embed/9bZkp7q19f0?controls=0&autoplay=1&loop=1&amp;showinfo=0&amp;modestbranding=1&amp;wmode=transparent&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fmegashots.net&amp;widgetid=1"></iframe>
+      <div id="bgVidDiv" class="">
+
+      </div>
+      <!-- <iframe id="tubular-player"  frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; loop; encrypted-media; gyroscope; picture-in-picture" title="YouTube video player" width="2111" height="1188" src="https://www.youtube.com/embed/9bZkp7q19f0?controls=0&autoplay=1&loop=1&amp;showinfo=0&amp;modestbranding=1&amp;wmode=transparent&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fmegashots.net&amp;widgetid=1"></iframe> -->
       <!-- <iframe class="bgVid" width="560" height="315" src="https://www.youtube.com/embed/9bZkp7q19f0?controls=0&autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
       <div class="blackOverlay"></div>
     </div>
 
     <div class="nav">
+      <div id="soundButton" class="soundButton">
+        <i class="fa-volume-up fa"></i>
+      </div>
       <!-- <div class="destinationNav">
         <p>Cyrus Khamak </p>
         <p>&nbsp >> Favorite Videos</p>
@@ -225,5 +232,71 @@
     <script src="assets/js/header.js" charset="utf-8"></script>
     <script src="assets/js/favorite-videos.js" charset="utf-8"></script>
     <script src="assets/js/dragula.js" charset="utf-8"></script>
+
+    <script>
+  // 2. This code loads the IFrame Player API code asynchronously.
+  var tag = document.createElement('script');
+
+  tag.src = "https://www.youtube.com/iframe_api";
+  var firstScriptTag = document.getElementsByTagName('script')[0];
+  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+  // 3. This function creates an <iframe> (and YouTube player)
+  //    after the API code downloads.
+  var player;
+  function onYouTubeIframeAPIReady() {
+    player = new YT.Player('bgVidDiv', {
+      height: '390',
+      width: '640',
+      videoId: '9bZkp7q19f0',
+      playerVars: {
+        'modestbranding': 0,
+        'showinfo': 0,
+        'controls':0,
+        'autoplay': 1,
+        'playlist':'9bZkp7q19f0',
+        'loop':1
+      },
+      events: {
+        'onReady': onPlayerReady,
+        'onStateChange': onPlayerStateChange
+      }
+    });
+  }
+
+  // 4. The API will call this function when the video player is ready.
+  function onPlayerReady(event) {
+    event.target.playVideo();
+  }
+
+  // 5. The API calls this function when the player's state changes.
+  //    The function indicates that when playing a video (state=1),
+  //    the player should play for six seconds and then stop.
+  var done = false;
+  function onPlayerStateChange(event) {
+    if (event.data == YT.PlayerState.PLAYING && !done) {
+      // setTimeout(stopVideo, 6000);
+      done = true;
+    }
+  }
+  function stopVideo() {
+    player.stopVideo();
+  }
+
+  var soundButton = document.getElementById('soundButton')
+  var toogleMute = 1;
+  soundButton.addEventListener('click',()=>{
+    if(toogleMute % 2 === 0){
+      soundButton.className = 'soundButton'
+      player.unMute()
+    }else{
+      soundButton.className = 'soundButton soundButtonRed'
+
+      player.mute()
+    }
+    console.log(1);
+    toogleMute++;
+  });
+</script>
   </body>
 </html>
