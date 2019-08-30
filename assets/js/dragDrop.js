@@ -25,10 +25,10 @@ for (var i = 0; i < box.length; i++) {
     e.target.style.border = '1px solid orange';
     e.target.style.filter = 'brightness(1.5)'
   });
-  // box[i].addEventListener('dragleave',(e)=>{
-  //   e.target.style.border = '1px solid transparent';
-  //   e.target.style.filter = 'brightness(1)'
-  // });
+  box[i].addEventListener('dragleave',(e)=>{
+    e.target.style.border = '1px solid transparent';
+    e.target.style.filter = 'brightness(1)'
+  });
 
 
   box[i].addEventListener('drop',(e)=>{
