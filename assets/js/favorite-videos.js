@@ -37,8 +37,8 @@ for (var i = 0; i < AddTo.length; i++) {
   })
 }
 
-window.addEventListener('load',()=>{
-  dragula([document.getElementsByClassName('videosContainer')[0]]);
-})
+// window.addEventListener('load',()=>{
+//   dragula([document.getElementsByClassName('videosContainer')[0]]);
+// })
 
 // drag and drop

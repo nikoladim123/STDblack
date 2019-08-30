@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="assets/css/style.css" >
     <link rel="stylesheet" href="assets/css/dragDrop.css" >
     <link rel="stylesheet" href="assets/css/favorite-videos.css">
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" onload="if(media!='all')media='all'" defer media="all">
   </head>
   <body>
@@ -36,7 +36,7 @@
       <div id="bgVidDiv" class="">
 
       </div>
-      <!-- <iframe style="pointer-events: none;" id="tubular-player"  frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; loop; encrypted-media; gyroscope; picture-in-picture" title="YouTube video player" width="2111" height="1188" src="https://www.youtube.com/embed/9bZkp7q19f0?controls=0&autoplay=1&loop=1&amp;showinfo=0&amp;modestbranding=1&amp;wmode=transparent&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fmegashots.net&amp;widgetid=1"></iframe> -->
+      <!-- <iframe id="tubular-player"  frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; loop; encrypted-media; gyroscope; picture-in-picture" title="YouTube video player" width="2111" height="1188" src="https://www.youtube.com/embed/9bZkp7q19f0?controls=0&autoplay=1&loop=1&amp;showinfo=0&amp;modestbranding=1&amp;wmode=transparent&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fmegashots.net&amp;widgetid=1"></iframe> -->
       <!-- <iframe class="bgVid" width="560" height="315" src="https://www.youtube.com/embed/9bZkp7q19f0?controls=0&autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
       <div class="blackOverlay"></div>
     </div>
@@ -114,32 +114,36 @@
 
       <div class="videosContainer">
 
-        <div data-position="0" ondragover="onDrop(event)" draggable="true" class="box videoContentBox">
-          <div  class="favVidImage">
-            <img  src="assets/images/favoriteVideos/1.png" alt="">
-          </div>
-          <div class="videoContentInside">
-            <div class="vidTitleBox">
-              <h3>DinoCyrus</h3>
-              <p>2 videos</p>
+        <div data-position="0" ondragover="event.preventDefault()" draggable="true" class="box item videoContentBoxHolder">
+          <div data-dragPos="1"  class="videoContentBox">
+            <div class="favVidImage">
+              <img src="assets/images/favoriteVideos/1.png" alt="">
             </div>
-            <div class="vidDescriptionBox">
-              <input placeholder="Click Here To Add Description....." type="text" name="" value="">
-            </div>
-            <div class="vidNav">
-              <p><span>0</span> Comments</p>
-              <p>Make Comment</p>
+            <div class="videoContentInside">
+              <div class="vidTitleBox">
+                <h3>Dinosaures</h3>
+                <p>2 videos</p>
+              </div>
+              <div class="vidDescriptionBox">
+                <input placeholder="Click Here To Add Description....." type="text" name="" value="">
+              </div>
+              <div class="vidNav">
+                <p><span>0</span> Comments</p>
+                <p>Make Comment</p>
+                <p>Share</p>
+              </div>
             </div>
           </div>
         </div>
 
-          <div data-position="1" ondragover="onDrop(event)" draggable="true" class="box videoContentBox">
-            <div  class="favVidImage">
-              <img  src="assets/images/favoriteVideos/1.png" alt="">
+        <div data-position="0" ondragover="event.preventDefault()" draggable="true"  class="box videoContentBoxHolder item">
+          <div data-dragPos="2"  class="videoContentBox">
+            <div class="favVidImage">
+              <img src="assets/images/favoriteVideos/1.png" alt="">
             </div>
             <div class="videoContentInside">
               <div class="vidTitleBox">
-                <h3>Dinosauresss</h3>
+                <h3>Ipsum</h3>
                 <p>2 videos</p>
               </div>
               <div class="vidDescriptionBox">
@@ -148,17 +152,20 @@
               <div class="vidNav">
                 <p><span>0</span> Comments</p>
                 <p>Make Comment</p>
+                <p>Share</p>
               </div>
             </div>
           </div>
+        </div>
 
-          <div data-position="2" ondragover="onDrop(event)" draggable="true" class="box videoContentBox">
-            <div draggable="false" class="favVidImage">
-              <img draggable="false" src="assets/images/favoriteVideos/1.png" alt="">
+        <div  class="box videoContentBoxHolder item">
+          <div data-dragPos="3"  class="videoContentBox">
+            <div class="favVidImage">
+              <img src="assets/images/favoriteVideos/1.png" alt="">
             </div>
             <div class="videoContentInside">
               <div class="vidTitleBox">
-                <h3>TyranoCyrus</h3>
+                <h3>History</h3>
                 <p>2 videos</p>
               </div>
               <div class="vidDescriptionBox">
@@ -167,17 +174,20 @@
               <div class="vidNav">
                 <p><span>0</span> Comments</p>
                 <p>Make Comment</p>
+                <p>Share</p>
               </div>
             </div>
           </div>
+        </div>
 
-          <div data-position="3" ondragover="onDrop(event)" draggable="true" class="box videoContentBox">
-            <div draggable="false" class="favVidImage">
-              <img draggable="false" src="assets/images/favoriteVideos/1.png" alt="">
+        <div  class="box videoContentBoxHolder item">
+          <div data-dragPos="3"  class="videoContentBox">
+            <div class="favVidImage">
+              <img src="assets/images/favoriteVideos/1.png" alt="">
             </div>
             <div class="videoContentInside">
               <div class="vidTitleBox">
-                <h3>GiganoCyrus</h3>
+                <h3>dolor</h3>
                 <p>2 videos</p>
               </div>
               <div class="vidDescriptionBox">
@@ -186,17 +196,20 @@
               <div class="vidNav">
                 <p><span>0</span> Comments</p>
                 <p>Make Comment</p>
+                <p>Share</p>
               </div>
             </div>
           </div>
+        </div>
 
-          <div data-position="4" ondragover="onDrop(event)" draggable="true" class="box videoContentBox">
-            <div draggable="false" class="favVidImage">
-              <img draggable="false" src="assets/images/favoriteVideos/1.png" alt="">
+        <div  class="box videoContentBoxHolder item">
+          <div data-dragPos="3"  class="videoContentBox">
+            <div class="favVidImage">
+              <img src="assets/images/favoriteVideos/1.png" alt="">
             </div>
             <div class="videoContentInside">
               <div class="vidTitleBox">
-                <h3>Dinosauresss</h3>
+                <h3>sit</h3>
                 <p>2 videos</p>
               </div>
               <div class="vidDescriptionBox">
@@ -205,25 +218,14 @@
               <div class="vidNav">
                 <p><span>0</span> Comments</p>
                 <p>Make Comment</p>
+                <p>Share</p>
               </div>
             </div>
           </div>
-
-
-
+        </div>
 
 
       </div>
-
-      <!-- <div class="container">
-        <div data-position="0" ondragover="event.preventDefault()" draggable="true" class="box">1</div>
-        <div data-position="1" ondragover="event.preventDefault()" draggable="true" class="box">2</div>
-        <div data-position="2" ondragover="event.preventDefault()" draggable="true" class="box">3</div>
-        <div data-position="3" ondragover="event.preventDefault()" draggable="true" class="box">4</div>
-        <div data-position="4" ondragover="event.preventDefault()" draggable="true" class="box">5</div>
-        <div data-position="5" ondragover="event.preventDefault()" draggable="true" class="box">6</div>
-        <div data-position="6" ondragover="event.preventDefault()" draggable="true" class="box">7</div>
-      </div> -->
 
     </main>
 
@@ -231,7 +233,7 @@
     <script src="assets/js/header.js" charset="utf-8"></script>
     <script src="assets/js/favorite-videos.js" charset="utf-8"></script>
     <!-- <script src="assets/js/dragula.js" charset="utf-8"></script> -->
-    <script src="assets/js/dragDrop.js" charset="utf-8"></script>
+    <script src="dragDrop.js" charset="utf-8"></script>
 
     <script>
   // 2. This code loads the IFrame Player API code asynchronously.

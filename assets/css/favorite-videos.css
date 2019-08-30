@@ -199,7 +199,7 @@ div{
 
 .soundButton{
   position: relative;
-  right: 2vw;
+  right: 6vw;
 }
 
 .soundButton .fa-volume-up::before{
@@ -226,7 +226,7 @@ div{
 
 .soundButtonRed .fa-volume-up:after {
   position: absolute;
-  top: 0.1vw;
+  top: 0.24vw;
   right: -0.8vw;
   content: "X";
   color: red;
@@ -471,6 +471,10 @@ main{
   color: #659bfd;
   font-family: 'Lato-Regular';
 }
+.vidTitleBox p:hover{
+  cursor:pointer;
+  text-decoration: underline;
+}
 
 .vidDescriptionBox{
 
@@ -526,3 +530,6 @@ main{
 .userMenuContainer{
   top: auto;
 }
+/* iframe{
+  pointer-events: none;
+} */
