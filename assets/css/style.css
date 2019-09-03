@@ -1050,7 +1050,7 @@ font-family: 'Lato-Bold';
 .feedBackContainer{
   padding: 0.1px;
   position: relative;
-  background-color: rgb(211,80,66);
+  background-color: #d47d4b;
   width: 77.5vw;
   height: 32vw;
   margin-left: 50%;
@@ -1146,7 +1146,7 @@ font-family: 'Lato-Bold';
 .half{
   height: 100%;
   width: 5px;
-  background-color: rgb(211,80,66);
+  background-color: #d47d4b;
 }
 /* bryon feedback section end */
 
