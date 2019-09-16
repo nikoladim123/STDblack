@@ -332,7 +332,9 @@ body{
   flex-direction: column;
   display: none;
 }
-
+.registerOverlay form{
+  text-align: center;
+}
 .registerOverlay p{
   color: white;
   font-size: 1.2vw;
