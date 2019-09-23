@@ -6,10 +6,33 @@
 main{
   background: white;
   padding-bottom: 4.6728vw;
+  position: relative;
 }
 .danceBaner{
   width: 100%;
   position: relative;
+}
+
+.favoriteVideosButton{
+  transition: all 0.5s ease;
+  position: absolute;
+  top: 22.2vw;
+  left: 46vw;
+  width: 12vw;
+  height: 2.6vw;
+  background: #ff975c;
+  display: flex;
+  font-family: 'Lato-Light';
+  align-items: center;
+  justify-content: center;
+  border-radius: 4vw;
+  color: black;
+  filter: brightness(1);
+}
+
+.favoriteVideosButton:hover{
+  cursor: pointer;
+  filter: brightness(1.2);
 }
 
 .content{
