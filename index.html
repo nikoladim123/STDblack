@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title></title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/cssMobile/styleMob.css">
     <link rel="icon" type="image/png" href="assets/images/logo.png">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" onload="if(media!='all')media='all'" defer media="all">
   </head>
@@ -60,7 +61,7 @@
       <div class="navArea">
         <nav>
           <a href="index.html">
-            <picture class="mobileHide">
+            <picture class=" ">
               <source media="(min-width: 1367px)" srcset="assets/images/logo.png">
               <source media="(max-width: 1367px) and (min-width: 766px)" srcset="assets/images/logo.png">
               <source media="(max-width: 766px)" srcset="assets/images/logo.png">
@@ -107,8 +108,9 @@
             <div class="userIcon">
               <img src="assets/images/user/userAvatar.png" alt="">
             </div>
-            <p  class="userInitials">Cy</p>
+            <p  class="userInitials mobileHide">Cy</p>
             <div class="userDropDownArrow"></div>
+            <div class="userDropDownArrow desktopHide"></div>
             <div class="userDropDownBox">
               <a class="profileLink" href="profileSettings.html">Profile</a>
               <a href="listings.html">Listing</a>
@@ -131,20 +133,20 @@
 
         </nav>
         <div class="featuredNav">
-          <a href="#" class="featuredNonLink">Featured</a>
+          <a href="#" class="featuredNonLink">Featured</a> <br class="desktopHide">
           <a href="Artists.html">ARTISTS</a>
           <a id="bands" href="bands.html">BANDS</a>
           <a href="#">STUDIOS</a>
-          <a href="#">ENGINEERS</a>
+          <a href="#" class="mobileHide">ENGINEERS</a>
         </div>
       </div>
 
       <div class="bannerArea">
-        <picture class="mobileHide">
+        <picture class=" ">
           <source media="(min-width: 1367px)" srcset="assets/images/baner.jpg">
-          <source media="(max-width: 1367px) and (min-width: 766px)" srcset="assets/images/baner.jpg">
-          <source media="(max-width: 766px)" srcset="assets/images/baner.jpg">
-          <img class="baner" src="assets/images/baner.jpg" alt="">
+          <!-- <source media="(max-width: 1367px) and (min-width: 766px)" srcset="assets/images/baner.jpg"> -->
+          <source media="(max-width: 766px)" srcset="assets/images/mobile/banner.jpg">
+          <img class="baner" src="assets/images/mobile/banner.jpg" alt="">
         </picture>
         <img class="banerCircle" src="assets/images/banerCircle.png" alt="">
         <div class="bannerText">
@@ -177,6 +179,10 @@
           <!-- <div class="buttonRowTwo">
             <button type="button" name="button">Book Recording Studios</button>
           </div> -->
+          <div class="mobileBannerTextBox desktopHide">
+            <h2>ADD YOUR STUDIO</h2>
+            <h2>GET FEATURED</h2>
+          </div>
       </div>
     </header>
 
@@ -200,7 +206,7 @@
           <iframe width="560" height="315" src="https://www.youtube.com/embed/l_08QDeJi90?rel=0&controls=1&showinfo=0&modestbranding=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
 
-        <!-- <picture class="mobileHide">
+        <!-- <picture class=" ">
           <source media="(min-width: 1367px)" srcset="assets/images/cliff/3.jpg">
           <source media="(max-width: 1367px) and (min-width: 766px)" srcset="assets/images/tablet/cliff/3.jpg">
           <source media="(max-width: 766px)" srcset="assets/images/tablet/cliff/3.jpg">
@@ -210,7 +216,7 @@
     </section>
 
     <section class="featuredSection ytFeaturedSec">
-      <!-- <picture class="mobileHide">
+      <!-- <picture class=" ">
         <source media="(min-width: 1367px)" srcset="assets/images/featuredBand.jpg">
         <source media="(max-width: 1367px) and (min-width: 766px)" srcset="assets/images/tablet/featuredBand.jpg">
         <source media="(max-width: 766px)" srcset="assets/images/tablet/featuredBand.jpg">
@@ -234,7 +240,7 @@
     </section>
 
     <section class="featuredSection featuredSectionTwo">
-      <!-- <picture class="mobileHide">
+      <!-- <picture class=" ">
         <source media="(min-width: 1367px)" srcset="assets/images/featuredBand.jpg">
         <source media="(max-width: 1367px) and (min-width: 766px)" srcset="assets/images/tablet/featuredBand.jpg">
         <source media="(max-width: 766px)" srcset="assets/images/tablet/featuredBand.jpg">
@@ -243,7 +249,7 @@
       <iframe width="560" height="315" src="https://www.youtube.com/embed/CdcFH7Rvppg?rel=0&controls=1&showinfo=0&modestbranding=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
       <div class="featuredBandTextContainer">
-        <div class="theNewBoysTextCoontainer">
+        <div class="theNewBoysTextCoontainer theNewBoysTextCoontainerTwo">
           <h2>David Omid</h2>
           <div class="theWayWeAreContainer">
             <p class="theWayWeAre">THE WAY WE WERE,THE WAY WE ARE AND THE WAY WE WILL BE</p>
@@ -254,7 +260,13 @@
     </section>
 
     <section class="howItWorks" defer>
-      <img class="howItWorksBG" src="assets/images/howItWorks/howItWorksBG.jpg" alt="">
+      <picture class=" ">
+        <source media="(orientation:landscape)" srcset="assets/images/howItWorks/howItWorksBG.jpg">
+        <!-- <source media="(max-width: 1367px) and (min-width: 766px)" srcset="assets/images/baner.jpg"> -->
+        <source media="(orientation:portrait)" srcset="assets/images/mobile/howItWorksBG.jpg">
+        <img class="howItWorksBG" src="assets/images/howItWorks/howItWorksBG.jpg" alt="">
+      </picture>
+      <!-- <img class="howItWorksBG" src="assets/images/howItWorks/howItWorksBG.jpg" alt=""> -->
       <div class="howItWorksTextBox">
         <h2>How it works</h2>
         <div class="howItWorksTextContent">
@@ -276,26 +288,28 @@
           produce good results and get featured on the site.</p>
 
           <p class="studioHostText">As a studio host:</p>
+          <div class="stuHostMobBox">
 
-          <div class="howItWorksSubTextBox">
-            <p> You can easily browse our complete portfolio using our search page. If you cannot find what
-              you are looking for or feel like you need some help.</p>
+            <div class="howItWorksSubTextBox howItWorksSubTextBoxTwo">
+              <p> You can easily browse our complete portfolio using our search page. If you cannot find what
+                you are looking for or feel like you need some help.</p>
+            </div>
+
+            <p class="prepYourStudioTxt">Prep your studio, be helpful to the artists, <br>
+            get featured on the site and increase your bottom line. </p>
           </div>
-
-          <p class="prepYourStudioTxt">Prep your studio, be helpful to the artists, <br>
-          get featured on the site and increase your bottom line. </p>
 
         </div>
       </div>
 
-      <!-- <picture class="mobileHide">
+      <!-- <picture class=" ">
         <source media="(min-width: 1367px)" srcset="assets/images/howItWorks/circleYellow.png">
         <source media="(max-width: 1367px) and (min-width: 766px)" srcset="assets/images/tablet/howItWorks/circleYellow.png">
         <source media="(max-width: 766px)" srcset="assets/images/tablet/howItWorks/circleYellow.png">
         <img class="circleYellow" src="assets/images/howItWorks/circleYellow.png" alt="">
       </picture>
 
-      <picture class="mobileHide">
+      <picture class=" ">
         <source media="(min-width: 1367px)" srcset="assets/images/howItWorks/phone.png">
         <source media="(max-width: 1367px) and (min-width: 766px)" srcset="assets/images/tablet/howItWorks/phone.png">
         <source media="(max-width: 766px)" srcset="assets/images/tablet/howItWorks/phone.png">
@@ -338,7 +352,7 @@
             <div class="">
               <div class="carDivOne">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/nZObMvBZjKw?rel=0&controls=1&showinfo=0&modestbranding=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <!-- <picture class="mobileHide">
+                <!-- <picture class=" ">
                   <source media="(min-width: 1367px)" srcset="assets/images/newsAndEvents/picOne.jpg">
                   <source media="(max-width: 1367px) and (min-width: 766px)" srcset="assets/images/tablet/newsAndEvents/picOne.jpg">
                   <source media="(max-width: 766px)" srcset="assets/images/tablet/newsAndEvents/picOne.jpg">
@@ -369,7 +383,7 @@
             </div>
             <div class="">
               <div class="carDivTwo">
-                <picture class="mobileHide">
+                <picture class=" ">
                   <source media="(min-width: 1367px)" srcset="assets/images/newsAndEvents/picTwo.jpg">
                   <source media="(max-width: 1367px) and (min-width: 766px)" srcset="assets/images/tablet/newsAndEvents/picTwo.jpg">
                   <source media="(max-width: 766px)" srcset="assets/images/tablet/newsAndEvents/picTwo.jpg">
@@ -400,7 +414,7 @@
             </div>
             <div class="" id="hideMobile">
               <div class="carDivThree">
-                <picture class="mobileHide">
+                <picture class=" ">
                   <source media="(min-width: 1367px)" srcset="assets/images/newsAndEvents/picThree.jpg">
                   <source media="(max-width: 1367px) and (min-width: 766px)" srcset="assets/images/tablet/newsAndEvents/picThree.jpg">
                   <source media="(max-width: 766px)" srcset="assets/images/tablet/newsAndEvents/picThree.jpg">

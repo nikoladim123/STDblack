@@ -1537,3 +1537,65 @@ footer{
   margin-bottom: 0.5vw;
 }
 /* Footer end */
+
+
+
+.desktopHide{
+  display: none;
+}
+.mobileHide{
+  display: block;
+}
+/* PORTRAIT BREAKPOINT */
+/* PORTRAIT BREAKPOINT */
+/* PORTRAIT BREAKPOINT */
+/* @media(orientation:portrait){
+  .desktopHide{
+    display: block;
+  }
+  .mobileHide{
+    display: none;
+  }
+
+  .logo{
+    width: 43vw;
+    left: 26vw;
+    margin-top: 6vw;
+  }
+  .navSocialMedias {
+    top: 4.1vw;
+    left: 6vw;
+  }
+  .navSocialMedias a {
+    margin-right: 0.5vw;
+    font-size: 4vw !important;
+    margin-right: 3vw;
+    opacity: 0.6;
+  }
+
+  .featuredNav{
+    margin-top: 23vw;
+    text-align: center;
+    display: block;
+  }
+  .featuredNonLink {
+    font-family: 'Lato-Bold' !important;
+    font-size: 4.4vw !important;
+    letter-spacing: 3vw;
+    text-transform: uppercase;
+  }
+  .userMenuContainer{
+    flex-direction: column;
+  }
+  .userDropDownArrow {
+    width: 1.8vw;
+    border: none;
+    top: 0.3vw;
+    background: white;
+    height: 3px;
+    margin-top: 0.3vw;
+  }
+  .userIcon{
+    order: 3;
+  }
+} */

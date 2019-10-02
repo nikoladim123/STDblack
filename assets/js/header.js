@@ -6,6 +6,11 @@ userDropDownArrow[0].addEventListener('click',()=>{
   userDropDownBox[0].style.border = '2px solid white';
 });
 
+userDropDownArrow[1].addEventListener('click',()=>{
+  userDropDownBox[0].style.maxHeight = '35vw';
+  userDropDownBox[0].style.border = '2px solid white';
+});
+
 userDropDownBox[0].addEventListener('mouseleave',()=>{
   userDropDownBox[0].style.maxHeight = '0vw';
   userDropDownBox[0].style.border = '0px solid white';

@@ -121,7 +121,9 @@ var navArea = document.getElementsByClassName('navArea');
 
 function bannerAreaFun() {
   // bannerArea[0].style.height = '10vw'
-  bannerArea[0].style.height = 'calc(100vh - '+ navArea[0].getBoundingClientRect().height +'px)';
+  if (window.innerWidth > window.innerHeight) {
+    bannerArea[0].style.height = 'calc(100vh - '+ navArea[0].getBoundingClientRect().height +'px)';
+  }
 }
 
 

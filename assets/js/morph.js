@@ -15,7 +15,11 @@ bookAStudio[0].addEventListener('click',()=>{
       blackOverlayheader[0].style.opacity = '0.8';
     }, 100);
     bannerButtonContainer[0].style.opacity = '1'
-    morphboxID.style.height = "29vw";
+    if (window.innerWidth > window.innerHeight) {
+      morphboxID.style.height = "29vw";
+    }else{
+      morphboxID.style.height = "120vw";
+    }
   }
   if(!tick){
     morphboxID.className = ' morphBox';
@@ -25,7 +29,11 @@ bookAStudio[0].addEventListener('click',()=>{
       tick = 1;
     }, 1100);
     bannerButtonContainer[0].style.opacity = '0'
-    morphboxID.style.height = "6vw";
+    if (window.innerWidth > window.innerHeight) {
+      morphboxID.style.height = "6vw";
+    }else{
+      morphboxID.style.height = "26vw";
+    }
   }
 });
 
