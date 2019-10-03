@@ -318,7 +318,7 @@
 
     </section>
 
-    <section class="bryonFeedBackSection" defer>
+    <section class="bryonFeedBackSection mobileHide" defer>
       <div class="feedBackContainer">
         <div class="bryonProf">
           <img src="assets\images\bryonFeedback\bryonProfilePic.png" alt="">
@@ -381,7 +381,7 @@
                 <b><a href="#">Read More</a></b>
               </div>
             </div>
-            <div class="">
+            <div class="mobileHide">
               <div class="carDivTwo">
                 <picture class=" ">
                   <source media="(min-width: 1367px)" srcset="assets/images/newsAndEvents/picTwo.jpg">
@@ -412,7 +412,7 @@
                 <b><a href="#">Read More</a></b>
               </div>
             </div>
-            <div class="" id="hideMobile">
+            <div class="">
               <div class="carDivThree">
                 <picture class=" ">
                   <source media="(min-width: 1367px)" srcset="assets/images/newsAndEvents/picThree.jpg">
@@ -464,7 +464,7 @@
 
     <footer defer>
 
-      <div class="footerLinks">
+      <div class="footerLinks mobileHide">
         <h2>Book a Studio</h2>
         <a href="searchPage.html">Recording Studios</a> <br>
         <a href="searchPage.html">Photography Studios</a> <br>
@@ -473,9 +473,19 @@
         <a href="searchPage.html">Event Studios</a>
       </div>
 
+      <!-- mobile footer text -->
+      <div class="desktopHide mobileFotterText">
+        <h2>TheStu, <br>
+          a new hangout for the <br>
+          artists and producers </h2>
+          <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+             but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+      </div>
+      <!-- mobile footer text end-->
+
       <div class="footerLogoBox">
         <a href="index.html"><img class="footerLogo" src="assets/images/logo.png" alt="THE STU"></a>
-        <p>2019 all rights reserved</p>
+        <p class="mobileHide">2019 all rights reserved</p>
       </div>
 
       <!-- <div class="footerRef">
@@ -483,7 +493,7 @@
         <a href="#">Terms of Use</a>
       </div> -->
 
-      <div class="footerRightContainer">
+      <div class="footerRightContainer mobileHide">
         <h3>The Stu</h3>
         <p>150-34,14th Avenue</p>
         <p>Whitestone, Queens</p>
