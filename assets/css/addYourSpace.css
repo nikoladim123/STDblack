@@ -73,7 +73,7 @@ main{
 
 
 
-.rightContent h2{
+.addSpaceRight h2{
   font-size: 1.577vw;
   color: #60d283;
   margin: 0;
@@ -81,14 +81,14 @@ main{
   /* margin-top: 1.9vw; */
 }
 
-.rightContent h3{
+.addSpaceRight h3{
   font-size: 1.126vw;
   color: #555555;
   font-family: 'Lato-Regular';
   font-weight: 100;
 }
 
-.rightContent p{
+.addSpaceRight p{
   font-size: 0.78vw;
   color: #555555;
   font-family: 'Lato-Regular';
