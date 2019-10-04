@@ -105,7 +105,7 @@ width: 100%;
 
 
   .addSpaceRight h2{
-    font-size: 1.577vw;
+    font-size: 4.577vw;
     color: #60d283;
     margin: 0;
     font-family: 'Lato-Bold';
@@ -113,27 +113,27 @@ width: 100%;
   }
 
   .addSpaceRight h3{
-    font-size: 1.126vw;
+    font-size: 4.126vw;
     color: #555555;
     font-family: 'Lato-Regular';
     font-weight: 100;
   }
 
   .addSpaceRight p{
-    font-size: 0.78vw;
+    font-size: 3.78vw;
     color: #555555;
     font-family: 'Lato-Regular';
     margin: 0;
-    margin-top: 0.65vw;
+    /* margin-top: 0.65vw; */
   }
 
   .continueButtonMob{
-    width: 11.39vw;
-    height: 3vw;
+    width: 45.39vw;
+    height: 12vw;
     border: none;
-    font-family: 'Lato-Bold';
+    font-family: 'Lato-Regular';
     font-weight: 100;
-    font-size: 1.46vw;
+    font-size: 6.46vw;
     background-color: #6de194;
     color: white;
     margin-left: 26vw;
@@ -154,11 +154,13 @@ width: 100%;
 
   .contOne h3{
     margin-top: 4.1463vw;
-    width: 33.087vw;
+    width: auto;
+    margin-right: 4vw;
+    margin-left: 5vw;
   }
   .contOne .continueButtonMob{
-    margin-left: 18vw;
-    margin-top: 6.2vw
+    margin-left: 26vw;
+    margin-top: 6.2vw;
   }
 
   /* contTwo */
