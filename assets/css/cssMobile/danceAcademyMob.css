@@ -1,0 +1,443 @@
+@media(orientation:portrait){
+  picture{
+    display: flex
+  }
+
+  .featuredNav{
+    box-shadow: 0px 10px 29px -9px rgba(0,0,0,0.75);
+    padding-bottom: 0.2vw;
+  }
+
+  main{
+    background: white;
+    padding-bottom: 20.6728vw;
+    position: relative;
+    background: #f8f8f8;
+  }
+  .danceBaner{
+    width: 100%;
+    position: relative;
+  }
+
+  .favoriteVideosButton{
+    transition: all 0.5s ease;
+    position: absolute;
+    top: 63.2vw;
+    left: 29vw;
+    width: 12vw;
+    height: 2.6vw;
+    background: #ff975c;
+    display: flex;
+    font-family: 'Lato-Regular';
+    align-items: center;
+    justify-content: center;
+    border-radius: 6vw;
+    color: white;
+    font-size: 4.2vw;
+    width: 41.25vw;
+    height: 9.375vw;
+    filter: brightness(1);
+  }
+
+  .favoriteVideosButton:hover{
+    cursor: pointer;
+    filter: brightness(1.2);
+  }
+
+  .content{
+    display: flex;
+    padding-left: 0;
+    /* padding-bottom: 36vw; */
+    margin-top: 0;
+    flex-direction: column;
+  }
+
+  .resultInfoBoxWraper{
+    background: #f8f8f8;
+    width: 100%;
+    height: auto;
+    padding-left: 0;
+    margin-left: 0;
+    margin-right: 0;
+    order: 2;
+  }
+  .Huntington{
+    font-size: 6vw;
+    font-family: 'Lato-regular';
+    text-align: center;
+    margin: 1vw;
+  }
+  .resultInfoBox{
+    display: flex;
+    padding: 2.3610vw 0 0.98473vw 0.915vw;
+    /* border: 1px solid red; */
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .priceBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-top: 0.3vw; */
+    height: 15vw;
+    background: #ffd5be;
+    width: 77.1875vw;
+    margin-right: 0;
+    text-align: center;
+    flex-shrink: 0;
+  }
+
+  .priceBox p{
+    color: black;
+    font-size: 5.477vw;
+    font-family: "Lato-Black";
+  }
+
+  .resultInfoText {
+  display: none;
+  }
+
+  .resultInfoText p:nth-child(1){
+    color: black;
+    font-size: 2.213vw;
+    margin: 0;
+    font-family: 'Lato-Bold';
+  }
+
+  .resultInfoText p:nth-child(2){
+    color: black;
+    font-size: 1.4771vw;
+    margin: 0;
+    font-family: 'Lato-Regular';
+  }
+
+  .rating{
+    transition: all 0.3s ease;
+    margin-top: -0.1vw;
+    color: #ffd5be;
+    display: flex;
+    align-items: center;
+  }
+  .rating .fas:hover{
+    filter: brightness(1.1);
+  }
+
+  .rating a{
+    color: #ffd5be;
+    text-decoration: none;
+  }
+
+  .rating p{
+    margin-left: 1vw;
+    color: #998478;
+    font-size: 0.886vw;
+    font-family: 'Lato-Regular';
+  }
+
+  .locationP{
+    font-size: 1.4756vw;
+    color: #555555;
+    font-family: 'Lato-Bold';
+    display: none;
+    margin: 0;
+    margin-top: -0.8vw;
+    margin-left: 1vw;
+  }
+  .locationP span{
+    color: #ff975c;
+  }
+
+  .avatarBox{
+    width: 100%;
+    height: auto;
+    background: #f8f8f8;
+    margin-left: 0;
+    margin-right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #555555;
+    padding-bottom: 4vw;
+    order: 1;
+  }
+
+  .avatarimg{
+    width: 33.0181vw;
+    margin-top: -5.4vw;
+    margin-bottom: -3.2vw;
+  }
+
+  .avatarBox p{
+    font-size: 5.18vw;
+    font-family: 'Lato-Light';
+    margin: 0;
+    margin-bottom: 0.2vw;
+  }
+
+  .avatarBox h3{
+    margin: 0;
+    font-size: 4.18vw;
+    font-family: 'Lato-Bold';
+  }
+
+  .MessageDavid{
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10.1328vw;
+    height: 2.1642vw;
+    margin-top: 1.9675vw;
+  }
+
+  .MessageDavid p{
+    font-family: 'Lato-Regular';
+    font-size: 4vw;
+    white-space: nowrap;
+    margin-top: 1vw;
+    color: #ff975c;
+  }
+
+
+  .bookThisStud{
+    /* border: 1px solid black; */
+    width: 30.742vw;
+    background: #f8f8f8;
+    margin-left: 0.73782vw;
+    margin-right: 0.73782vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    order: 3;
+    display: none;
+  }
+
+  .bookThisStud a{
+    text-decoration: none;
+  }
+
+  .bookThisStud h2{
+    margin: 0;
+    font-family: 'Lato-Bold';
+    font-size: 2.363vw;
+    text-align: center;
+    color: #ff975c;
+    margin-top: 5.75vw;
+  }
+
+  .bookThisStud h4{
+    font-family: 'Lato-Bold';
+    color: #ff975c;
+    font-size: 1.4756vw;
+    margin: 0;
+  }
+
+  .bookThisStud p{
+    font-size: 1.180vw;
+    font-family: 'Lato-Light';
+    color: #555555;
+    font-weight: 800;
+    margin: 0;
+  }
+
+  .bookThisStud h3{
+    font-size: 1.180vw;
+    font-family: 'Lato-Light';
+    color: #555555;
+  }
+
+  /* whatIsIncludedSection start */
+  .whatIsIncludedSection{
+    position: relative;
+    color: #555555;
+    background: #ebebeb;
+    padding: 0.1px;
+    border: none;
+    outline: none;
+    margin-top: -3px;
+  }
+
+  .includedTextBox{
+    padding-left: 3vw
+  }
+
+  .includedTextBox h2{
+    font-size: 3.7707vw;
+    font-family: 'Lato-Bold';
+  }
+
+  .includedTextBox h3{
+    font-size: 3.18vw;
+    font-family: 'Lato-Bold';
+    margin-top: 3vw;
+    margin-bottom: 0.5vw;
+  }
+
+  .includedTextBox h4{
+    font-size: 1.58vw;
+    font-family: 'Lato-Light';
+    margin-top: 0;
+    /* margin-bottom: 3vw; */
+    margin-bottom: 2vw;
+  }
+
+  .includedTextBox h4:nth-last-child(1){
+    margin-top: -2vw;
+  }
+
+  .location{
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .location h2{
+    font-size: 5.18vw;
+    font-family: 'Lato-Bold';
+    margin-top: 3vw;
+    margin-bottom: 1.8691vw;
+    margin-top: 5.9517vw;
+    margin-left: 4vw;
+  }
+
+  .locationImg{
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  /* whatIsIncludedSection end */
+
+  /* cancelation policy section */
+  .cancelPolicySection{
+    position: relative;
+    background: white;
+    padding: 0.1px;
+    padding-left: 3vw;
+    display: none;
+  }
+
+  .cancelContainer{
+    width: 38.40vw;
+    color: #555555;
+  }
+
+  .cancelContainer h2{
+    font-size: 1.18vw;
+    font-family: 'Lato-Bold';
+    margin-top: 3vw;
+    margin-bottom: 0.5vw;
+  }
+
+  .cancelContainer h4{
+    font-size: 1.18vw;
+    font-family: 'Lato-Light';
+    margin-top: 0;
+    /* margin-bottom: 3vw; */
+    margin-bottom: 2vw;
+  }
+  /* cancelation policy section end*/
+
+  /* reviewSectionstart start*/
+  .reviewSection{
+    padding: 0.1px;
+    position: relative;
+    background: white;
+    padding-left: 3vw;
+  }
+  .reviewSection img{
+    /* width: 100%; */
+  }
+  .reviewContainer{
+    width: auto;
+    /* border: 1px solid red; */
+    margin-left: 0;
+    padding-right: 5vw;
+  }
+  .reviewContainer .rating{
+    /* margin-top: 0.8vw; */
+    margin-right: 2vw;
+    font-size: 3vw;
+    margin-right: 0vw;
+  }
+  .reviewBox{
+
+  display: flex;
+
+  /* border-bottom: 2px solid #c7cac1; */
+  }
+  .reviewsHeading{
+    font-family: 'Lato-Bold';
+    font-size: 4.3vw;
+    margin-left: 1vw;
+    margin-top: 19vw;
+    margin-bottom: 10vw;
+  }
+
+  .reviewAvatar{
+    width: 14.5vw !important;
+    height: 14.5vw;
+    flex-shrink: 0;
+    margin-right: 2vw;
+  }
+  .reviewUserContent{
+
+  border-bottom: 1px solid #d7dad1;
+
+  padding-bottom: 1vw;
+
+  margin-bottom: 2vw;
+  }
+  .revTitle{
+  font-family: 'Lato Regular';
+  font-size: 4.2vw;
+  color: black;
+  margin: 0;
+  }
+  .revClass{
+  margin: 0;
+  font-family: 'Lato-Regular';
+  font-size: 3vw;
+  margin-top: 1vw;
+  color: #878a91;
+  }
+  .revRatingBox{
+
+  display: flex;
+
+  align-items: center;
+  }
+  .checkMark{
+    width: 4.01694vw !important;
+    margin-right: 2.3vw;
+    margin-left: 5vw;
+  }
+  .revCheckSugestion{
+
+font-family: 'Lato-Regular';
+
+font-size: 3.6vw;
+
+color: #878a91;
+
+}
+  .revText{
+
+font-family: 'Lato-Regular';
+
+font-size: 2.92vw;
+
+line-height: 1.7;
+
+margin-top: 0;
+
+}
+  .revDate{
+
+color: #c7cac1;
+
+font-size: 3vw;
+
+}
+  /* reviewSectionstart end*/
+
+}

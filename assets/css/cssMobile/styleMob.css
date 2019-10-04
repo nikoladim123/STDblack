@@ -304,14 +304,14 @@
 
   .fbLogIn{
     margin-bottom: 1.0023vw;
-    background-image: url('../images/loginForm/fb.jpg');
+    /* background-image: url('../images/loginForm/fb.jpg'); */
   }
   .twLogIn{
     margin-bottom: 1.0023vw;
-    background-image: url('../images/loginForm/tw.jpg');
+    /* background-image: url('../images/loginForm/tw.jpg'); */
   }
   .gLogIn{
-    background-image: url('../images/loginForm/g.jpg');
+    /* background-image: url('../images/loginForm/g.jpg'); */
   }
 
   .forgotPassword{
@@ -1628,6 +1628,7 @@ border: 2px solid #a694a3;
     position: relative;
     /* margin-left: 2vw; */
     left: 2vw;
+    display: none;
   }
 
   .footerRightContainer h3{

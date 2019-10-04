@@ -162,7 +162,7 @@ body{
   /* border: 1px solid red; */
   width: 5vw;
   height: 5vw;
-  right: 21vw;
+  right: 17vw;
   top: 9.5vw;
   display: flex;
   align-items: center;
@@ -186,17 +186,22 @@ body{
   top: 12vw;
   position: relative;
   background: white;
-  width: 41.942vw;
-  height: 32.6137vw;
+  width: 53vw;
+  height: 28.6137vw;
   border: 1px solid #c2d926;
   outline: 0.771vw solid white;
   left: 50%;
-  margin-left:-21vw;
+  margin-left: -26.5vw;
   padding-top: 1.3878vw;
   padding-left: 1.542vw;
   padding-right: 1.542vw;
 }
 
+.logInContainer h2{
+  font-family: "Lato-Bold";
+  color: #333;
+  margin-top: 0;
+}
 .pleaseLogIn{
   width: 100%;
   height: 4.0863vw;
@@ -233,12 +238,26 @@ body{
   opacity: 1;
 }
 
+.formOr{
+  width: 3vw;
+  position: absolute;
+  left: 47%;
+  top: 4vw;
+}
 
 .formContainer{
   display: flex;
   justify-content: space-between;
-  margin-bottom: 5.8596vw;
+  /* margin-bottom: 3.8596vw; */
   /* border: 1px solid blue; */
+}
+
+.formLogo{
+  width: 6vw;
+  position: absolute;
+  left: -3vw;
+  top: -6vw;
+  margin-left: 50%;
 }
 .formContainer form{
   /* border: 1px solid red; */
@@ -271,17 +290,23 @@ body{
   filter: brightness(1.1);
 }
 
+.rememberMeCheckBox{
+  display: flex;
+  align-items: center;
+  color: gray;
+  margin-bottom: 2vw;
+}
 
 .loginAPI{
   /* border: 1px solid yellow; */
-  width: 13.338vw;
+  width: 23.338vw;
 }
 
 .loginAPI div{
   height: 3.238vw;
   width: 100%;
   background-size: 100% 100%;
-  height: 3.238vw;
+  height: 3.29vw;
   border: 1px solid transparent;
   transition: all 0.6s ease;
   filter: brightness(1);

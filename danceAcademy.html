@@ -4,7 +4,9 @@
      <meta charset="utf-8">
      <title></title>
      <link rel="stylesheet" href="assets/css/style.css" >
+     <link rel="stylesheet" href="assets/css/cssMobile/styleMob.css">
      <link rel="stylesheet" href="assets/css/danceAcademy.css" >
+     <link rel="stylesheet" href="assets/css/cssMobile/danceAcademyMob.css" >
      <link rel="icon" type="image/png" href="assets/images/logo.png">
      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" onload="if(media!='all')media='all'" defer media="all">
    </head>
@@ -13,7 +15,7 @@
        <div class="navArea">
          <nav>
            <a href="index.html">
-             <picture class="mobileHide">
+             <picture class=" ">
                <source media="(min-width: 1367px)" srcset="assets/images/logo.png">
                <source media="(max-width: 1367px) and (min-width: 766px)" srcset="assets/images/logo.png">
                <source media="(max-width: 766px)" srcset="assets/images/logo.png">
@@ -50,18 +52,19 @@
            <div class="headerLinks">
              <a href="add-your-space.html" class="headerLinksOne">ADD YOUR STUDIO</a>
              <a href="news.html">SUBMIT NEWS FLASH</a>
-             <!-- <div class="loginRegister">
-               <a href="#">About us </a>
-               <a href="#">&nbsp Contact</a>
-             </div> -->
+             <div class="loginRegister">
+               <a class="logIn" href="#">Log In /</a>
+               <a class="register" href="#">Register</a>
+             </div>
            </div>
 
            <div class="userMenuContainer">
              <div class="userIcon">
                <img src="assets/images/user/userAvatar.png" alt="">
              </div>
-             <p  class="userInitials">Cy</p>
+             <p  class="userInitials mobileHide">Cy</p>
              <div class="userDropDownArrow"></div>
+             <div class="userDropDownArrow desktopHide"></div>
              <div class="userDropDownBox">
                <a class="profileLink" href="profileSettings.html">Profile</a>
                <a href="listings.html">Listing</a>
@@ -84,17 +87,24 @@
 
          </nav>
          <div class="featuredNav">
-           <a href="#" class="featuredNonLink">Featured</a>
+           <a href="#" class="featuredNonLink">Featured</a> <br class="desktopHide">
            <a href="Artists.html">ARTISTS</a>
            <a id="bands" href="bands.html">BANDS</a>
            <a href="#">STUDIOS</a>
-           <a href="#">ENGINEERS</a>
+           <a href="#" class="mobileHide">ENGINEERS</a>
          </div>
        </div>
+
      </header>
 
      <main>
-       <img class="danceBaner" src="assets/images/danceAcadaemy/danceBaner.jpg" alt="">
+       <!-- <img class="danceBaner" src="assets/images/danceAcadaemy/danceBaner.jpg" alt=""> -->
+       <picture class=" ">
+         <source media="(orientation:landscape)" srcset="assets/images/danceAcadaemy/danceBaner.jpg">
+         <!-- <source media="(max-width: 1367px) and (min-width: 766px)" srcset="assets/images/baner.jpg"> -->
+         <source media="(orientation:portrait)" srcset="assets/images/mobile/danceBanerMob.jpg">
+         <img class="danceBaner" src="assets/images/danceAcadaemy/danceBaner.jpg" alt="">
+       </picture>
        <a href="favorite-videos.html">
          <div class="favoriteVideosButton">
          <p>Favorite Videos</p>
@@ -102,6 +112,7 @@
         </a>
        <div class="content">
          <div class="resultInfoBoxWraper">
+           <h4 class="Huntington">Huntington Photographic Studio</h4>
            <div class="resultInfoBox">
              <div class="priceBox">
                <p>
@@ -157,7 +168,13 @@
 
        <div class="location">
          <h2>Location</h2>
-         <img class="locationImg" src="assets/images/danceAcadaemy/location.jpg" alt="">
+         <!-- <img class="locationImg" src="assets/images/danceAcadaemy/location.jpg" alt=""> -->
+         <picture class=" ">
+           <source media="(orientation:landscape)" srcset="assets/images/danceAcadaemy/location.jpg">
+           <!-- <source media="(max-width: 1367px) and (min-width: 766px)" srcset="assets/images/baner.jpg"> -->
+           <source media="(orientation:portrait)" srcset="assets/images/mobile/locationMob.jpg">
+           <img class="locationImg" src="assets/images/danceAcadaemy/danceBaner.jpg" alt="">
+         </picture>
        </div>
      </section>
 
@@ -177,11 +194,12 @@
      </section>
 
      <section class="reviewSection">
-       <img src="assets/images/temp.jpg" alt="">
-       <!-- <h2>Reviews(2)</h2>
+       <!-- <img src="assets/images/temp.jpg" alt=""> -->
+
+       <h2 class="reviewsHeading">Reviews(2)</h2>
        <div class="reviewContainer">
          <div class="reviewBox">
-           <img class="reviewAvatar" src="" alt="">
+           <img class="reviewAvatar" src="assets/images/user/userAvatar.png" alt="avatar">
            <div class="reviewUserContent">
              <p class="revTitle">Mary F. booked a short filt shoot for 25 people</p>
              <p class="revClass">Founder/Producer</p>
@@ -193,7 +211,7 @@
                 <a href="#"><i class="fas fa-star"></i></a>
                 <a href="#"><i class="fas fa-star"></i></a>
               </div>
-              <img src="" alt="checkMark">
+              <img class="checkMark" src="assets/images/checkMark.png" alt="checkMark">
               <p class="revCheckSugestion">Yes,i would book again.</p>
              </div>
              <p class="revText">This space was perfect for our high school dance. We were able to use the sapce to
@@ -202,8 +220,29 @@
 
            </div>
          </div>
+         <div class="reviewBox">
+           <img class="reviewAvatar" src="assets/images/user/userAvatar.png" alt="avatar">
+           <div class="reviewUserContent">
+             <p class="revTitle">Mary F. booked a short filt shoot for 25 people</p>
+             <p class="revClass">Founder/Producer</p>
+             <div class="revRatingBox">
+               <div class="rating">
+                <a href="#"><i class="fas fa-star"></i></a>
+                <a href="#"><i class="fas fa-star"></i></a>
+                <a href="#"><i class="fas fa-star"></i></a>
+                <a href="#"><i class="fas fa-star"></i></a>
+                <a href="#"><i class="fas fa-star"></i></a>
+              </div>
+              <img class="checkMark" src="assets/images/checkMark.png" alt="checkMark">
+              <p class="revCheckSugestion">Yes,i would book again.</p>
+             </div>
+             <p class="revText">This space was perfect for our high school dance. We were able to use the sapce to
+             provide various activities. Royale was a pleasure to work with and made sure onloadedmetadata="we had everything we needed!"</p>
+             <p class="revDate">June 30,2019</p>
 
-       </div> -->
+           </div>
+         </div>
+       </div>
      </section>
 
      <footer defer>
