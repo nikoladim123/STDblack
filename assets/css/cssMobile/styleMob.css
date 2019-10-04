@@ -1691,10 +1691,7 @@ border: 2px solid #a694a3;
   /* Footer end */
   /* custom */
   .desktopHide{
-    display: block;
-  }
-  .mobileHide{
-    display: none;
+    display: block !important;
   }
 
   .logo{

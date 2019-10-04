@@ -1,3 +1,4 @@
+
 var spacerLeftMenuSelection = document.getElementsByClassName('spacerLeftMenuSelection');
 var rightContent = document.getElementsByClassName('rightContent');
 var continueButton = document.getElementsByClassName('continueButton');
@@ -37,5 +38,53 @@ function continueButtonFun(e) {
   }
   rightContent[e.target.dataset.buttonselection].style.display = 'block';
   spacerLeftMenuSelection[e.target.dataset.buttonselection].dataset.selected = 1;
+  console.log(e.target.dataset.buttonselection);
+}
+
+// mobile
+
+var spacerLeftMenuSelectionMob = document.getElementsByClassName('spacerLeftMenuSelectionMob');
+var rightContentMob = document.getElementsByClassName('rightContentMob');
+var continueButtonMob = document.getElementsByClassName('continueButtonMob');
+var addSpaceRight = document.getElementsByClassName('addSpaceRight');
+
+for (var i = 0; i < spacerLeftMenuSelectionMob.length; i++) {
+  spacerLeftMenuSelectionMob[i].addEventListener('click',(e)=>{
+    customLoopMob(e);
+    addSpaceRight[1].style.order =2 +  parseInt(e.target.dataset.menusel);
+  });
+}
+
+
+var customI = 0;
+function customLoopMob(e) {
+  if(customI < spacerLeftMenuSelectionMob.length){
+    spacerLeftMenuSelectionMob[customI].dataset.selected = 0;
+    rightContentMob[customI].style.display = 'none';
+    customI++;
+    customLoopMob(e);
+  }else{
+    customI = 0;
+  };
+  e.target.dataset.selected = 1;
+  rightContentMob[e.target.dataset.menusel].style.display = 'block';
+}
+
+
+
+for (var i = 0; i < continueButtonMob.length; i++) {
+  continueButtonMob[i].addEventListener('click',(e)=>{
+    continueButtonMobFun(e);
+  })
+}
+
+function continueButtonMobFun(e) {
+  for (var i = 0; i < spacerLeftMenuSelectionMob.length; i++) {
+    rightContentMob[i].style.display = 'none';
+    spacerLeftMenuSelectionMob[i].dataset.selected = 0;
+  }
+  addSpaceRight[1].style.order = 2 +  parseInt(e.target.dataset.buttonselection);
+  rightContentMob[e.target.dataset.buttonselection].style.display = 'block';
+  spacerLeftMenuSelectionMob[e.target.dataset.buttonselection].dataset.selected = 1;
   console.log(e.target.dataset.buttonselection);
 }

@@ -19,27 +19,33 @@
 
   .addSpaceLeft{
     padding: 0.1px;
-    background-color: #eaeaea;
-    width: 33.72vw;
+    background-color: black;
+    width: auto;
     flex-shrink: 0;
     padding-top: 4vw;
     height: calc(100% - 4vw);
+    display: flex;
+    flex-direction: column;
+    padding-top: 0;
   }
+  .mobileSpace{
 
+width: 100%;
+  }
   .addSpaceLeft p{
     position: relative;
-    background-color: #eaeaea;
+    background-color: #d7d7d7;
     transition: all 0.4s ease;
     display: flex;
     align-items: center;
-    font-size: 1.772vw;
+    font-size: 5.772vw;
     font-family: 'Lato-Black';
-    color: #8f8f96;
+    color: black;
     margin: 0;
-    margin-right: 4px;
-    margin-bottom: 0.15vw;
+    margin-right: 0;
+    margin-bottom: 0.25vw;
     padding-left: 5.169vw;
-    height: 3.348vw;
+    height: 15.348vw;
     border-right: .1969vw solid transparent;
     user-select: none;
     box-shadow: 0.2469135vw 0.2469135vw 3.407407vw -1.53086vw rgba(0,0,0,0);
@@ -47,22 +53,44 @@
   .addSpaceLeft p:hover{
     border-right: .1969vw solid rgba(96,210,131,0.35);
     cursor: pointer;
-    filter: brightness(1.04);
+    filter: brightness(1.1);
     box-shadow: 0.2469135vw 0.2469135vw 3.407407vw -1.53086vwx rgba(0,0,0,0.75);
+  }
+
+  .addSpaceLeft p:nth-child(2){
+    order:1;
+  }
+  .addSpaceLeft p:nth-child(3){
+    order:2;
+  }
+  .addSpaceLeft p:nth-child(4){
+    order:3;
+  }
+  .addSpaceLeft p:nth-child(5){
+    order:4;
+  }
+  .addSpaceLeft p:nth-child(6){
+    order:5;
+  }
+  .addSpaceLeft p:nth-child(7){
+    order:6;
+  }
+  .addSpaceLeft p:nth-child(8){
+    order:7;
   }
 
   [data-selected="1"]{
     color: black !important;
-    border-right: .1969vw solid #60d283 !important;
+    border-right: 4.1969vw solid #60d283 !important;
     box-shadow: 1px 1px 3.407407vw -1.50086vw rgba(0,0,0,0.75) !important;
     z-index: 1;
   }
 
   /* rightContent */
-  .rightContent{
+  .rightContent,.rightContentMob{
     display: none;
   }
-  .addSpaceRight .rightContent:nth-child(1){
+  .addSpaceRight .rightContent:nth-child(1) ,.addSpaceRight .rightContent:nth-child(1){
     display: block;
   }
   .addSpaceRight{
@@ -70,6 +98,8 @@
     /* border: 1px solid red; */
     padding-left: 2.39vw;
     padding-top: 4.8780vw;
+    order: 1;
+    background: #d7d7d7;
   }
 
 
@@ -97,7 +127,7 @@
     margin-top: 0.65vw;
   }
 
-  .continueButton{
+  .continueButtonMob{
     width: 11.39vw;
     height: 3vw;
     border: none;
@@ -109,7 +139,7 @@
     margin-left: 26vw;
     margin-bottom: 7vw;
   }
-  .continueButton:hover{
+  .continueButtonMob:hover{
     cursor: pointer;
   }
 
@@ -126,7 +156,7 @@
     margin-top: 4.1463vw;
     width: 33.087vw;
   }
-  .contOne .continueButton{
+  .contOne .continueButtonMob{
     margin-left: 18vw;
     margin-top: 6.2vw
   }
@@ -311,7 +341,7 @@
     border-left: none;
     color: #8f8f96;
   }
-  .contThree .continueButton{
+  .contThree .continueButtonMob{
     margin-top: 4vw;
     margin-left: 29.4vw;
   }
@@ -335,7 +365,7 @@
     resize: none;
   }
 
-  .contFour .continueButton{
+  .contFour .continueButtonMob{
     margin-left: 18vw;
     margin-top: 4.4vw;
   }
@@ -355,7 +385,7 @@
     height: 2.25vw;
     margin-bottom: 0.74vw;
   }
-  .contFive .continueButton{
+  .contFive .continueButtonMob{
     margin-left: 14vw;
     margin-top: 3vw;
     padding-left: 0.728vw
@@ -391,7 +421,7 @@
     margin-bottom: 3.7vw !important;
   }
 
-  .contSix .continueButton{
+  .contSix .continueButtonMob{
     margin-top: 4vw;
     margin-left: 16vw;
   }

@@ -4,8 +4,9 @@
     <meta charset="utf-8">
     <title></title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/cssMobile/styleMob.css">
     <link rel="stylesheet" href="assets/css/addYourSpace.css">
-    <link rel="stylesheet" href="assets/css/addYourSpaceMob.css">
+    <link rel="stylesheet" href="assets/css/cssMobile/addYourSpaceMob.css">
     <link rel="icon" type="image/png" href="assets/images/logo.png">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" onload="if(media!='all')media='all'" defer media="all">
   </head>
@@ -15,7 +16,7 @@
       <div class="navArea">
         <nav>
           <a href="index.html">
-            <picture class="mobileHide">
+            <picture class=" ">
               <source media="(min-width: 1367px)" srcset="assets/images/logo.png">
               <source media="(max-width: 1367px) and (min-width: 766px)" srcset="assets/images/logo.png">
               <source media="(max-width: 766px)" srcset="assets/images/logo.png">
@@ -53,7 +54,7 @@
             <a href="add-your-space.html" class="headerLinksOne">ADD YOUR STUDIO</a>
             <a href="news.html">SUBMIT NEWS FLASH</a>
             <div class="loginRegister">
-              <a href="#">Log In /</a>
+              <a class="logIn" href="#">Log In /</a>
               <a class="register" href="#">Register</a>
             </div>
           </div>
@@ -62,8 +63,9 @@
             <div class="userIcon">
               <img src="assets/images/user/userAvatar.png" alt="">
             </div>
-            <p  class="userInitials">Cy</p>
+            <p  class="userInitials mobileHide">Cy</p>
             <div class="userDropDownArrow"></div>
+            <div class="userDropDownArrow desktopHide"></div>
             <div class="userDropDownBox">
               <a class="profileLink" href="profileSettings.html">Profile</a>
               <a href="listings.html">Listing</a>
@@ -86,17 +88,17 @@
 
         </nav>
         <div class="featuredNav">
-          <a href="#" class="featuredNonLink">Featured</a>
+          <a href="#" class="featuredNonLink">Featured</a> <br class="desktopHide">
           <a href="Artists.html">ARTISTS</a>
           <a id="bands" href="bands.html">BANDS</a>
           <a href="#">STUDIOS</a>
-          <a href="#">ENGINEERS</a>
+          <a href="#" class="mobileHide">ENGINEERS</a>
         </div>
       </div>
     </header>
 
     <main>
-      <div class="content">
+      <div class="content mobileHide">
         <div class="addSpaceLeft">
           <p class="spacerLeftMenuSelection" data-menuSel="0" data-selected="1">Adding your studio or space</p>
           <p class="spacerLeftMenuSelection" data-menuSel="1" data-selected="0">Basic host info</p>
@@ -230,18 +232,18 @@ and it        would also describe your space and its functionality</h3>
         </div>
       </div>
 
-      <div class="mobileSpace">
+      <div class="mobileSpace desktopHide">
         <div class="addSpaceLeft">
-          <div class="addSpaceRight">
+          <div class="addSpaceRight" style="order:2;">
 
-            <div data-contentMenu="0" class="rightContentMob contOne">
+            <div data-contentMenu="0" class="rightContentMob contOne" style="display:block;">
               <h2>Adding your studio or space</h2>
               <p>Step 1 of 8</p>
               <h3>
                 This is the first step in the prpcess of becoming a host on the Stu.
                 Please register your space by sharing the relevant information
                 about you and your space.</h3>
-                <button data-buttonselection="1" class="continueButton" type="button" name="button">Continue</button>
+                <button data-buttonselection="1" class="continueButtonMob" type="button" name="button">Continue</button>
             </div>
 
             <div data-contentMenu="1" class="rightContentMob contTwo">
@@ -287,7 +289,7 @@ and it        would also describe your space and its functionality</h3>
                 </div>
               </div>
 
-                <button data-buttonselection="2" class="continueButton" type="button" name="button">Continue</button>
+                <button data-buttonselection="2" class="continueButtonMob" type="button" name="button">Continue</button>
             </div>
 
             <div data-contentMenu="2" class="rightContentMob contThree">
@@ -313,7 +315,7 @@ and it        would also describe your space and its functionality</h3>
                   <input type="text" name="" value="">
                   <button type="button" name="button">SQ ft</button>
                 </div>
-              <button data-buttonselection="3" class="continueButton" type="button" name="button">Continue</button>
+              <button data-buttonselection="3" class="continueButtonMob" type="button" name="button">Continue</button>
             </div>
 
             <div data-contentMenu="3" class="rightContentMob contFour">
@@ -323,7 +325,7 @@ and it        would also describe your space and its functionality</h3>
               <h4>Please mention all the rules you'd like to be followed <br>
               when someone rents your space: </h4>
               <textarea name="name" rows="8" cols="80"></textarea> <br>
-                <button data-buttonselection="4" class="continueButton" type="button" name="button">Continue</button>
+                <button data-buttonselection="4" class="continueButtonMob" type="button" name="button">Continue</button>
             </div>
 
             <div data-contentMenu="4" class="rightContentMob contFive">
@@ -333,7 +335,7 @@ and it        would also describe your space and its functionality</h3>
               <input placeholder="City" class="city" type="text" name="" value=""> <br>
               <input placeholder="State" class="state" type="text" name="" value=""> <br>
               <input placeholder="Zip Code" class="zipCode" type="text" name="" value=""> <br>
-                <button data-buttonselection="5" class="continueButton" type="button" name="button">Continue</button>
+                <button data-buttonselection="5" class="continueButtonMob" type="button" name="button">Continue</button>
             </div>
 
             <div data-contentMenu="4" class="rightContentMob contSix">
@@ -346,20 +348,20 @@ and it        would also describe your space and its functionality</h3>
               <input type="text" name="" value=""> <br>
               <h4>Daily Rate if applicable:</h4>
               <input type="text" name="" value=""> <br>
-                <button data-buttonselection="6" class="continueButton" type="button" name="button">Continue</button>
+                <button data-buttonselection="6" class="continueButtonMob" type="button" name="button">Continue</button>
             </div>
             <div data-contentMenu="6" class="rightContentMob contTwo">
-                <button data-buttonselection="6" class="continueButton" type="button" name="button">Continue</button>
+                <button data-buttonselection="6" class="continueButtonMob" type="button" name="button">Continue</button>
             </div>
 
           </div>
-          <p class="spacerLeftMenuSelection" data-menuSel="0" data-selected="1">Adding your studio or space</p>
-          <p class="spacerLeftMenuSelection" data-menuSel="1" data-selected="0">Basic host info</p>
-          <p class="spacerLeftMenuSelection" data-menuSel="2" data-selected="0">Your Studio or space Description</p>
-          <p class="spacerLeftMenuSelection" data-menuSel="3" data-selected="0">Studio or space rules</p>
-          <p class="spacerLeftMenuSelection" data-menuSel="4" data-selected="0">Space Location</p>
-          <p class="spacerLeftMenuSelection" data-menuSel="5" data-selected="0">Space pricing</p>
-          <p class="spacerLeftMenuSelection" data-menuSel="6" data-selected="0">Sample photos</p>
+          <p class="spacerLeftMenuSelectionMob" data-menuSel="0" data-selected="1">Adding your studio or space</p>
+          <p class="spacerLeftMenuSelectionMob" data-menuSel="1" data-selected="0">Basic host info</p>
+          <p class="spacerLeftMenuSelectionMob" data-menuSel="2" data-selected="0">Your Studio or space Description</p>
+          <p class="spacerLeftMenuSelectionMob" data-menuSel="3" data-selected="0">Studio or space rules</p>
+          <p class="spacerLeftMenuSelectionMob" data-menuSel="4" data-selected="0">Space Location</p>
+          <p class="spacerLeftMenuSelectionMob" data-menuSel="5" data-selected="0">Space pricing</p>
+          <p class="spacerLeftMenuSelectionMob" data-menuSel="6" data-selected="0">Sample photos</p>
         </div>
       </div>
 

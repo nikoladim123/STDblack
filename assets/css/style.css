@@ -1569,6 +1569,7 @@ footer{
 .desktopHide{
   display: none;
 }
+}
 .mobileHide{
   display: block;
 }
