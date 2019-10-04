@@ -961,6 +961,7 @@ margin-right: 4vw;
     height: 138vw;
     overflow: hidden;
     padding-top: 29vw;
+    padding-bottom: 14vw;
   }
   .featuredSectionTwo{
 
@@ -1008,10 +1009,11 @@ top: 156vw;
   }
 
   .theNewBoysTextCoontainer h2{
-    font-family: 'Montserrat-Bold';
+    font-family: 'Lato-Regular';
     margin: 0;
     text-align: center;
-    font-size: 7.54716vw;
+    font-size: 5.3125vw;
+    margin-top: 45vw;
   }
   .newBoys{
     top: 17vw !important;
