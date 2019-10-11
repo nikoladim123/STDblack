@@ -50,8 +50,11 @@ var addSpaceRight = document.getElementsByClassName('addSpaceRight');
 
 for (var i = 0; i < spacerLeftMenuSelectionMob.length; i++) {
   spacerLeftMenuSelectionMob[i].addEventListener('click',(e)=>{
-    customLoopMob(e);
-    addSpaceRight[1].style.order =2 +  parseInt(e.target.dataset.menusel);
+    setTimeout(function () {
+      addSpaceRight[1].style.order = 2 +  parseInt(e.target.dataset.menusel);
+      customLoopMob(e);
+    }, 800);
+    smothMove();
   });
 }
 
@@ -66,15 +69,20 @@ function customLoopMob(e) {
   }else{
     customI = 0;
   };
-  e.target.dataset.selected = 1;
-  rightContentMob[e.target.dataset.menusel].style.display = 'block';
+    e.target.dataset.selected = 1;
+    rightContentMob[e.target.dataset.menusel].style.display = 'block';
 }
+
+spacerLeftMenuSelectionMob[0].style.opacity = '1';
 
 
 
 for (var i = 0; i < continueButtonMob.length; i++) {
   continueButtonMob[i].addEventListener('click',(e)=>{
-    continueButtonMobFun(e);
+    smothMove()
+    setTimeout(function () {
+      continueButtonMobFun(e);
+    }, 950);
   })
 }
 
@@ -86,5 +94,15 @@ function continueButtonMobFun(e) {
   addSpaceRight[1].style.order = 2 +  parseInt(e.target.dataset.buttonselection);
   rightContentMob[e.target.dataset.buttonselection].style.display = 'block';
   spacerLeftMenuSelectionMob[e.target.dataset.buttonselection].dataset.selected = 1;
+
+  spacerLeftMenuSelectionMob[e.target.dataset.buttonselection].style.opacity = '1';
   console.log(e.target.dataset.buttonselection);
+}
+
+
+function smothMove() {
+  addSpaceRight[1].style.maxHeight = '0vh';
+  setTimeout(function () {
+    addSpaceRight[1].style.maxHeight = '150vh';
+  }, 1200);
 }

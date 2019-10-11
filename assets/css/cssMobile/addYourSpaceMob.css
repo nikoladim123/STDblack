@@ -36,7 +36,7 @@ width: 100%;
     position: relative;
     background-color: #d7d7d7;
     transition: all 0.4s ease;
-    display: flex;
+    /* display: none; */
     align-items: center;
     font-size: 5.772vw;
     font-family: 'Lato-Black';
@@ -45,6 +45,7 @@ width: 100%;
     margin-right: 0;
     margin-bottom: 0.25vw;
     padding-left: 5.169vw;
+    overflow: hidden;
     height: 15.348vw;
     border-right: .1969vw solid transparent;
     user-select: none;
@@ -81,14 +82,29 @@ width: 100%;
 
   [data-selected="1"]{
     color: black !important;
-    border-right: 4.1969vw solid #60d283 !important;
+    border-right: 0vw solid #60d283 !important;
     box-shadow: 1px 1px 3.407407vw -1.50086vw rgba(0,0,0,0.75) !important;
     z-index: 1;
   }
 
+  .spanArrow{
+    transition: all 1s ease;
+    color: #60d283;
+    font-size: 11vw;
+    position: absolute;
+    right: 1vw;
+    pointer-events: none;
+  }
+
+  [data-selected="1"] .spanArrow{
+    transform: rotate(-90deg);
+    filter: brightness(1.2);
+  }
   /* rightContent */
   .rightContent,.rightContentMob{
     display: none;
+    padding-left: 3vw;
+    padding-right: 3vw;
   }
   .addSpaceRight .rightContent:nth-child(1) ,.addSpaceRight .rightContent:nth-child(1){
     display: block;
@@ -96,20 +112,31 @@ width: 100%;
   .addSpaceRight{
     position: relative;
     /* border: 1px solid red; */
-    padding-left: 2.39vw;
-    padding-top: 4.8780vw;
+    padding-left: 0;
+    padding-top: 0;
     order: 1;
     background: #d7d7d7;
+    overflow: hidden;
+    transition: 1s;
+    max-height: 155vh
+  }
+
+  .spacerLeftMenuSelectionMob{
+    display: flex;
+    opacity: 0;
+    transition: 0.5s;
   }
 
 
 
   .addSpaceRight h2{
-    font-size: 4.577vw;
+    font-size: 5.577vw;
     color: #60d283;
     margin: 0;
     font-family: 'Lato-Bold';
     /* margin-top: 1.9vw; */
+    margin-top: 6vw;
+    margin-bottom: 1vw;
   }
 
   .addSpaceRight h3{
@@ -138,6 +165,7 @@ width: 100%;
     color: white;
     margin-left: 26vw;
     margin-bottom: 7vw;
+    margin-top: 6vw;
   }
   .continueButtonMob:hover{
     cursor: pointer;
@@ -174,11 +202,12 @@ width: 100%;
     margin-top: 3.47vw;
     line-height: 1.5;
     margin-bottom: 0;
+    padding-left: 1vw;
   }
   .contTwo form{
     background-color: #f8f9fa;
     padding: 0.1px;
-    width: 46.6vw;
+    width: calc(100% - 3.0582vw);
     padding-left: 3.0582vw;
     padding-top: 1.46vw;
     padding-bottom: 3.5vw;
@@ -207,18 +236,19 @@ width: 100%;
   }
   .inputFields{
     /* border: 1px solid; */
+    width: 60%;
     margin-left: 2.5vw;
   }
   .inputFields input{
     border: 1px solid #d1d5dd;
     background: white;
-    width: 22.815vw;
-    height: 2.766vw;
+    width: 100%;
+    height: 5.766vw;
     border-radius: 5px;
     margin-bottom: 0.6vw;
   }
   .contTwo h4{
-    font-size: 1.17vw;
+    font-size: 3.17vw;
     color: #555555;
     font-family: 'Lato-Regular';
     margin-left: 1.2vw;
@@ -226,32 +256,32 @@ width: 100%;
   }
 
   .codeInput{
-    width: 4.951vw;
+    width: 14.951vw;
     position: relative;
-    height: 2.13vw;
+    height: 6.13vw;
     border: 1px solid #555555;
     top: -2px;
     margin-left: 18.7vw;
     margin-right: 2.6vw;
   }
   .codeEnterButon{
-    width: 7.427vw;
-    height: 2.33vw;
+    width: 12.427vw;
+    height: 6.33vw;
     border: 1px solid #f79d1d;
     background-color: #f79d1d;
     color: white;
-    font-size: 1.165vw;
+    font-size: 3.165vw;
   }
 
   .avatarTextContainer{
     display: flex;
     align-items: center;
-    margin-top: -1vw;
+    margin-top: 8vw;
+    margin-bottom: 7vw;
   }
 
   .avatarTextContainer img{
-  width: 13.3vw;
-
+  width: 28.3vw;
   }
 
   .uploiadApic{
@@ -285,18 +315,18 @@ width: 100%;
     margin: 0;
   }
   .contThree input{
-    width: 28.4174vw;
-    height: 2.5699vw;
+    width: 100%;
+    height: 8.5699vw;
     margin-top: 1.3vw;
     border: 1px solid #555555;
     margin-bottom: 1.6vw;
     padding-left: 1vw;
-    font-size: 1.165vw;
+    font-size: 3.165vw;
     color: #555555;
   }
   .contThreeInput::placeholder{
     color: #8f8f96;
-    font-size: 1.165vw;
+    font-size: 3.165vw;
     font-family: 'Lato-Regular';
   }
   .describeHtwo{
@@ -309,8 +339,8 @@ width: 100%;
 
   .contThree textarea{
     resize: none;
-    width: 44.66vw;
-    height: 13.3495vw;
+    width: 100%;
+    height: 29.3495vw;
     font-size: 1.165vw;
     color: #555555;
   }
@@ -321,22 +351,22 @@ width: 100%;
 
   .contThree h4{
     color: #555555;
-    font-size: 1.1622vw;
+    font-size: 3.1622vw;
     font-family: 'Lato-Regular';
   }
 
   .sqImageContractContainer{
     display: flex;
-    height: 2.5699vw;
+    height: 7.5699vw;
   }
 
   .sqImageContractContainer input{
-    width: 6.1985vw;
+    width: 24.1985vw;
     margin: 0 !important;
     height: auto;
   }
   .sqImageContractContainer button{
-    font-size: 1.1622vw;
+    font-size: 4.1622vw;
     font-family: 'Lato-Regular';
     background: white;
     border: 1px solid #555555;
@@ -345,30 +375,30 @@ width: 100%;
   }
   .contThree .continueButtonMob{
     margin-top: 4vw;
-    margin-left: 29.4vw;
+    margin-left: 25.4vw;
   }
 
   /* contFour */
   .contFour h3{
-    font-size: 1.4vw;
+    font-size: 4.4vw;
     margin-top: 3.5vw;
   }
 
   .contFour h4{
-    font-size: 1.1622vw;
+    font-size: 4.1622vw;
     font-family: 'Lato-Regular';
     color: #8f8f96;
     font-weight: 100;
   }
 
   .contFour textarea{
-    width: 32.687vw;
-    height: 11.912vw;
+    width: 100%;
+    height: 19.912vw;
     resize: none;
   }
 
   .contFour .continueButtonMob{
-    margin-left: 18vw;
+    margin-left: 25vw;
     margin-top: 4.4vw;
   }
 
@@ -384,23 +414,25 @@ width: 100%;
   }
 
   .contFive input{
-    height: 2.25vw;
+    height: 7.25vw;
+    font-size: 4vw;
     margin-bottom: 0.74vw;
+    padding-left: 4vw;
   }
   .contFive .continueButtonMob{
-    margin-left: 14vw;
+    margin-left: 25vw;
     margin-top: 3vw;
-    padding-left: 0.728vw
+    padding-left: 0.728vw;
   }
 
   .city, .state{
-    width: 12.9vw;
-    padding-left: 0.728vw
+    width: 57.9vw;
+    padding-left: 0.728vw;
   }
 
   .zipCode{
-    width: 7.258vw;
-    padding-left: 0.728vw
+    width: 43.258vw;
+    padding-left: 0.728vw;
   }
 
 
@@ -411,13 +443,13 @@ width: 100%;
 
   .contSix h4{
     font-weight: 100;
-    font-size: 1.065vw;
+    font-size: 3.065vw;
     font-family: 'Lato-Regular';
     color: #8f8f96;
     margin-bottom: 0.5vw;
   }
 
-  .contSix input{height: 2.66vw;margin-bottom: 0.45vw;width: 13.6561vw;}
+  .contSix input{height: 5.66vw;margin-bottom: 0.45vw;width: 31.6561vw;}
 
   .contSix .spaceLocation{
     margin-bottom: 3.7vw !important;
@@ -425,7 +457,7 @@ width: 100%;
 
   .contSix .continueButtonMob{
     margin-top: 4vw;
-    margin-left: 16vw;
+    margin-left: 24vw;
   }
 
 }

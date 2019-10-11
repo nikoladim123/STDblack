@@ -29,7 +29,7 @@ main{
   position: relative;
   background-color: #eaeaea;
   transition: all 0.4s ease;
-  display: flex;
+  /* display: flex; */
   align-items: center;
   font-size: 1.772vw;
   font-family: 'Lato-Black';
@@ -42,6 +42,9 @@ main{
   border-right: .1969vw solid transparent;
   user-select: none;
   box-shadow: 0.2469135vw 0.2469135vw 3.407407vw -1.53086vw rgba(0,0,0,0);
+}
+.spacerLeftMenuSelection{
+  display: flex;
 }
 .addSpaceLeft p:hover{
   border-right: .1969vw solid rgba(96,210,131,0.35);
