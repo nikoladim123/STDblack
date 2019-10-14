@@ -1,0 +1,215 @@
+body {
+  background: white;
+  margin: 0;
+}
+
+/* pop up message container start */
+.newMessagePopUpContainer{
+  transition: 0.5s ease;
+  opacity: 0;
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  border: 1px solid red;
+  z-index: 2;
+  overflow: hidden;
+}
+.popUpContentWithBG{
+  position: relative;
+  top: 8.3vw;
+  background: rgba(0,0,0,0.7);
+  width: 100%;
+  height: calc(100% - 8.3vw);
+  display: flex;
+  justify-content: center;
+}
+.popUpMessageBox{
+  font-family: 'Lato-Regular';
+  background: white;
+  position: relative;
+  width: 29.7vw;
+  margin-top: 11vw;
+  color: #424347;
+  padding-left: 1.3vw;
+  padding-right: 1.3vw;
+  height: fit-content;
+}
+.popUpMessageBox input{
+  height: 2.4177vw;
+  border: 1px solid #d8d7d5;
+  border-radius: 0.3vw;
+  padding-left: 1vw;
+  margin-bottom: 1vw;
+  font-family: 'Lato-Regular';
+  font-size: 1.160vw;
+}
+.popUpMessageBox textarea{
+  font-family: 'Lato-Regular';
+  padding-left: 1vw;
+  padding-top: 1vw;
+  resize: none;
+  border-radius: 0.3vw;
+  margin-bottom: 1vw;
+  border: 1px solid #d8d7d5;
+  font-size: 0.8704vw;
+}
+.popUpMessageBox p{
+font-size: 1.27vw;
+font-family: 'Lato-Regular';
+text-align: center;
+}
+.popUpMessageBox button{
+  background: #00ecb4;
+  font-family: 'Lato-Bold';
+  font-size: 1.16vw;
+  border: none;
+  border-radius: 0.3vw;
+  height: 2.514vw;
+  margin-bottom: 4.35vw;
+  transition: 0.5s ease;
+  filter: brightness(1);
+  cursor: pointer;
+}
+
+.popUpMessageBox button:hover{
+  filter: brightness(1.2);
+}
+.popUpMessageForm{
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+}
+
+.closeBox{
+  width: 1vw;
+  height: 1vw;
+  /* border: 1px solid red; */
+  position: absolute;
+  top: 0.5vw;
+  display: flex;
+  right: 0.5vw;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.closeBox p{
+  user-select: none;
+
+}
+/* pop up message container end */
+main{
+  padding-left: 20.5vw;
+  padding-top: 4vw;
+}
+
+main h1 {
+  font-family: 'Lato-Light';
+  font-weight: 100;
+  font-size: 2.9vw;
+}
+
+.mainContainer {
+  width: 59vw;
+  /* border: 1px solid red; */
+  color: #3a3a41;
+}
+
+.mainContainer p {
+  font-size: 1.16vw;
+  font-family: 'Lato-Regular';
+  font-weight: 800;
+}
+
+.messagesSelectionContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.4vw;
+}
+
+.messageSelectBox {
+  display: flex;
+}
+
+.messageSelectBox p {
+  margin-right: 2vw;
+  transition: 0.5s ease;
+  user-select: none;
+  cursor: pointer;
+}
+
+.messageSelectBox p:hover{
+  color: #00ecb4;
+}
+
+.composeNewMessageButton {
+  transition: 0.5s ease;
+  filter: brightness(1);
+  width: 16.9245vw;
+  background: #00ecb4;
+  height: 2.65957vw;
+  display: flex;
+  align-items: center;
+  margin-right: 2vw;
+  justify-content: center;
+  cursor: pointer;
+}
+.composeNewMessageButton:hover{
+  filter: brightness(1.2);
+}
+
+.composeNewMessageButton p {}
+
+.messageContentContainer {
+  display: flex;
+}
+
+.userIconBox {
+    margin-right: 1vw;
+}
+
+.messageContent {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.messageContent button {
+  width: 9.57446vw;
+  background: #00ecb4;
+  height: 2.6112vw;
+  font-size: 1.160vw;
+  border: 0;
+  font-family: 'Lato-Bold';
+  cursor: pointer;
+  transition: 0.5s ease;
+  filter: brightness(1);
+  color: #3a3a41;
+}
+
+.messageContent button:hover{
+  filter: brightness(1.2);
+}
+
+.locationInput {
+  height: 2.65957vw;
+  background: #f1f1f1;
+  margin-bottom: 0.5vw;
+  padding-left: 1vw;
+  border: none;
+  font-size: 1.2vw;
+  font-family: 'Lato-Regular';
+}
+
+.messageTextArea {
+  background: #f1f1f1;
+  resize: none;
+  border: none;
+  margin-bottom: 1vw;
+  font-size: 1.2vw;
+  padding-left: 1vw;
+  padding-top: 1vw;
+  font-family: 'Lato-Regular';
+}

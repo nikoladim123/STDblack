@@ -4,16 +4,34 @@
     <meta charset="utf-8">
     <title></title>
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/profileSettings.css">
+    <link rel="stylesheet" href="assets/css/cssMobile/styleMob.css">
+    <link rel="stylesheet" href="assets/css/messaging.css">
     <link rel="icon" type="image/png" href="assets/images/logo.png">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" onload="if(media!='all')media='all'" defer media="all">
   </head>
   <body>
+
+    <div class="newMessagePopUpContainer">
+      <div class="popUpContentWithBG">
+        <div class="popUpMessageBox">
+          <p>Send a Private Message</p>
+          <form class="popUpMessageForm" action="index.html" method="post">
+            <input placeholder="Username" type="text" name="" value="">
+            <input placeholder="Subject" type="text" name="" value="">
+            <textarea placeholder="Your Message" name="name" rows="8" cols="80"></textarea>
+            <button type="submit" name="button">Send</button>
+          </form>
+          <div class="closeBox">
+            <p>x</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <header>
       <div class="navArea">
         <nav>
           <a href="index.html">
-            <picture class="mobileHide">
+            <picture class=" ">
               <source media="(min-width: 1367px)" srcset="assets/images/logo.png">
               <source media="(max-width: 1367px) and (min-width: 766px)" srcset="assets/images/logo.png">
               <source media="(max-width: 766px)" srcset="assets/images/logo.png">
@@ -50,18 +68,19 @@
           <div class="headerLinks">
             <a href="add-your-space.html" class="headerLinksOne">ADD YOUR STUDIO</a>
             <a href="news.html">SUBMIT NEWS FLASH</a>
-            <!-- <div class="loginRegister">
-              <a href="#">About us </a>
-              <a href="#">&nbsp Contact</a>
-            </div> -->
+            <div class="loginRegister">
+              <a class="logIn" href="#">Log In /</a>
+              <a class="register" href="#">Register</a>
+            </div>
           </div>
 
           <div class="userMenuContainer">
             <div class="userIcon">
               <img src="assets/images/user/userAvatar.png" alt="">
             </div>
-            <p  class="userInitials">Cy</p>
+            <p  class="userInitials mobileHide">Cy</p>
             <div class="userDropDownArrow"></div>
+            <div class="userDropDownArrow desktopHide"></div>
             <div class="userDropDownBox">
               <a class="profileLink" href="profileSettings.html">Profile</a>
               <a href="listings.html">Listing</a>
@@ -84,80 +103,43 @@
 
         </nav>
         <div class="featuredNav">
-          <a href="#" class="featuredNonLink">Featured</a>
+          <a href="#" class="featuredNonLink">Featured</a> <br class="desktopHide">
           <a href="Artists.html">ARTISTS</a>
           <a id="bands" href="bands.html">BANDS</a>
           <a href="#">STUDIOS</a>
-          <a href="#">ENGINEERS</a>
+          <a href="#" class="mobileHide">ENGINEERS</a>
         </div>
       </div>
     </header>
 
     <main>
-      <div class="studCont">
-        <div class="avatarContainer">
-          <img class="avatar" src="assets/images/settings/avatar.png" alt="">
-          <p>Cesar Kumar</p>
+      <h1>Messages</h1>
+      <div class="mainContainer">
+        <div class="messagesSelectionContainer">
+          <div class="messageSelectBox">
+            <p>All messages</p>
+            <p>Unread messages</p>
+          </div>
+          <div class="composeNewMessageButton">
+            <p>Compose New Message</p>
+          </div>
         </div>
-        <div class="twoImageFlexStud">
-          <div class="imgBox">
-            <img src="assets/images/studiosOrSpaces/1.jpg" alt="">
-            <p>Boston's Premiere Dance Studio</p>
+        <div class="messageContentContainer">
+          <div class="userIconBox">
+            <img src="assets/images/user/userAvatar.png" alt="">
           </div>
-          <div class="imgBox">
-            <img src="assets/images/studiosOrSpaces/2.jpg" alt="">
-            <p>Boston's Premiere Dance Studio</p>
-          </div>
+          <form class="messageContent">
+            <input placeholder="Studio Location" class="locationInput" type="text" name="" value="">
+            <textarea placeholder="Your Message" class="messageTextArea" name="name" rows="8" cols="80"></textarea>
+            <button type="submit" name="button">Reply</button>
+          </form>
         </div>
       </div>
-      <h3 class="nextPage">Next page</h3>
     </main>
 
-    <footer defer>
-      <div class="footerLinks">
-        <h2>Book a Studio</h2>
-        <a href="searchPage.html">Recording Studios</a> <br>
-        <a href="searchPage.html">Photography Studios</a> <br>
-        <a href="searchPage.html">Videography Studios</a> <br>
-        <a href="searchPage.html">Dance Studios</a> <br>
-        <a href="searchPage.html">Event Studios</a>
-      </div>
-
-      <div class="footerLogoBox">
-        <a href="index.html"><img class="footerLogo" src="assets/images/logo.png" alt="THE STU"></a>
-        <p>2019 all rights reserved</p>
-      </div>
-
-      <!-- <div class="footerRef">
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms of Use</a>
-      </div> -->
-
-      <div class="footerRightContainer">
-        <h3>The Stu</h3>
-        <p>150-34,14th Avenue</p>
-        <p>Whitestone, Queens</p>
-        <p>New York 11357</p>
-        <p>Phone:347-356-4838</p>
-        <p>Email: <a href="#">multisoundgroup@yahoo.com</a> </p>
-        <div class="paymentMethodContainer">
-          <img class="paymentSprites" src="assets/images/paymentSprites.png" alt="">
-          <div title="Visa Card" class="cardSpriteDiv"></div>
-          <div title="Master Card" class="cardSpriteDiv"></div>
-          <div title="" class="cardSpriteDiv"></div>
-          <div title="Discover Card" class="cardSpriteDiv"></div>
-        </div>
-        <h4>CONNECT WITH US</h4>
-        <div class="foterSocialMedia">
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-google-plus-g"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-        </div>
-      </div>
-    </footer>
 
     <script src="assets/js/morph.js" charset="utf-8"></script>
     <script src="assets/js/header.js" charset="utf-8"></script>
+    <script src="assets/js/messaging.js" charset="utf-8"></script>
   </body>
 </html>

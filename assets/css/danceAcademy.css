@@ -17,7 +17,7 @@ main{
   transition: all 0.5s ease;
   position: absolute;
   top: 22.2vw;
-  left: 48vw;
+  left: 47vw;
   width: 12vw;
   height: 2.6vw;
   background: #ff975c;
@@ -38,8 +38,11 @@ main{
 
 .content{
   display: flex;
-  padding-left: 7vw;
+  padding-left: 6vw;
   margin-top: 2.75vw;
+}
+.content a{
+  text-decoration: none;
 }
 
 .resultInfoBoxWraper{
@@ -181,7 +184,9 @@ main{
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 100%;
 }
+
 
 .bookThisStud a{
   text-decoration: none;
