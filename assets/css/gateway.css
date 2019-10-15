@@ -1,0 +1,84 @@
+body{
+  background: white;
+}
+
+
+.gatewaySection{
+  padding-top: 6.9182vw;
+  display: flex;
+  justify-content: center;
+}
+.gatewayContainer{
+  width: 85.1475vw;
+  display: flex;
+}
+.gatewayLeftBox{
+  margin-right: 0.87082vw;
+  width: 30.96274vw;
+  flex-shrink: 0;
+  border: 1px solid #5e606c;
+}
+.gatewayLeftBox{
+  display: flex;
+  justify-content: center;
+}
+.gatewayLeftBoxInside{
+  width: 26.608vw;
+  margin-top: 3.87vw;
+}
+
+.gatewayLeftBoxInside h3{
+  font-size: 1.4513vw;
+  font-family: 'Lato-Bold';
+  text-align: center;
+  color: #5d5d6c;
+}
+
+.descriptionbox{
+  font-size: 1.4513vw;
+  font-family: 'Lato-Bold';
+  background: #eeeeee;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0.5vw;
+  padding-right: 0.5vw;
+  color: #81818d;
+}
+
+.descriptionbox p{
+  margin: 0.5vw;
+}
+.gatewayLeftBoxInside h4{
+  font-size: 1.161vw;
+  color: #98ddbd;
+  font-family: 'Lato-Bold';
+}
+
+.orderBox{
+  display: flex;
+  justify-content: space-between;
+  color: #4f4f59;
+  font-size: 1.06434vw;
+  font-family:  'Lato-Bold';
+  border-bottom: 1px solid #5e606c;
+}
+.total{
+  display: flex;
+  justify-content: space-between;
+}
+
+.orderLeftBox{
+
+}
+.orderRightBox{
+  text-align: right;
+}
+
+
+
+.gatewayRightBox{
+  margin-left: 0.87082vw;
+  width: 52.1528vw;
+  flex-shrink: 0;
+  border: 1px solid #5e606c;
+}

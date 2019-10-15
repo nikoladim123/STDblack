@@ -455,6 +455,18 @@ header nav input{
   left: 2vw;
   top: -0.4vw;
 }
+.aboutContactBox{
+  position: absolute;
+  bottom: 4.2vw;
+  display: flex;
+  opacity: 0.5;
+  color: white;
+  font-size: 1.165vw;
+}
+.aboutContactBox a{
+  text-decoration: none;
+  font-size: 1.165vw;
+}
 .navSocialMedias {
   position: absolute;
   top: 6.1vw;

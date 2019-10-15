@@ -1,0 +1,63 @@
+body{
+  background: white;
+}
+
+.contactUsContainer{
+  width: 50.9917vw;
+  /* border: 1px solid black; */
+  margin-left: 11.852vw;
+  margin-top: 15vw;
+}
+.contactUsMainSection{
+  position: relative;
+}
+
+.contactUsMainSection h3{
+  font-size: 1.935vw;
+  font-family: 'Lato-Regular';
+}
+
+.contactUsContainer input{
+  font-family: 'Lato-Regular';
+  width: 97.5%;
+  padding-left: 2.5%;
+  height: 3.7735vw;
+  border: 1px solid black;
+  font-size: 1.4513vw;
+  margin-bottom: 0.822vw;
+}
+.contactUsContainer textarea{
+  font-family: 'Lato-Regular';
+  width: 97.5%;
+  padding-left: 2.5%;
+  border: 1px solid black;
+  font-size: 1.4513vw;
+  margin-bottom: 0.822vw;
+}
+
+.contactUsContainer button[type='submit']{
+  background: #63ceb6;
+  border: none;
+  width: 13.5462vw;
+  height: 4.11223vw;
+  font-size: 1.4513vw;
+  font-family: 'Lato-Black';
+  transition: 0.5s ease;
+  cursor: pointer;
+  filter: brightness(1);
+}
+.contactUsContainer button[type='submit']:hover{
+  filter: brightness(1.2);
+}
+
+.contactUsContainer h2{
+  position: absolute;
+  font-size: 6.289vw;
+  font-family: 'Lato-Black';
+  color: #d8d8d9;
+  margin: 0;
+  writing-mode: tb;
+  bottom: 2vw;
+  right: 16vw;
+  white-space: nowrap;
+}

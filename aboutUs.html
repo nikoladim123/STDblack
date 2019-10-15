@@ -5,28 +5,12 @@
     <title></title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/cssMobile/styleMob.css">
-    <link rel="stylesheet" href="assets/css/messaging.css">
+    <link rel="stylesheet" href="assets/css/aboutUs.css">
     <link rel="icon" type="image/png" href="assets/images/logo.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" onload="if(media!='all')media='all'" defer media="all">
+
   </head>
   <body>
-
-    <div class="newMessagePopUpContainer">
-      <div class="popUpContentWithBG">
-        <div class="popUpMessageBox">
-          <p>Send a Private Message</p>
-          <form class="popUpMessageForm" action="index.html" method="post">
-            <input placeholder="Username" type="text" name="" value="">
-            <input placeholder="Subject" type="text" name="" value="">
-            <textarea placeholder="Your Message" name="name" rows="8" cols="80"></textarea>
-            <button type="submit" name="button">Send</button>
-          </form>
-          <div class="closeBox">
-            <p>x</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <header>
       <div class="navArea">
         <nav>
@@ -67,7 +51,7 @@
 
           <div class="headerLinks">
             <div class="aboutContactBox">
-              <a href="aboutUs.html">About Us &nbsp</a>
+              <a href="#">About Us &nbsp</a>
               /
               <a href="contactUs.html">&nbsp Contact Us</a>
             </div>
@@ -117,34 +101,17 @@
       </div>
     </header>
 
-    <main>
-      <h1>Messages</h1>
-      <div class="mainContainer">
-        <div class="messagesSelectionContainer">
-          <div class="messageSelectBox">
-            <p>All messages</p>
-            <p>Unread messages</p>
-          </div>
-          <div class="composeNewMessageButton">
-            <p>Compose New Message</p>
-          </div>
-        </div>
-        <div class="messageContentContainer">
-          <div class="userIconBox">
-            <img src="assets/images/user/userAvatar.png" alt="">
-          </div>
-          <form class="messageContent">
-            <input placeholder="Studio Location" class="locationInput" type="text" name="" value="">
-            <textarea placeholder="Your Message" class="messageTextArea" name="name" rows="8" cols="80"></textarea>
-            <button type="submit" name="button">Reply</button>
-          </form>
-        </div>
+    <section >
+      <img class="aboutUsBanner" src="assets/images/aboutUs/aboutUsBaner.jpg" alt="">
+      <div class="loremIpsumHeHasNoIdeaWhatToDesign">
+        <h3>What Is Lorem Ipsum</h3>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+        <h2>ABOUT US</h2>
       </div>
-    </main>
-
+    </section>
 
     <script src="assets/js/morph.js" charset="utf-8"></script>
     <script src="assets/js/header.js" charset="utf-8"></script>
-    <script src="assets/js/messaging.js" charset="utf-8"></script>
   </body>
 </html>
