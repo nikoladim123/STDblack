@@ -123,8 +123,9 @@ main{
 
 .content{
   display: flex;
-  padding-left: 6vw;
+  /* padding-left: 6vw; */
   margin-top: 2.75vw;
+  justify-content: center;
 }
 .content a{
   text-decoration: none;
