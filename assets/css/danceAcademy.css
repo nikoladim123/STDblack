@@ -123,9 +123,10 @@ main{
 
 .content{
   display: flex;
-  /* padding-left: 6vw; */
+  padding-left: 2.5vw;
+  padding-right: 2.5vw;
   margin-top: 2.75vw;
-  justify-content: center;
+  justify-content: space-between;
 }
 .content a{
   text-decoration: none;
@@ -133,11 +134,11 @@ main{
 
 .resultInfoBoxWraper{
   background: #f8f8f8;
-  width: 34.5vw;
+  width: 37.5vw;
   height: 18.691vw;
   padding-left: 1vw;
   margin-left: 0.73782vw;
-  margin-right: 0.73782vw;
+  /* margin-right: 1.73782vw; */
 }
 .resultInfoBox{
   display: flex;
@@ -168,8 +169,10 @@ main{
 
 .resultInfoText p:nth-child(1){
   color: black;
-  font-size: 2.213vw;
+  font-size: 2.13vw;
   margin: 0;
+  height: 5.2vw;
+  overflow: hidden;
   font-family: 'Lato-Bold';
 }
 
