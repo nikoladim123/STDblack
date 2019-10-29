@@ -123,8 +123,9 @@ width: 100%;
 
   .spacerLeftMenuSelectionMob{
     display: flex;
-    opacity: 0;
+    opacity: 1;
     transition: 0.5s;
+    display: none;
   }
 
 
