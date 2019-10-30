@@ -73,7 +73,7 @@ function customLoopMob(e) {
     rightContentMob[e.target.dataset.menusel].style.display = 'block';
 }
 
-spacerLeftMenuSelectionMob[0].style.display = 'block';
+spacerLeftMenuSelectionMob[0].style.display = 'flex';
 
 
 
@@ -95,7 +95,7 @@ function continueButtonMobFun(e) {
   rightContentMob[e.target.dataset.buttonselection].style.display = 'block';
   spacerLeftMenuSelectionMob[e.target.dataset.buttonselection].dataset.selected = 1;
 
-  spacerLeftMenuSelectionMob[e.target.dataset.buttonselection].style.display = 'block';
+  spacerLeftMenuSelectionMob[e.target.dataset.buttonselection].style.display = 'flex';
   console.log(e.target.dataset.buttonselection);
 }
 
