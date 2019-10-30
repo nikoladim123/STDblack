@@ -103,6 +103,6 @@ function continueButtonMobFun(e) {
 function smothMove() {
   addSpaceRight[1].style.maxHeight = '0vh';
   setTimeout(function () {
-    addSpaceRight[1].style.maxHeight = '160vh';
+    addSpaceRight[1].style.maxHeight = '185vh';
   }, 1200);
 }
