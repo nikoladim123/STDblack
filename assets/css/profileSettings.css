@@ -13,7 +13,7 @@ main{
 }
 
 .dinamycAvatarHolder{
-  /* border: 1px solid red; */
+  border: 5px solid gray;
   border-radius: 50%;
   width: 5vw;
   height: 5vw;
