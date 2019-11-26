@@ -18,4 +18,19 @@ for (var i = 0; i < sixImageDiv.length; i++) {
     e.target.childNodes[3].style.bottom = '-13.653vw';
     e.target.childNodes[3].style.opacity = '0';
   })
-}
+};
+
+// Read more popup
+var blogPopUpContainer = document.getElementsByClassName('blogPopUpContainer');
+var popUpButton = document.getElementsByClassName('popUpButton');
+var popUpCloseButton = document.getElementsByClassName('popUpCloseButton');
+
+for (var i = 0; i < popUpButton.length; i++) {
+  popUpButton[i].addEventListener('click',()=>{
+    blogPopUpContainer[0].style.display = 'block';
+  });
+};
+
+popUpCloseButton[0].addEventListener('click',()=>{
+  blogPopUpContainer[0].style.display = 'none';
+})

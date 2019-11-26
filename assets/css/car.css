@@ -148,16 +148,18 @@ body{
   margin-left: 4vw;
   margin-top: 3vw;
   margin-bottom: 2vw;
+  /* visibility: hidden; */
 }
 .carDate {
-  position: absolute;
-  top: 2.7vw;
-  left: 17vw;
+  /* position: absolute; */
+  margin-top: 2.7vw;
+  margin-left: 5vw;
   color: rgb(143,143,143);
 }
 
 .leftTextBox h2 {
   margin-left: 4vw;
+  margin-top: 2vw;
   font-family: 'Montserrat-Bold';
   font-size: 2.214vw;
 }

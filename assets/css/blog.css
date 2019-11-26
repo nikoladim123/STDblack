@@ -142,7 +142,18 @@ main h3{
   font-size: 1.03321vw;
   color: rgb(223,122,131);
   margin-top: 2.80442vw;
-  margin-bottom: -2vw;
+  /* margin-bottom: -2vw; */
+}
+.popUpButton p{
+  transition: 0.5s ease;
+  font-size: 1.4527vw;
+  color: #ffae7f;
+  font-family: 'Lato-Bold';
+  user-select: none;
+  cursor: pointer;
+}
+.popUpButton p:hover{
+  filter: brightness(1.2);
 }
 
 .pageNumberContainer{
@@ -266,6 +277,18 @@ main h3{
 .formP{
   display: inline-block;
 }
+.contactMeForm textarea{
+  width: 18.8929vw;
+  resize: none;
+  background: rgb(245,112,116);
+  border: 1px solid white;
+  padding-left: 1vw;
+  background: transparent;
+  margin-bottom: 0.738vw;
+  padding-left: 1vw;
+  font-size: 1.0332vw;
+  color: white;
+}
 
 
 
@@ -296,12 +319,15 @@ main h3{
 
 .contactSubmitButton{
   transition: 0.3s;
-  width: 18.966vw;
-  height: 2.8782vw;
+  width: 7.2639vw;
+  height: 1.937vw;
   margin-top: 0.8856vw;
-  background-color: #fffa6e;
+  background-color: #ffae7f;
   border:none;
   font-size: 1.4760vw;
+  color: white;
+  margin-left: 7vw;
+  cursor: pointer;
 }
 .contactSubmitButton:hover{
   filter: brightness(140%);
@@ -486,5 +512,75 @@ main h3{
   bottom: -6vw;
   left: 7.2vw;
 }
-
 /* insta grid end */
+
+/* blog popup start*/
+.blogPopUpContainer{
+  display: none;
+  position: fixed;
+  /* border: 1px solid red; */
+  background: rgba(0,0,0,0.7);
+  height: 100%;
+  width: 100%;
+  z-index: 3;
+  top: 0;
+  left: 0;
+}
+
+.blogPopUpContent{
+  /* border: 1px solid red; */
+  background: White;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 68vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: scroll;
+}
+
+.popUpImage{
+  width: 26.9733vw;
+  margin-top: 1.4043vw;
+  flex-shrink: 0;
+}
+
+.blogPopUpContent h2{
+  font-size: 2.90556vw;
+  font-family: 'Lato-Bold';
+  width: 44.5835vw;
+  text-align: center;
+}
+.blogPopUpContent p{
+  font-size: 1.1622vw;
+  font-family: 'Lato-Light';
+  width: 43.5835vw;
+  text-align: center;
+}
+
+.popUpCloseButton{
+  transition: 0.5s ease;
+  cursor: pointer;
+  position: relative;
+  /* bottom: 1vw; */
+  width: 11.52542vw;
+  flex-shrink: 0;
+  margin-bottom: 2vw;
+  height: 3.00242vw;
+  background: #ffae7f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.popUpCloseButton:hover{
+  filter: brightness(1.2);
+}
+.popUpCloseButton p{
+  font-size: 1.4527vw;
+  font-family: 'Lato-Bold';
+  width: auto;
+  margin: 0;
+}
+/* blog popup End */
