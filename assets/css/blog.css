@@ -561,6 +561,7 @@ main h3{
 }
 
 .popUpCloseButton{
+  margin-top: 3vw;
   transition: 0.5s ease;
   cursor: pointer;
   position: relative;
