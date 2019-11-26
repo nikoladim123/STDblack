@@ -46,6 +46,10 @@
   src: url('../fonts/Montserrat-Black.ttf') format('truetype');
 }
 
+*{
+  scroll-behavior: smooth;
+}
+
 /* morph box */
 .blackOverlayheader{
   width: 100%;
