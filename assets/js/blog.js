@@ -29,6 +29,7 @@ var blogPopUpContent = document.getElementsByClassName('blogPopUpContent');
 
 for (var i = 0; i < popUpButton.length; i++) {
   popUpButton[i].addEventListener('click',()=>{
+    blogPopUpContent[0].scrollTop = 0;
     blogPopUpContainer[0].style.top = '0';
     blogPopUpContainer[0].style.opacity = '1';
   });
