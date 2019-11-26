@@ -24,6 +24,8 @@ for (var i = 0; i < sixImageDiv.length; i++) {
 var blogPopUpContainer = document.getElementsByClassName('blogPopUpContainer');
 var popUpButton = document.getElementsByClassName('popUpButton');
 var popUpCloseButton = document.getElementsByClassName('popUpCloseButton');
+var blogPopUpContent = document.getElementsByClassName('blogPopUpContent');
+
 
 for (var i = 0; i < popUpButton.length; i++) {
   popUpButton[i].addEventListener('click',()=>{
@@ -31,6 +33,19 @@ for (var i = 0; i < popUpButton.length; i++) {
   });
 };
 
+blogPopUpContent[0].addEventListener('click',(e)=>{
+  e.stopPropagation()
+});
+
+blogPopUpContainer[0].addEventListener('click',(e)=>{
+  e.stopPropagation();
+  blogPopUpContainer[0].style.display = 'none';
+});
+
 popUpCloseButton[0].addEventListener('click',()=>{
   blogPopUpContainer[0].style.display = 'none';
-})
+});
+
+// blogPopUpContent[0].addEventListener('click',(e)=>{
+//   e.stopPropagation();
+// });
