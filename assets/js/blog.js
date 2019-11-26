@@ -83,15 +83,7 @@ function instaSectionFun() {
 
 // instagrid images anim
 var instaGridImages = document.getElementsByClassName('instaGridImages');
-// function instaGridImagesFun() {
-//   if(instaGridImages[0].getClientRects()[0].top < window.innerHeight /3){
-//     instaGridImages[0].style.opacity = '1';
-//     instaGridImages[0].style.top = '0';
-//   }else{
-//     instaGridImages[0].style.opacity = '0';
-//     instaGridImages[0].style.top = '2vw';
-//   }
-// }
+
 
 function instaGridImagesFun(e) {
   if(e.getClientRects()[0].top < window.innerHeight /1.8){
@@ -111,11 +103,61 @@ function instaGridCall() {
   instaGridImagesFun(instaGridImages[5])
 }
 
+
+
+// post images anim
+var postImage = document.getElementsByClassName('postImage');
+function postImageFun(e) {
+  if(e.getClientRects()[0].top < window.innerHeight /1.8){
+    e.style.opacity = '1';
+    e.style.left = '0';
+  }else{
+    e.style.opacity = '0';
+    e.style.left = '-2vw';
+  }
+}
+
+function postImageCall() {
+  postImageFun(postImage[0]);
+  postImageFun(postImage[1]);
+  postImageFun(postImage[2]);
+  postImageFun(postImage[3]);
+  postImageFun(postImage[4]);
+}
+
+
+
+// rightSideImageAnimClass images anim
+var rightSideImageAnimClass = document.getElementsByClassName('rightSideImageAnimClass');
+function rightSideImageAnimClassFun(e) {
+  if(e.getClientRects()[0].top < window.innerHeight /1.8){
+    e.style.opacity = '1';
+    e.style.right = '0';
+  }else{
+    e.style.opacity = '0';
+    e.style.right = '-2vw';
+  }
+}
+
+function rightSideImageAnimClassCall() {
+  rightSideImageAnimClassFun(rightSideImageAnimClass[0]);
+  rightSideImageAnimClassFun(rightSideImageAnimClass[1]);
+  rightSideImageAnimClassFun(rightSideImageAnimClass[2]);
+  rightSideImageAnimClassFun(rightSideImageAnimClass[3]);
+  rightSideImageAnimClassFun(rightSideImageAnimClass[4]);
+}
+
+
+
 // window events
 // window events
 // window events
 window.addEventListener('scroll',()=>{
   // instaSectionFun(); //insta double hover
-  // instaGridImagesFun();
   instaGridCall();
-})
+  postImageCall();
+  rightSideImageAnimClassCall();
+});
+window.addEventListener('load',()=>{
+
+});

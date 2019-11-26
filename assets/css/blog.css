@@ -75,6 +75,10 @@ main h3{
   height: 40.59vw;
   margin-bottom: 1.9188vw;
   margin-right:1.7712vw;
+  position: relative;
+  left: -2vw;
+  opacity: 0;
+  transition: 1s ease;
 }
 
 .description{
@@ -245,6 +249,12 @@ main h3{
 }
 .myTwits{
   width: 100%;
+}
+.rightSideImageAnimClass{
+  transition: 1s ease;
+  position: relative;
+  right: -2vw;
+  opacity: 0;
 }
 .contactMe{
   width: 12.25vw;
