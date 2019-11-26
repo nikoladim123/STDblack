@@ -58,3 +58,31 @@ popUpCloseButton[0].addEventListener('click',()=>{
   blogPopUpContainer[0].style.top = '-100%';
   blogPopUpContainer[0].style.opacity = '0';
 });
+
+
+
+// body double hover
+var body = document.getElementsByClassName('body');
+var recentPostsDiv = document.getElementsByClassName('recentPostsDiv');
+body[0].style.background = 'rgb(249,242,242)';
+recentPostsDiv[0].style.background = 'rgb(249,242,242)';
+
+
+
+// instagram double hover
+var instaSection = document.getElementsByClassName('instaSection');
+function instaSectionFun() {
+  if(instaSection[0].getClientRects()[0].top < window.innerHeight /3){
+    instaSection[0].style.background = 'transparent';
+  }else{
+    instaSection[0].style.background = 'black';
+    console.log(123);
+  }
+}
+
+// window events
+// window events
+// window events
+window.addEventListener('scroll',()=>{
+  instaSectionFun();
+})

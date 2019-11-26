@@ -29,8 +29,8 @@ main h3{
   position: relative;
   width: 64vw;
   margin-right: 2vw;
-  border-left: 1px solid #dddddd;
-  border-right: 1px solid #dddddd;
+  /* border-left: 1px solid #dddddd; */
+  /* border-right: 1px solid #dddddd; */
 }
 .rightContent{
   position: relative;
@@ -46,8 +46,11 @@ main h3{
 }
 
 .recentPostsDiv{
-  background-color: rgb(249,242,242);
-  outline: 1px solid rgb(249,242,242);
+  transition: 1s;
+  transition-delay: 1s;
+  background: black;
+  /* background-color: rgb(249,242,242); */
+  /* outline: 1px solid rgb(249,242,242); */
   padding-top: 2.56vw;
 }
 .recentPosts{
@@ -470,6 +473,8 @@ main h3{
 .instaSection{
   position: relative;
   margin-top: 8.856vw;
+  background: black;
+  transition: 1s;
   /* border: 1px solid blue; */
 }
 
@@ -485,7 +490,7 @@ main h3{
   transition: 3s;
   /* background: linear-gradient(to bottom, rgba(253,207,202,1) 0%, rgba(250,153,153,1) 100%); */
   /* background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 100%); */
-  background: rgb(249,242,242);
+  /* background: rgb(249,242,242); */
   padding-top: 5.092vw;
   padding-bottom: 15.719vw;
 }

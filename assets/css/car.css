@@ -1,6 +1,9 @@
 body{
   margin: 0;
-  background-color: rgb(249,242,242);
+  transition: 1s ease;
+  transition-delay: 1s;
+  /* background-color: rgb(249,242,242); */
+  background: black;
 }
 .sectionCar{
   margin-top: 13vw;
@@ -18,7 +21,7 @@ body{
   top: 0;
   right: 0;
   /* height: 55vw; */
-  background-color: rgb(249,242,242);
+  /* background-color: rgb(249,242,242); */
   overflow: hidden;
   z-index: 1;
 }
