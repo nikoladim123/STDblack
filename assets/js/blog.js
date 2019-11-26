@@ -39,7 +39,7 @@ blogPopUpContent[0].addEventListener('click',(e)=>{
 });
 
 blogPopUpContent[0].addEventListener('scroll',(e)=>{
-    if (e.target.scrollHeight - e.target.scrollTop === e.target.clientHeight){
+    if (Math.floor(e.target.scrollHeight - e.target.scrollTop) === e.target.clientHeight){
         console.log('scrolled');
         blogPopUpContainer[0].style.top = '-100%';
         blogPopUpContent[0].scrollTop = 0;
