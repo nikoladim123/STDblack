@@ -583,4 +583,14 @@ main h3{
   width: auto;
   margin: 0;
 }
+
+.blogPopUpContent::-webkit-scrollbar {
+    width: 10px;
+    background-color: transparent;
+    position: absolute;
+}
+.blogPopUpContent::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    background: #888;
+}
 /* blog popup End */
