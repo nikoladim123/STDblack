@@ -585,6 +585,7 @@ main h3{
   font-family: 'Lato-Light';
   width: 43.5835vw;
   text-align: center;
+  line-height: 1.6;
 }
 
 .popUpCloseButton{

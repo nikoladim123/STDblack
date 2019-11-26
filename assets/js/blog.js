@@ -39,15 +39,15 @@ blogPopUpContent[0].addEventListener('click',(e)=>{
   e.stopPropagation()
 });
 
-blogPopUpContent[0].addEventListener('scroll',(e)=>{
-    if (Math.floor(e.target.scrollHeight - e.target.scrollTop) === e.target.clientHeight){
-        console.log('scrolled');
-        blogPopUpContainer[0].style.top = '-100%';
-        blogPopUpContent[0].scrollTop = 0;
-    }
-    // console.log(e.target.scrollHeight - e.target.scrollTop);
-    // console.log(e.target.clientHeight);
-})
+// blogPopUpContent[0].addEventListener('scroll',(e)=>{
+//     if (Math.floor(e.target.scrollHeight - e.target.scrollTop) === e.target.clientHeight){
+//         console.log('scrolled');
+//         blogPopUpContainer[0].style.top = '-100%';
+//         blogPopUpContent[0].scrollTop = 0;
+//     }
+//     console.log(e.target.scrollHeight - e.target.scrollTop);
+//     console.log(e.target.clientHeight);
+// })
 
 blogPopUpContainer[0].addEventListener('click',(e)=>{
   blogPopUpContainer[0].style.top = '-100%';
