@@ -80,9 +80,42 @@ function instaSectionFun() {
   }
 }
 
+
+// instagrid images anim
+var instaGridImages = document.getElementsByClassName('instaGridImages');
+// function instaGridImagesFun() {
+//   if(instaGridImages[0].getClientRects()[0].top < window.innerHeight /3){
+//     instaGridImages[0].style.opacity = '1';
+//     instaGridImages[0].style.top = '0';
+//   }else{
+//     instaGridImages[0].style.opacity = '0';
+//     instaGridImages[0].style.top = '2vw';
+//   }
+// }
+
+function instaGridImagesFun(e) {
+  if(e.getClientRects()[0].top < window.innerHeight /1.8){
+    e.style.opacity = '1';
+    e.style.top = '0';
+  }else{
+    e.style.opacity = '0';
+    e.style.top = '2vw';
+  }
+}
+function instaGridCall() {
+  instaGridImagesFun(instaGridImages[0])
+  instaGridImagesFun(instaGridImages[1])
+  instaGridImagesFun(instaGridImages[2])
+  instaGridImagesFun(instaGridImages[3])
+  instaGridImagesFun(instaGridImages[4])
+  instaGridImagesFun(instaGridImages[5])
+}
+
 // window events
 // window events
 // window events
 window.addEventListener('scroll',()=>{
-  instaSectionFun();
+  // instaSectionFun(); //insta double hover
+  // instaGridImagesFun();
+  instaGridCall();
 })
