@@ -31,7 +31,7 @@ function initiateGridBox(i) {
     <p>Local Boys were fantastic <br>
     At the Burkley Performance Center</p>
   </div>
-  <iframe src="${ytVideos.ytVids[i]}?rel=0&amp;controls=1&amp;showinfo=0&amp;modestbranding=0&amp;mute=1&autoplay=1;" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+  <iframe src="${ytVideos.ytVids[i]}?rel=0&amp;controls=1&amp;showinfo=0&amp;modestbranding=0&amp;" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
   `;
 }
 
