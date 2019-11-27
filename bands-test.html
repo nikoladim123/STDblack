@@ -18,13 +18,13 @@
       <p class="talent">WHERE TALENT MEETS SUCCESS</p>
     </div>
 
-    <header media="none" onload="if(media!='all')media='all'" defer>
+    <header>
       <div class="navArea">
         <nav>
           <a href="index.html">
-            <picture class="mobileHide">
-              <source media="(min-width: 1367px)" srcset="assets/images/logo.png">
-              <source media="(max-width: 1367px) and (min-width: 766px)" srcset="assets/images/logo.png">
+            <picture class=" ">
+              <source media="(min-width: 1360px)" srcset="assets/images/logo.png">
+              <source media="(max-width: 1360px) and (min-width: 766px)" srcset="assets/images/logo.png">
               <source media="(max-width: 766px)" srcset="assets/images/logo.png">
               <img class="logo" src="assets/images/logo.png" alt="THE STU">
             </picture>
@@ -51,27 +51,32 @@
               <a href="searchPage.html"><button type="button" name="button">Dance Studios</button></a>
               <a href="searchPage.html"><button type="button" name="button">Event Studios</button></a>
             </div>
-            <div  class="bookAStudio ">
-              <p class="morphP">Book a Studio</p>
+            <div class="bookAStudio ">
+              <p class="morphP">Discover &amp; Book a Studio</p>
             </div>
           </div>
 
           <div class="headerLinks">
             <div class="aboutContactBox">
-              <a href="aboutUs.html">About Us &nbsp</a>
+              <a href="aboutUs.html">About Us &nbsp;</a>
               /
-              <a href="contactUs.html">&nbsp Contact Us</a>
+              <a href="contactUs.html">&nbsp; Contact Us</a>
             </div>
-            <a href="add-your-space.html" class="headerLinksOne">ADD YOUR STUDIO</a>
+            <a href="add-your-space.html" class="headerLinksOne"><span>+</span> ADD YOUR STUDIO</a>
             <a href="news.html">SUBMIT NEWS FLASH</a>
+            <div class="loginRegister">
+              <a class="logIn" href="#">Log In /</a>
+              <a class="register" href="#">Register</a>
+            </div>
           </div>
 
           <div class="userMenuContainer">
             <div class="userIcon">
               <img src="assets/images/user/userAvatar.png" alt="">
             </div>
-            <p  class="userInitials">Cy</p>
+            <p class="userInitials mobileHide">Cy</p>
             <div class="userDropDownArrow"></div>
+            <div class="userDropDownArrow desktopHide"></div>
             <div class="userDropDownBox">
               <a class="profileLink" href="profileSettings.html">Profile</a>
               <a href="listings.html">Listing</a>
@@ -94,13 +99,15 @@
 
         </nav>
         <div class="featuredNav">
-          <a href="#" class="featuredNonLink">Featured</a>
+          <a href="#" class="featuredNonLink">Featured</a> <br class="desktopHide">
           <a href="Artists.html">ARTISTS</a>
           <a id="bands" href="bands.html">BANDS</a>
           <a href="#">STUDIOS</a>
-          <!-- <a href="#">ENGINEERS</a> -->
+          <!-- <a href="#" class="mobileHide">ENGINEERS</a> -->
         </div>
       </div>
+
+
     </header>
 
 
