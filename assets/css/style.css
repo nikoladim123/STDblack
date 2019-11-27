@@ -82,11 +82,11 @@
 .bookAStudio{
   transition: all 2s ease;
   position: absolute;
-  width: 13.779vw;
+  width: 23.2929vw;
   min-height: 3.69094vw;
   max-height: 3.69094vw;
   border-radius: 5vw;
-  border: 2px solid #ffae7f;
+  border: 2px solid #ff975c;
   top: 1.4vw;
   z-index: 5;
   overflow: hidden;
@@ -97,11 +97,12 @@
 .morphP{
   transition: 0.5s;
   position: absolute;
-  color: #ffae7f;
-  font-size: 1.181vw;
-  font-family: 'Roboto-Regular';
+  color: #ff975c;
+  font-size: 1.45278vw;
+  font-family: 'Lato-Bold';
   text-align: center;
   width: 100%;
+  margin-top: 1vw;
 }
 
 
@@ -488,7 +489,7 @@ header nav input{
 }
 
 .headerLinks a{
-  font-family: 'Lato-Regular';
+  font-family: 'Lato-Bold';
   text-decoration: none;
   color: #fff;
   font-size: 1.165vw;
@@ -501,6 +502,9 @@ header nav input{
 }
 .headerLinksOne{
   margin-right: 2vw;
+}
+.headerLinksOne span{
+  color: #ff975c;
 }
 
 .userMenuContainer{
@@ -622,15 +626,19 @@ header nav input{
   color: #00ecb4;
 }
 .featuredNav a:nth-child(1){
-  margin-right: -0.15vw;
+  margin-right: -0.45vw;
+  font-size: 1.6vw !important;
+  transform: rotate(-12deg);
+  position: relative;
+  top: 0.3vw;
 }
 
 .featuredNonLink {
-    color: #00ecb4 !important;
-    font-family: 'AlexBrush-Regular' !important;
-    font-size: 2.1vw !important;
-    padding-top: 0.16vw;
-    pointer-events: none;
+  color: #00ecb4 !important;
+  font-family: 'AlexBrush-Regular' !important;
+  font-size: 2.1vw !important;
+  padding-top: 0.16vw;
+  pointer-events: none;
 }
 
 .bannerArea{
@@ -819,16 +827,18 @@ font-family: 'Lato-Bold';
 .bannerText h2{
   margin: 0;
   font-size: 2.166vw;
+  position: relative;
   margin-bottom: 1.2vw;
   margin-left: 3.4349vw;
   transition: all 1.5s ease;
   opacity: 0;
   filter: blur(10px);
+  top: -2vw;
 }
 
 .studiosContainer{
   width: 50.0725vw;
-  height: 10.0628vw;
+  height: 21.0628vw;
   /* background: rgba(255,61,69,0.45); */
   position: relative;
   overflow: hidden;
@@ -841,6 +851,12 @@ font-family: 'Lato-Bold';
   margin-left: 2.7576vw;
   position: absolute;
   font-family: 'Lato-Black';
+  white-space: nowrap;
+  text-align: center;
+    line-height: 1;
+}
+.bannerText h1 span{
+  font-size: 2.1307vw;
 }
 
 /* header end */
