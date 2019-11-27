@@ -199,6 +199,15 @@ width: 100%;
     position: relative;
     /* margin-left: 1.355vw; */
   }
+  .logedinOrangeBox {
+    background: #fff0e7;
+    font-family: 'Lato-Regular';
+    font-size: 3.6vw;
+    width: auto;
+    padding: 1vw;
+    margin-top: 2vw;
+    line-height: 1.4;
+}
   .contTwo h3{
     font-family: 'Lato-Light';
     margin-top: 3.47vw;

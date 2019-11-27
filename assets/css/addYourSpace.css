@@ -139,6 +139,24 @@ main{
   position: relative;
   /* margin-left: 1.355vw; */
 }
+.logedinOrangeBox{
+  background: #fff0e7;
+  font-family: 'Lato-Regular';
+  font-size: 1.126vw;
+  width: 24vw;
+  padding: 1vw;
+  margin-top: 2vw;
+  line-height: 1.4;
+}
+.logedinOrangeBox a{
+  cursor: pointer;
+  text-decoration: none;
+  color: #60d283;
+  font-weight: 900;
+}
+.logedinOrangeBox p{
+
+}
 .contTwo h3{
   font-family: 'Lato-Light';
   margin-top: 3.47vw;
