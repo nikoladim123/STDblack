@@ -9,7 +9,7 @@ xhttp.onreadystatechange = function() {
     // init gallery
   }
 };
-xhttp.open("GET", "https://149.56.98.59:3055/yt", true);
+xhttp.open("GET", "http://149.56.98.59:3055/yt", true);
 xhttp.send();
 
 
