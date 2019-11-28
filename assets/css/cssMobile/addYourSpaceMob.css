@@ -1,4 +1,66 @@
 @media(orientation:portrait){
+  .studioSpacesPopup{
+    position: fixed;
+    max-width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: 6;
+    text-align: center;
+    color: white;
+    background: black;
+    box-sizing: border-box;
+    padding: 0 1vw;
+    transition: 0.5s ease;
+  }
+
+  .studioPopUpTextone{
+    position: relative;
+    font-family: 'Lato-Regular';
+    font-size: 5.4375vw;
+    margin: 12vw 0;
+  }
+  .studioPopUpTexttwo{
+    position: relative;
+    font-family: 'Lato-Bold';
+    font-size: 12.5vw;
+    margin: 0;
+  }
+  .studioPopUpTextthree{
+    position: relative;
+    font-family: 'Lato-Bold';
+    margin: 11vw 0;
+    font-size: 5.4375vw;
+  }
+  .studioSpacesPopUpButtonContainer{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+  }
+  .studioSpacesPopUpButtonContainer button{
+    margin: 4vw;
+    width: 61.75vw;
+    height: 12.875vw;
+    background: #ffa26e;
+    font-size: 4.6875vw;
+    color: white;
+    font-family: 'Lato-Bold';
+    border: none;
+    transition: 0.5s ease;
+    cursor: pointer;
+  }
+
+  .studioSpacesPopup img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    /* width: 100%; */
+  }
+
   main{
     padding: 0.1px;
     position: relative;

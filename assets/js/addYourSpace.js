@@ -106,3 +106,15 @@ function smothMove() {
     addSpaceRight[1].style.maxHeight = '185vh';
   }, 1200);
 }
+
+
+// popUp close;
+var continueNowInPopUp = document.getElementsByClassName('continueNowInPopUp');
+var studioSpacesPopup = document.getElementsByClassName('studioSpacesPopup');
+
+continueNowInPopUp[0].addEventListener('click',()=>{
+  studioSpacesPopup[0].style.opacity = '0';
+  setTimeout(function () {
+    studioSpacesPopup[0].style.display = 'none';
+  }, 500);
+});

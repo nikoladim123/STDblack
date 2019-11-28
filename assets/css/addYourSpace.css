@@ -1,3 +1,58 @@
+.studioSpacesPopup{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: 6;
+  text-align: center;
+  color: white;
+  background: black;
+  transition: 0.5s ease;
+}
+
+.studioPopUpTextone{
+  position: relative;
+  font-family: 'Lato-Regular';
+  font-size: 3.4375vw;
+}
+.studioPopUpTexttwo{
+  position: relative;
+  font-family: 'Lato-Bold';
+  font-size: 7.5vw;
+  margin: 0;
+}
+.studioPopUpTextthree{
+  position: relative;
+  font-family: 'Lato-Light';
+  font-size: 3.4375vw;
+}
+.studioSpacesPopUpButtonContainer{
+  display: flex;
+  justify-content: center;
+    position: relative;
+}
+.studioSpacesPopUpButtonContainer button{
+  margin: 2vw;
+  width: 18.75vw;
+  height: 4.875vw;
+  background: #ffa26e;
+  font-size: 1.6875vw;
+  color: white;
+  font-family: 'Lato-Bold';
+  border: none;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.studioSpacesPopup img{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
 main{
   padding: 0.1px;
   position: relative;
