@@ -123,15 +123,19 @@ main{
 }
 
 .closeDateBox {
-  height: 5vw;
-  width: 5vw;
-  font-family: 'Montserrat-Black';
+  height: 3vw;
+  width: 3vw;
+  font-family: 'Lato-Black';
   display: flex;
   align-items: center;
   justify-content: center;
   position: absolute;
-  top: 0vw;
-  left: 81vw;
+  top: 2vw;
+  /* left: 81vw; */
+  background: black;
+  z-index: 1;
+  border-radius: 50%;
+  right: 10vw;
 }
 .closeDateBox:hover{
   cursor: pointer;
@@ -139,8 +143,9 @@ main{
 
 .closeDateBox p{
   color: white;
-  font-size: 5vw;
+  font-size: 2vw;
   margin: 0;
+  margin-top: -0.41vw;
   pointer-events: none;
 }
 
