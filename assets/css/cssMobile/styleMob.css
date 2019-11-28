@@ -609,6 +609,7 @@
     border-bottom: 2px solid #6cdc84;
     margin: 0;
     color: #6cdc84 !important;
+    transform: rotate(0);
   }
 
   .featuredNonLink {
