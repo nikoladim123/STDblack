@@ -126,7 +126,11 @@ div{
 
 .gridSpanSmall .gridBoxContent h2{
   font-size: 1.9236vw;
-  margin-bottom: -0.8vw;
+  margin-bottom: 1vw;
+  margin-left: 2.219vw;
+}
+
+.gridSpanSmall .gridBoxContent hr {
   margin-left: 2.219vw;
 }
 /* sectionGridYT end */
