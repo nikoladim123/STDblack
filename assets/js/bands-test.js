@@ -42,6 +42,7 @@ function initiateVideoElements() {
     initiateGridBox(i);
     var newDiv = document.createElement('div');
     newDiv.className = gridBoxClassNames[i%4];
+    newDiv.className += " bandsVideoBoxContainer"
     newDiv.innerHTML = gridBox;
     sectionGridYT[0].append(newDiv);
   }
