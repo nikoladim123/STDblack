@@ -16,6 +16,8 @@
   position: relative;
   font-family: 'Lato-Regular';
   font-size: 3.4375vw;
+  margin: 0;
+  margin-top: 1vw;
 }
 .studioPopUpTexttwo{
   position: relative;
@@ -27,6 +29,7 @@
   position: relative;
   font-family: 'Lato-Light';
   font-size: 3.4375vw;
+  margin: 0;
 }
 .studioSpacesPopUpButtonContainer{
   display: flex;
