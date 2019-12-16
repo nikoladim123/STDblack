@@ -52,6 +52,32 @@ main{
   justify-content: center;
   display: none;
 }
+.popUpCloseBox{
+  cursor: pointer;
+  width: 7.26744vw;
+  height: 7.26744vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-family: 'Roboto-Light';
+  z-index: 1;
+}
+.popUpCloseBox:hover p{
+  opacity: 0.45;
+}
+.popUpCloseBox p {
+  transition: 0.5s ease;
+  font-size: 6vw;
+  font-weight: 100;
+  opacity: 0.27;
+  pointer-events: none;
+  color: white;
+  user-select: none;
+  font-family: cursive;
+}
 
 .thumbNailsContainer{
   position: absolute;

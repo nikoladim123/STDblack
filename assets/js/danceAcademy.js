@@ -68,8 +68,16 @@ bannerImg[0].addEventListener('click',(e)=>{
 
 // popup
 var banerPopUp = document.getElementsByClassName('banerPopUp');
+var popUpCloseBox = document.getElementsByClassName('popUpCloseBox');
 
 banerPopUp[0].addEventListener('click',(e)=>{
+  banerPopUp[0].style.opacity = '0';
+  setTimeout(function () {
+    banerPopUp[0].style.display = 'none';
+  }, 500);
+});
+
+popUpCloseBox[0].addEventListener('click',(e)=>{
   banerPopUp[0].style.opacity = '0';
   setTimeout(function () {
     banerPopUp[0].style.display = 'none';
