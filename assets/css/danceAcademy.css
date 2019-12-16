@@ -15,10 +15,44 @@ main{
 .danceAcademyBanerVideo{
   width: 100%;
   height: 28.73vw;
+  position: relative;
 }
 .danceBanerConatainer{
+  background: #f3e6d6;
   overflow: hidden;
   height: 28.73vw;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  position: relative;
+}
+.bannerImg{
+  height: 25vw;
+  border: 0.24213vw solid white;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.thumbNailsContainer{
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  height: 4vw;
+  display: flex;
+  justify-content: center;
+}
+.thumbNailsContainer img{
+  transition: 0.5s ease;
+  width: 2.7917vw;
+  margin: 0.6vw;
+  height: 2.7917vw;
+  border: 1px solid rgba(255,255,255,0.5);
+}
+.thumbNailsContainer img:hover{
+  cursor: pointer;
+  filter: brightness(1.3);
+  transform: scale(1.1);
 }
 
 .danceAcademyBanerVideoTEST{
