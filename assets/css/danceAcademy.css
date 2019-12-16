@@ -10,7 +10,8 @@ main{
 }
 .danceBaner{
   width: 100%;
-  position: relative;
+  height: 100%;
+  position: absolute;
 }
 .danceAcademyBanerVideo{
   width: 100%;
@@ -27,6 +28,7 @@ main{
   position: relative;
 }
 .bannerImg{
+  position: relative;
   height: 25vw;
   border: 0.24213vw solid white;
   box-sizing: border-box;
