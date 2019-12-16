@@ -28,6 +28,7 @@ main{
   position: relative;
 }
 .bannerImg{
+  cursor: pointer;
   position: relative;
   /* height: 25vw; */
   border: 0.24213vw solid white;
@@ -37,6 +38,8 @@ main{
 }
 
 .banerPopUp{
+  z-index: 7;
+  opacity: 0;
   transition: 0.5s ease;
   position: fixed;
   left: 0;
@@ -47,6 +50,7 @@ main{
   display: flex;
   align-items: center;
   justify-content: center;
+  display: none;
 }
 
 .thumbNailsContainer{
@@ -63,8 +67,10 @@ main{
   margin: 0.6vw;
   height: 2.7917vw;
   border: 1px solid rgba(255,255,255,0.5);
+  opacity: 0.5;
 }
 .thumbNailsContainer img:hover{
+  opacity: 1;
   cursor: pointer;
   filter: brightness(1.3);
   transform: scale(1.1);
