@@ -31,13 +31,13 @@ var bannerImg = document.getElementsByClassName('bannerImg');
 
 
 function thumbnailClick(e) {
+  banerPopUp[0].style.display = 'flex';
+  banerPopUp[0].style.opacity = '1';
   bannerImg[0].style.opacity = 0;
   setTimeout(function () {
-
     bannerImg[0].src = `assets/images/danceAcadaemy/banerImages/${e.dataset.thumbnail}.jpg`
     bannerImg[0].dataset.newSet = e.dataset.thumbnail;
   }, 300);
-  console.log(e.dataset.thumbnail);
 }
 
 bannerImg[0].addEventListener('load',(e)=>{
@@ -52,6 +52,7 @@ for (var i = 0; i < thumbnail.length; i++) {
 
 // bannerImg
 bannerImg[0].addEventListener('click',(e)=>{
+  e.stopPropagation();
   bannerImg[0].style.opacity = 0;
   setTimeout(function () {
     if (parseInt(e.target.dataset.newSet) <= 4) {
@@ -63,3 +64,14 @@ bannerImg[0].addEventListener('click',(e)=>{
     }
   }, 300);
 })
+
+
+// popup
+var banerPopUp = document.getElementsByClassName('banerPopUp');
+
+banerPopUp[0].addEventListener('click',(e)=>{
+  banerPopUp[0].style.opacity = '0';
+  setTimeout(function () {
+    banerPopUp[0].style.display = 'none';
+  }, 500);
+});
