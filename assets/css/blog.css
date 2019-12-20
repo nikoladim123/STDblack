@@ -621,7 +621,7 @@ main h3{
 .commentForm{
   position: relative;
   width: 41.7433vw;
-  margin-bottom: 2vw;
+  /* margin-bottom: 2vw; */
   font-size: 1.1622vw;
   font-family: 'Lato-Regular';
 }
@@ -636,7 +636,7 @@ main h3{
   font-size: 1.1622vw;
   font-family: 'Lato-Regular';
   width: 100%;
-  height: 5.8111vw;
+  height: 12.978vw;
   resize: none;
   box-sizing: border-box;
 }
@@ -653,8 +653,22 @@ main h3{
   padding-left: 0.8547vw;
 }
 
+.SubmitComment{
+  height: 3.9709vw;
+  width: 20.338vw;
+  font-family: 'Lato-Bold';
+  font-size: 1.74334vw;
+  color: white;
+  background: #48e6a5;
+  flex-shrink: 0;
+  border: none;
+  font-weight: 100;
+  margin-top: 3.6319vw;
+  margin-bottom: 3.9225vw;
+}
+
 .bigClose{
-  width: 95%;
+  width: 100%;
   height: 2.66343vw;
   background: #ffd6bf;
   font-size: 1.74334vw;
