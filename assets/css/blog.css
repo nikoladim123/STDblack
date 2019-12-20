@@ -586,6 +586,8 @@ main h3{
   width: 43.5835vw;
   text-align: center;
   line-height: 1.6;
+  margin-top: 1vw;
+  margin-bottom: 0;
 }
 
 .popUpCloseButton{
@@ -663,7 +665,7 @@ main h3{
   flex-shrink: 0;
   border: none;
   font-weight: 100;
-  margin-top: 3.6319vw;
+  margin-top: 2.6319vw;
   margin-bottom: 3.9225vw;
 }
 
@@ -674,7 +676,7 @@ main h3{
   font-size: 1.74334vw;
   font-family: 'Lato-Light';
   border: none;
-  margin-bottom: 2.082vw;
+  /* margin-bottom: 2.082vw; */
   cursor: pointer;
   transition: 0.5s ease;
   flex-shrink: 0;
