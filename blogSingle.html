@@ -6,7 +6,7 @@
   <title></title>
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/cssMobile/styleMob.css">
-  <link rel="stylesheet" href="assets/css/blog.css">
+  <link rel="stylesheet" href="assets/css/blogSingle.css">
   <link rel="stylesheet" href="assets/css/car.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" onload="if(media!='all')media='all'" defer media="all">
 </head>
@@ -239,70 +239,28 @@
           <p class="contentText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
           <p class="postDate">11/22/2018,By Cyrus Khamak</p>
-          <div class="popUpButton">
+          <p class="leaveAcomment">Leave a comment</p>
+          <form class="commentForm" action="index.html" method="post">
+            <textarea name="name" rows="8" cols="80"></textarea>
+            <div class="commentFormInnerInput">
+              <input type="text" name="" value="" placeholder="Name">
+              <input type="text" name="" value="" placeholder="Email">
+            </div>
+            <input type="text" name="" value="" placeholder="Website">
+          </form>
+          <!-- <div class="popUpButton">
             <p>Read More</p>
-          </div>
+          </div> -->
         </div>
+        <button class="bigClose" type="button" name="button">CLOSE</button>
       </div>
 
-      <div class="content">
-        <img class="postImage" src="assets/images/blog/left2.jpg" alt="">
-        <div class="description">
-          <h2>Amps’s new recording gadget and <br>the artists who use them .</h2>
-          <p class="contentText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          <p class="postDate">11/22/2018,By Cyrus Khamak</p>
-          <div class="popUpButton">
-            <p>Read More</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="content">
-        <img class="postImage" src="assets/images/blog/left3.jpg" alt="">
-        <div class="description">
-          <h2>Amps’s new recording gadget and <br>the artists who use them .</h2>
-          <p class="contentText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          <p class="postDate">11/22/2018,By Cyrus Khamak</p>
-          <div class="popUpButton">
-            <p>Read More</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="content">
-        <img class="postImage" src="assets/images/blog/left4.jpg" alt="">
-        <div class="description">
-          <h2>Amps’s new recording gadget and <br>the artists who use them .</h2>
-          <p class="contentText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          <p class="postDate">11/22/2018,By Cyrus Khamak</p>
-          <div class="popUpButton">
-            <p>Read More</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="content">
-        <img class="postImage" src="assets/images/blog/left5.jpg" alt="">
-        <div class="description">
-          <h2>Amps’s new recording gadget and <br>the artists who use them .</h2>
-          <p class="contentText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          <p class="postDate">11/22/2018,By Cyrus Khamak</p>
-          <div class="popUpButton">
-            <p>Read More</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="pageNumberContainer">
+      <!-- <div class="pageNumberContainer">
         <div class="">1</div>
         <div class="">2</div>
         <div class="">3</div>
         <div class="">4</div>
-      </div>
+      </div> -->
 
     </section>
 
@@ -481,17 +439,9 @@
         amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
       </p>
-      <p class="leaveAcomment">Leave a comment</p>
-      <form class="commentForm" action="index.html" method="post">
-        <textarea name="name" rows="8" cols="80"></textarea>
-        <div class="commentFormInnerInput">
-          <input type="text" name="" value="" placeholder="Name">
-          <input type="text" name="" value="" placeholder="Email">
-        </div>
-        <input type="text" name="" value="" placeholder="Website">
-      </form>
-      <button class="bigClose" type="button" name="button">CLOSE</button>
-    </div>
+      <div class="popUpCloseButton">
+        <p>Close</p>
+      </div>
     </div>
   </div>
 

@@ -64,6 +64,9 @@ main h3{
   display: flex;
   background-color: white;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .content:hover{
   box-shadow: 0px 0px 4.555vw -1.286vw rgba(0,0,0,0.75);
@@ -71,10 +74,10 @@ main h3{
 }
 
 .postImage{
-  width: 27vw;
-  height: 40.59vw;
+  width: 100%;
+  /* height: 40.59vw; */
   margin-bottom: 1.9188vw;
-  margin-right:1.7712vw;
+  /* margin-right:1.7712vw; */
   position: relative;
   left: -2vw;
   opacity: 0;
@@ -83,7 +86,11 @@ main h3{
 
 .description{
   padding-right: 2.4354vw;
-  width: 51%;
+  width: 78%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .button{
   transition: 0.3s;
@@ -161,6 +168,61 @@ main h3{
 }
 .popUpButton p:hover{
   filter: brightness(1.2);
+}
+
+.leaveAcomment{
+  font-size: 2.324vw;
+  font-family: 'Lato-Bold';
+}
+
+.commentForm{
+  position: relative;
+  width: 41.7433vw;
+  margin-bottom: 2vw;
+  font-size: 1.1622vw;
+  font-family: 'Lato-Regular';
+}
+.commentFormInnerInput{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin: 0.87167vw 0;
+}
+.commentForm textarea{
+
+  font-size: 1.1622vw;
+  font-family: 'Lato-Regular';
+  width: 100%;
+  height: 5.8111vw;
+  resize: none;
+  box-sizing: border-box;
+}
+
+.commentForm input{
+  width: 98%;
+  padding-left: 2%;
+  height: 3.29297vw;
+  font-size: 1.1622vw;
+  font-family: 'Lato-Regular';
+}
+.commentFormInnerInput input{
+  width: 19vw;
+  padding-left: 0.8547vw;
+}
+
+.bigClose{
+  width: 95%;
+  height: 2.66343vw;
+  background: #ffd6bf;
+  font-size: 1.74334vw;
+  font-family: 'Lato-Light';
+  border: none;
+  margin-bottom: 2.082vw;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+.bigClose:hover{
+  filter: brightness(1.1);
 }
 
 .pageNumberContainer{
@@ -253,8 +315,8 @@ main h3{
 .rightSideImageAnimClass{
   transition: 1s ease;
   position: relative;
-  right: -2vw;
-  opacity: 0;
+  /* right: -2vw; */
+  /* opacity: 0; */
 }
 .contactMe{
   width: 12.25vw;
@@ -611,62 +673,6 @@ main h3{
   font-family: 'Lato-Bold';
   width: auto;
   margin: 0;
-}
-
-.leaveAcomment{
-  font-size: 2.324vw !important;
-  font-family: 'Lato-Bold' !important;
-}
-
-.commentForm{
-  position: relative;
-  width: 41.7433vw;
-  margin-bottom: 2vw;
-  font-size: 1.1622vw;
-  font-family: 'Lato-Regular';
-}
-.commentFormInnerInput{
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  margin: 0.87167vw 0;
-}
-.commentForm textarea{
-
-  font-size: 1.1622vw;
-  font-family: 'Lato-Regular';
-  width: 100%;
-  height: 5.8111vw;
-  resize: none;
-  box-sizing: border-box;
-}
-
-.commentForm input{
-  width: 98%;
-  padding-left: 2%;
-  height: 3.29297vw;
-  font-size: 1.1622vw;
-  font-family: 'Lato-Regular';
-}
-.commentFormInnerInput input{
-  width: 19vw;
-  padding-left: 0.8547vw;
-}
-
-.bigClose{
-  width: 95%;
-  height: 2.66343vw;
-  background: #ffd6bf;
-  font-size: 1.74334vw;
-  font-family: 'Lato-Light';
-  border: none;
-  margin-bottom: 2.082vw;
-  cursor: pointer;
-  transition: 0.5s ease;
-  flex-shrink: 0;
-}
-.bigClose:hover{
-  filter: brightness(1.1);
 }
 
 .blogPopUpContent::-webkit-scrollbar {

@@ -23,7 +23,7 @@ for (var i = 0; i < sixImageDiv.length; i++) {
 // Read more popup
 var blogPopUpContainer = document.getElementsByClassName('blogPopUpContainer');
 var popUpButton = document.getElementsByClassName('popUpButton');
-var popUpCloseButton = document.getElementsByClassName('popUpCloseButton');
+var popUpCloseButton = document.getElementsByClassName('bigClose');
 var blogPopUpContent = document.getElementsByClassName('blogPopUpContent');
 
 
