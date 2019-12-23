@@ -99,6 +99,7 @@ var dragMenu = document.getElementsByClassName('dragMenu');
 
 saveBanerRecompose[0].addEventListener('click',()=>{
   dragVar = false;
+  danceBaner[0].style.cursor = 'default';
   dragMenu[0].style.display = 'none';
 });
 
@@ -108,6 +109,7 @@ var danceBanerConatainer = document.getElementsByClassName('danceBanerConatainer
 cameraInput[0].addEventListener('input',(e)=>{
   danceBaner[0].src = `assets/images/danceAcadaemy/banerImages/${e.target.files[0].name}`
   dragVar = true;
+  danceBaner[0].style.cursor = 'grab';
   uploadBanerFixedContainer[0].style.display = 'none';
   dragMenu[0].style.display = 'flex';
   console.log(e.target.files[0].name);
