@@ -128,7 +128,7 @@ function dragElement(elmnt) {
     // set the element's new position:
     // elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
     console.log(elmnt.offsetTop - pos2);
-    if (elmnt.offsetTop - pos2 < 0) {
+    if (elmnt.offsetTop - pos2 < 0 && -(danceBaner[0].offsetHeight - danceBanerConatainer[0].clientHeight) < elmnt.offsetTop - pos2) {
       elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
       console.log('i hit the top')
     }
