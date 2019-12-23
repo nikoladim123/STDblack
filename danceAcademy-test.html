@@ -14,6 +14,63 @@
  </head>
 
  <body>
+
+   <div class="loginOverlay">
+     <div class="closeBoxLogIn">
+       <p>x</p>
+     </div>
+     <div class="logInContainer">
+       <!-- <div class="pleaseLogIn">
+         <p>Please log in to continue</p>
+       </div> -->
+       <!-- <p class="noAccYet">No account yet, <a href="#"><b>Register</b> </a></p> -->
+       <h2>Login</h2>
+       <a href="index.html"><img class="formLogo" src="assets/images/logo.png" alt="THE STU"></a>
+       <img class="formOr" src="assets/images/loginForm/or.jpg" alt="THE STU">
+       <div class="formContainer">
+         <form class="" action="index.html" method="post">
+           <input type="text" name="" value="" placeholder="Email">
+           <input type="text" name="" value="" placeholder="Password">
+           <button type="submit" name="button">Log In</button>
+         </form>
+         <div class="loginAPI">
+           <div class="fbLogIn">
+
+           </div>
+           <div class="twLogIn">
+
+           </div>
+           <div class="gLogIn">
+
+           </div>
+         </div>
+       </div>
+       <div class="rememberMeCheckBox">
+         <input type="checkbox" name="" value="">
+         <p>Remember me</p>
+       </div>
+       <a class="forgotPassword" href="#"><b>Forgot your password?</b> </a> <br>
+       <a class="forgotPassword" href="#"><b>Not Signed Up yet?</b> </a>
+     </div>
+   </div>
+
+   <div class="registerOverlay">
+     <div class="registerOverlayCloseButton">
+       X
+     </div>
+     <form class="" action="index.html" method="post">
+       <p>First Name</p>
+       <input type="text" name="" value="">
+       <p>Letraset Name</p>
+       <input type="text" name="" value="">
+       <p>Phone number</p>
+       <input type="text" name="" value="">
+       <p>Email</p>
+       <input type="text" name="" value="">
+     </form>
+   </div>
+
+
    <header>
      <div class="navArea">
        <nav>
@@ -118,16 +175,16 @@
        </div>
 
        <!-- thank you for uploading div -->
-       <div class="thankYouForUploadingContainer">
+       <!-- <div class="thankYouForUploadingContainer">
          <h3>Thank you for uploading a banner</h3>
          <p>You can now upload up to 5 more photos to better
             describe your studio. Adding more photos will increase
           the rentability of your new studio</p>
           <button type="button" name="button">Upload photos</button>
           <button style="background:#ef2035;" type="button" name="button">Upload them later</button>
-       </div>
+       </div> -->
 
-       <img class="danceBaner" src="assets/images/danceAcadaemy/danceBaner.jpg" alt="">
+       <img draggable="true" class="danceBaner" src="assets/images/danceAcadaemy/danceBaner.jpg" alt="">
        <!-- <iframe class="danceAcademyBanerVideo danceAcademyBanerVideoTEST danceBaner" width="560" height="315" src="https://www.youtube.com/embed/YWesb1MaEMI?controls=1&mute=1&autoplay=1" frameborder="0" allow="accelerometer; muted; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
        <div class="thumbNailsContainer">
          <img class="thumbnail" data-thumbnail="1" src="assets/images/danceAcadaemy/banerImages/1.jpg" alt="">
@@ -137,15 +194,15 @@
          <img class="thumbnail" data-thumbnail="5" src="assets/images/danceAcadaemy/banerImages/5.jpg" alt="">
        </div>
      </div>
-     <!-- <div class="cameraBox">
-       <input class="cameraInput" type="file" name="" value="">
+     <div class="cameraBox">
        <i class="fa fa-camera customCamera" aria-hidden="true"></i>
-     </div> -->
-     <!-- <a href="favorite-videos.html">
+       <input class="cameraInput" type="file" name="" value="">
+     </div>
+     <a href="favorite-videos.html">
        <div class="favoriteVideosButton">
          <p>Favorite Videos</p>
        </div>
-     </a> -->
+     </a>
      <div class="content">
        <div class="resultInfoBoxWraper">
          <!-- <h4 class="Huntington">Huntington Photographic Studio</h4> -->
@@ -212,7 +269,7 @@
          <source media="(orientation:landscape)" srcset="assets/images/danceAcadaemy/location.jpg">
          <!-- <source media="(max-width: 1367px) and (min-width: 766px)" srcset="assets/images/baner.jpg"> -->
          <source media="(orientation:portrait)" srcset="assets/images/mobile/locationMob.jpg">
-         <img class="locationImg" src="assets/images/danceAcadaemy/danceBaner.jpg" alt="">
+         <img draggable="true" class="locationImg" src="assets/images/danceAcadaemy/danceBaner.jpg" alt="">
        </picture>
      </div>
    </section>
