@@ -3,6 +3,8 @@ var uploadBanerFixedContainer = document.getElementsByClassName('uploadBanerFixe
 var cameraBox = document.getElementsByClassName('cameraBox');
 var customCamera = document.getElementsByClassName('customCamera');
 var cameraInput = document.getElementsByClassName('cameraInput');
+var uploadBox = document.getElementsByClassName('uploadBox');
+
 
 danceBaner[0].addEventListener('mouseenter',()=>{
   customCamera[0].style.opacity = '0.8';
@@ -22,7 +24,14 @@ cameraBox[0].addEventListener('click',()=>{
 
 uploadBanerFixedContainer[0].addEventListener('click',(e)=>{
   uploadBanerFixedContainer[0].style.display = 'none';
-})
+});
+
+uploadBox[0].addEventListener('click',(e)=>{
+  e.stopPropagation();
+});
+uploadBox[1].addEventListener('click',(e)=>{
+  e.stopPropagation();
+});
 
 
 // thumbnail
@@ -84,18 +93,30 @@ popUpCloseBox[0].addEventListener('click',(e)=>{
   }, 500);
 });
 
+// save baner
+var saveBanerRecompose = document.getElementsByClassName('saveBanerRecompose');
+var dragMenu = document.getElementsByClassName('dragMenu');
+
+saveBanerRecompose[0].addEventListener('click',()=>{
+  dragVar = false;
+  dragMenu[0].style.display = 'none';
+});
+
 // input file baner
 var danceBanerConatainer = document.getElementsByClassName('danceBanerConatainer');
 
 cameraInput[0].addEventListener('input',(e)=>{
   danceBaner[0].src = `assets/images/danceAcadaemy/banerImages/${e.target.files[0].name}`
+  dragVar = true;
+  uploadBanerFixedContainer[0].style.display = 'none';
+  dragMenu[0].style.display = 'flex';
   console.log(e.target.files[0].name);
 })
 
 // drag
+var dragVar = false;
 
 dragElement(document.getElementsByClassName("danceBaner")[0]);
-
 function dragElement(elmnt) {
   var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
   if (document.getElementById(elmnt.id + "header")) {
@@ -121,15 +142,17 @@ function dragElement(elmnt) {
     e = e || window.event;
     e.preventDefault();
     // calculate the new cursor position:
-    pos1 = pos3 - e.clientX;
+    // pos1 = pos3 - e.clientX;
     pos2 = pos4 - e.clientY;
-    pos3 = e.clientX;
+    // pos3 = e.clientX;
     pos4 = e.clientY;
     // set the element's new position:
     // elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
     console.log(elmnt.offsetTop - pos2);
     if (elmnt.offsetTop - pos2 < 0 && -(danceBaner[0].offsetHeight - danceBanerConatainer[0].clientHeight) < elmnt.offsetTop - pos2) {
-      elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+      if (dragVar) {
+        elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+      }
       console.log('i hit the top')
     }
     // console.log(elmnt.offsetTop - pos2 < -(danceBaner[0].offsetHeight - danceBanerConatainer[0].clientHeight));

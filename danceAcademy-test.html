@@ -164,11 +164,17 @@
 
    <main>
      <div class="danceBanerConatainer danceBanerConatainerTEST">
+       <!-- drag menu -->
+       <div class="dragMenu">
+         <p>Drag image to recompose</p>
+         <button class="saveBanerRecompose" type="button" name="button">Save</button>
+       </div>
+
        <!-- upload banner  image warning  div -->
        <div class="banerWarningContainer">
          <h2>Please upload a banner image</h2>
          <h3>For your new studio</h3>
-         <h4>Your banner must be at least 2000 pixels wide</h4>
+         <h4>Your banner must be at least 1920 pixels wide</h4>
          <h3>Your new studio will not be searchable</h3>
          <p>Before you have added a new banner</p>
          <button type="button" name="button">Upload a Banner</button>
@@ -196,7 +202,6 @@
      </div>
      <div class="cameraBox">
        <i class="fa fa-camera customCamera" aria-hidden="true"></i>
-       <input class="cameraInput" type="file" name="" value="">
      </div>
      <a href="favorite-videos.html">
        <div class="favoriteVideosButton">
@@ -390,13 +395,16 @@
    <div class="uploadBanerFixedContainer">
      <div class="uploadBox">
        <p>If you have a Youtube video for your baner, <br>
-         Please paste the link <a href="#"> <b>here</b> </a> </p>
+         Please upload a link
+      </p>
+         <button class="uploadContainerNextButton" type="button" name="button">Upload Video</button>
      </div>
      <div class="uploadBox">
        <p>If you are uploading a photo it should be at lease <br>
          1920 pixels wide</a> </p>
+         <button class="uploadContainerNextButton" type="button" name="button">Upload Photo</button>
+     <input class="cameraInput" type="file" name="" value="">
      </div>
-     <button class="uploadContainerNextButton" type="button" name="button">Next</button>
    </div>
 
    <div class="banerPopUp">
