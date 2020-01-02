@@ -126,6 +126,22 @@ function bannerAreaFun() {
   }
 }
 
+// arrow to top
+var arrowToTop = document.getElementsByClassName('arrowToTop');
+
+arrowToTop[0].addEventListener('click',()=>{
+  scrollTo(0,0);
+})
+function arrrowToTopFun() {
+  if(arrowToTop[0].getBoundingClientRect().top + window.scrollY > window.innerHeight * 1.5){
+    arrowToTop[0].style.opacity = 0.5;
+    arrowToTop[0].style.pointerEvents = 'auto';
+  }else{
+    arrowToTop[0].style.opacity = 0;
+    arrowToTop[0].style.pointerEvents = 'none';
+  }
+}
+
 
 
 // window events
@@ -137,6 +153,7 @@ window.addEventListener('load',()=>{
 
 window.addEventListener('scroll',()=>{
   theNewBoysTextCoontainerFun();
+  arrrowToTopFun();
 });
 
 window.addEventListener('resize',()=>{
