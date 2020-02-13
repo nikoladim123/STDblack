@@ -1,0 +1,190 @@
+.featuredTab tbody td:nth-child(1) {
+  width: 6% !important;
+}
+
+.featuredTab tbody td:nth-child(2) {
+  width: auto !important;
+}
+
+.featuredTab tbody td:nth-child(3) {
+  width: auto !important;
+  text-align: center !important;
+  padding: 0 1vw !important;
+}
+
+.featuredTab tbody td:nth-child(4) {
+  width: auto !important;
+  text-align: center !important;
+  padding: 0 1vw !important;
+}
+
+.featuredTab tbody td:nth-child(5) {
+  display: flex !important;
+  justify-content: space-between !important;
+  padding-right: 0.5vw !important;
+  align-items: center !important;
+}
+
+.featuredTab tbody td {
+  height: 7.5vw !important;
+  border: 1px solid #dbdbdb !important;
+}
+
+.featuredTab tbody td button {
+  margin: 1vw !important;
+}
+
+.featuredTab .tableImageDiv {
+  width: 100% !important;
+  height: 100% !important;
+  display: flex !important;
+  justify-content: center !important;
+}
+
+.featuredTab .tableImageDiv img {
+  object-fit: contain !important;
+  max-width: 100% !important;
+  max-height: 100% !important;
+}
+
+
+
+
+
+.photographyTab tbody td:nth-child(1) {
+  width: 6% !important;
+}
+
+.photographyTab tbody td:nth-child(2) {
+  width: 7.5vw !important;
+}
+
+.photographyTab tbody td:nth-child(3) {
+  width: auto !important;
+  text-align: center !important;
+  padding: 0 1vw !important;
+}
+
+.photographyTab tbody td:nth-child(4) {
+  width: auto !important;
+  text-align: center !important;
+  padding: 0 1vw !important;
+}
+
+.photographyTab tbody td:nth-child(5) {
+  display: flex !important;
+  justify-content: space-between !important;
+  padding-right: 0.5vw !important;
+  align-items: center !important;
+}
+
+.photographyTab tbody td {
+  height: 7.5vw !important;
+  border: 1px solid #dbdbdb !important;
+}
+
+.photographyTab tbody td button {
+  margin: 1vw !important;
+}
+
+.photographyTab .tableImageDiv {
+  width: 100% !important;
+  height: 100% !important;
+  display: flex !important;
+  justify-content: center !important;
+}
+
+.photographyTab .tableImageDiv img {
+  object-fit: contain !important;
+  max-width: 100% !important;
+  max-height: 100% !important;
+}
+
+.popUpImageContainer {
+  top: 0;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+.popUpVideoContainer{
+  background: white;
+  top: 0;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+.popUpImgCloseBox {
+  cursor: pointer;
+  /* border: 1px solid red; */
+  position: absolute;
+  width: 5vw;
+  height: 5vw;
+  font-size: 3vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  top: 3vw;
+  right: 5vw;
+  font-family: 'Lato-Black';
+}
+
+.popUpImageContainer img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.popUpImageBox {
+  background: white;
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.popUpImageBox input {
+  width: 50%;
+  height: 2vw;
+  font-size: 1.6vw;
+  padding-left: 5%;
+  margin-top: 0.51vw;
+}
+
+.popUpImageBox textarea {
+  margin-top: 0.51vw;
+  width: 80%;
+  height: 8vw;
+  font-size: 1.6vw;
+  padding-left: 5%;
+  border: 1px solid gray;
+  font-family: 'Lato-Bold';
+}
+
+.popUpImageBox button {
+  cursor: pointer;
+  transition: 0.5s;
+  width: 20vw;
+  height: 3vw;
+  background: #5ad0a2;
+  font-size: 2.1vw;
+  font-family: 'Lato-Bold';
+  margin-top: 0.51vw;
+  border: none;
+}
+
+.popUpImageBox button:hover {
+  filter: brightness(1.2);
+}

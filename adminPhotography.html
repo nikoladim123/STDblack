@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="assets/css/adminPanel.css">
+    <link rel="stylesheet" href="assets/css/adminPhotography.css">
+  </head>
+  <body>
+    <section class="messangerSection">
+      <main>
+        <div class="contentContainer">
+        <div class="contentBox">
+          <div class="managementNav">
+            <h3 style="color: #fff;">Featured Artists</h3>
+            <h3>Featured Groups</h3>
+            <h3 style="color: #59c99d;">Photography</h3>
+          </div>
+
+          <div class="newlyAddedSpacesContainer">
+            <div class="spaceManageNav">
+              <p class="spaceManageNavSelection" data-space-manage-nav="0">You have featured <span>3</span> photos</p>
+              <p style="color: #59c99d;" class="spaceManageNavSelection" onclick="imagePopUp()" data-space-manage-nav="0">Feature More Photos</p>
+            </div>
+
+            <div class="allRegisteredSpacesContainer" style="display:block;">
+
+              <!-- this is new table for featured tab start-->
+              <table class="photographyTab">
+                <thead>
+                  <tr>
+                    <td><input type="checkbox" name="" value=""> </td>
+                    <th>Photos</th>
+                    <th>&nbsp</th>
+                    <th>Title</th>
+                    <th>Caption</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- repetitive dynamic row start-->
+                  <tr>
+                    <td><input type="checkbox" name="" value=""> </td>
+                    <td><div class="tableImageDiv"><img class="thumbnailImg" src="assets/images/adminPanel/1.png" alt=""></div> </td>
+                    <td>Name</td>
+                    <td>Red</td>
+                    <td>Descrition/cation Descrition/cation Descrition/cation Descrition/cation Descrition/cation </td>
+                    <td><button type="button" name="button">Delete</button> </td>
+                  </tr>
+                  <!-- repetitive dynamic row end-->
+                  <tr>
+                    <td><input type="checkbox" name="" value=""></td>
+                    <td><div class="tableImageDiv"><img class="thumbnailImg" src="assets/images/adminPanel/2.png" alt=""></div> </td>
+                    <td>Name</td>
+                    <td>Red</td>
+                    <td>Descrition/cation Descrition/cation Descrition/cation Descrition/cation Descrition/cation </td>
+                    <td><button class="btn btn-danger" type="button" name="button">Delete</button> </td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox" name="" value=""></td>
+                    <td><div class="tableImageDiv"><img class="thumbnailImg" src="assets/images/adminPanel/3.png" alt=""></div> </td>
+                    <td>Name</td>
+                    <td>Red</td>
+                    <td>Descrition/cation Descrition/cation Descrition/cation Descrition/cation Descrition/cation </td>
+                    <td><button class="btn btn-danger" type="button" name="button">Delete</button> </td>
+                  </tr>
+                </tbody>
+              </table>
+              <!-- this is new table for featured tab end-->
+
+              <!-- poupImage start -->
+              <div class="popUpImageContainer">
+                <div class="popUpImageBox">
+                  <img src="assets/images/adminPanel/4.jpg" alt="">
+                  <input type="text" name="" value="">
+                  <textarea type="text" name="" value=""></textarea>
+                  <button type="button" name="button">Post Photo</button>
+                </div>
+                <div class="popUpImgCloseBox">
+                  X
+                </div>
+              </div>
+              <!-- poupImage End-->
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+      </main>
+    </section>
+
+    <script src="assets/js/adminPhotography.js" charset="utf-8"></script>
+
+  </body>
+</html>

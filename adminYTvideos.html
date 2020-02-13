@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="assets/css/adminPanel.css">
+    <link rel="stylesheet" href="assets/css/adminPhotography.css">
+  </head>
+  <body>
+    <section class="messangerSection">
+      <main>
+        <div class="contentContainer">
+        <div class="contentBox">
+          <div class="managementNav">
+            <h3>Featured Artists</h3>
+            <h3>Featured Groups</h3>
+            <h3>Photography</h3>
+          </div>
+
+          <div class="newlyAddedSpacesContainer">
+            <div class="spaceManageNav">
+              <p class="spaceManageNavSelection" data-space-manage-nav="0">You have featured <span>3</span> Videos</p>
+              <p style="color: #59c99d;" class="spaceManageNavSelection" onclick="uploadVidPopUp()" data-space-manage-nav="0">Feature More Videos</p>
+            </div>
+
+            <div class="allRegisteredSpacesContainer" style="display:block;">
+
+              <!-- this is new table for featured tab start-->
+              <table class="featuredTab">
+                <thead>
+                  <tr>
+                    <td><input type="checkbox" name="" value=""> </td>
+                    <th>videos</th>
+                    <th>&nbsp</th>
+                    <th>Title</th>
+                    <th>Caption</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- repetitive dynamic row start-->
+                  <tr>
+                    <td><input type="checkbox" name="" value=""> </td>
+                    <td><a href="#">www.youtube.com</a> </td>
+                    <td>Name</td>
+                    <td>Red</td>
+                    <td>Descrition/cation Descrition/cation Descrition/cation Descrition/cation Descrition/cation </td>
+                    <td><button type="button" name="button">Delete</button> </td>
+                  </tr>
+                  <!-- repetitive dynamic row end-->
+                  <tr>
+                    <td><input type="checkbox" name="" value=""></td>
+                    <td><a href="#">www.youtube.com</a> </td>
+                    <td>Name</td>
+                    <td>Red</td>
+                    <td>Descrition/cation Descrition/cation Descrition/cation Descrition/cation Descrition/cation </td>
+                    <td><button class="btn btn-danger" type="button" name="button">Delete</button> </td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox" name="" value=""></td>
+                    <td><a href="#">www.youtube.com</a> </td>
+                    <td>Name</td>
+                    <td>Red</td>
+                    <td>Descrition/cation Descrition/cation Descrition/cation Descrition/cation Descrition/cation </td>
+                    <td><button class="btn btn-danger" type="button" name="button">Delete</button> </td>
+                  </tr>
+                </tbody>
+              </table>
+              <!-- this is new table for featured tab end-->
+
+              <!-- poupImage start -->
+              <div class="popUpVideoContainer">
+                <div class="popUpImageBox">
+                  <h2>Featuring an Artist</h2>
+                  <p>If you have a video for this feature
+                  please place the link below:</p>
+                  <textarea name="name" rows="8" cols="80"></textarea>
+                  <input placeholder="Insert your caption" type="text" name="" value="">
+                  <button type="button" name="button">Post Feature</button>
+                  <div class="moveToPhotoUploadContainer">
+                    <p>If you don't have a video, please upload a photo from your drive</p>
+                  </div>
+                </div>
+                <div class="popUpImgCloseBox">
+                  X
+                </div>
+              </div>
+              <!-- poupImage End-->
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+      </main>
+    </section>
+
+    <script src="assets/js/adminPhotography.js" charset="utf-8"></script>
+
+  </body>
+</html>

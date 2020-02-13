@@ -610,6 +610,7 @@
     margin: 0;
     color: #6cdc84 !important;
     transform: rotate(0);
+        font-size: 6.6vw !important;
   }
 
   .featuredNonLink {

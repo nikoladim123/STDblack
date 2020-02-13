@@ -1,0 +1,65 @@
+.feedBackAdminContainer{
+  width: 50%;
+  margin-left: 25%;
+}
+
+.feedBackAdminContainer h2{
+  font-family: 'Lato-Regular';
+  font-size: 1.6vw;
+}
+
+.feedBackAdminContainer textarea{
+  resize: none;
+  border: 1px solid #333333;
+  padding-left: 2%;
+  font-size: 1.5vw;
+  width: 98%;
+  font-family: 'Lato-Thin';
+}
+
+.feedBackAdminContainer button{
+  border: none;
+    cursor: pointer;
+    background: #4ee29b;
+    color: white;
+    font-family: 'Lato-Bold';
+    font-size: 1.5vw;
+    padding: 0.5vw 1.5vw;
+    margin: 0.5vw 0 2vw 0;
+    transition: 0.4s ease;
+}
+
+.adminFeedBackButtonContainer{
+  display: flex;
+  justify-content: center;
+}
+.adminFeedBackButtonContainer button{
+  margin: 0.3vw;
+}
+
+.rejectedOrApprovedContainer{
+  display: flex;
+  justify-content: center;
+}
+
+
+
+.rejectedOrApproved, .rejectedOrApprovedContainer button{
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-family: 'Lato-Bold';
+  font-size: 1.5vw;
+  padding: 0.5vw 1.5vw;
+  margin: 0.5vw 0.3vw;
+  transition: 0.4s ease;
+}
+
+
+.rejected{
+background: #ff0000;
+
+}
+.approved{
+  background: #4ee29b;
+}

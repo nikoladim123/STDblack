@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="assets/css/feedBackAdmin.css">
+  </head>
+  <body>
+    <div class="feedBackAdminContainer">
+      <div class="">
+        <h2>Site feedback from $UserName</h2>
+        <!-- make link to users studio -->
+        <a href="#">https://thestu.net/UserStudio</a>
+        <form class="feedBackForm" action="index.html" method="post">
+          <textarea placeholder="Feedback" name="name" rows="8" cols="80"></textarea>
+          <div class="adminFeedBackButtonContainer">
+            <button type="submit" name="button">Approve</button>
+            <button type="submit" name="button">Reject</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="">
+        <h2>Site feedback from $UserName</h2>
+        <!-- make link to users studio -->
+        <a href="#">https://thestu.net/UserStudio</a>
+        <form class="feedBackForm" action="index.html" method="post">
+          <textarea placeholder="Feedback" name="name" rows="8" cols="80"></textarea>
+          <div class="adminFeedBackButtonContainer">
+            <!-- not a button, just shows if rejected or approved previously -->
+            <!-- the UI is retarded but try to deal with it.... -->
+            <div class="rejectedOrApprovedContainer">
+              <p class="rejectedOrApproved rejected">Rejected</p>
+              <button type="button" name="button">delete</button>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <div class="">
+        <h2>Site feedback from $UserName</h2>
+        <!-- make link to users studio -->
+        <a href="#">https://thestu.net/UserStudio</a>
+        <form class="feedBackForm" action="index.html" method="post">
+          <textarea placeholder="Feedback" name="name" rows="8" cols="80"></textarea>
+          <div class="adminFeedBackButtonContainer">
+            <!-- not a button, just shows if rejected or approved previously -->
+            <!-- the UI is retarded but try to deal with it.... -->
+            <div class="rejectedOrApprovedContainer">
+              <p class="rejectedOrApproved approved" class="rejectedOrApproved">Approved</p>
+              <button  type="button" name="button">delete</button>
+            </div>
+          </div>
+        </form>
+      </div>
+
+
+
+    </div>
+  </body>
+</html>

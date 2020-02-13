@@ -1,0 +1,300 @@
+@media(orientation:portrait) {
+  body {
+    background: white;
+  }
+
+  .gatewaySection {
+    padding-top: 6.9182vw;
+    display: flex;
+    justify-content: center;
+  }
+
+  .gatewayContainer {
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+  }
+
+  .gatewayLeftBox {
+    margin-right: 0.87082vw;
+    width: 100%;
+    flex-shrink: 0;
+    /* border: 1px solid #5e606c; */
+  }
+
+  .gatewayLeftBox {
+    display: flex;
+    justify-content: center;
+  }
+
+  .gatewayLeftBoxInside {
+    width: 100%;
+    margin-top: 3.87vw;
+    background: #ffeade;
+    padding-left: 4vw;
+    padding-right: 4vw;
+  }
+
+  .gatewayLeftBoxInside h3 {
+    font-size: 8.4513vw;
+    font-family: 'Lato-Bold';
+    text-align: center;
+    color: #5d5d6c;
+  }
+
+  .descriptionbox {
+    font-size: 1.4513vw;
+    font-family: 'Lato-Bold';
+    background: #eeeeee;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
+    color: #81818d;
+    display: none;
+  }
+
+  .descriptionbox p {
+    margin: 0.5vw;
+  }
+
+  .gatewayLeftBoxInside h4 {
+    font-size: 5.62151vw;
+    /* color: #98ddbd; */
+    font-family: 'Lato-Bold';
+    margin: 0;
+    color: black;
+  }
+
+  .orderBox {
+    display: flex;
+    justify-content: space-between;
+    color: #4f4f59;
+    font-size: 4.06434vw;
+    font-family: 'Lato-Bold';
+  }
+
+  .total {
+    display: flex;
+    justify-content: space-between;
+    background: #ffd6c1;
+    padding: 2.41vw 4vw;
+    position: relative;
+    left: -4vw;
+    width: 100%;
+  }
+
+  .orderLeftBox {}
+
+  .orderRightBox {
+    text-align: right;
+  }
+
+  .gatewayRightBox {
+    margin-left: 0.87082vw;
+    width: 100%;
+    flex-shrink: 0;
+    /* border: 1px solid #5e606c; */
+    padding: 0.75vw;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .payPalHeaderDiv {
+    /* width: 50.846 */
+    display: flex;
+    justify-content: space-around;
+    /* border: 1px solid black; */
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .payPalHeaderDiv h2 {
+    color: #75d1a7;
+    font-size: 7.9351vw;
+    font-family: 'Lato-Regular';
+    margin: 0;
+    margin-top: 13vw;
+    margin-bottom: 2vw;
+  }
+
+  .payPalHeaderDiv img {
+    width: 88%;
+    cursor: pointer;
+    border: 1px solid black;
+    margin-bottom: 5vw;
+  }
+
+  .payWithPPacc {
+    cursor: pointer;
+    border: 1px solid #efefef;
+    background: linear-gradient(to bottom, rgba(254, 254, 255, 1) 0%, rgba(235, 237, 240, 1) 100%);
+    margin-top: 0.75vw;
+    padding-left: 3.2vw;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .payWithPPacc h3 {
+    color: #595964;
+    font-size: 6.1611vw;
+    font-family: 'Lato-Bold';
+    text-align: center;
+    margin-bottom: 0.1vw;
+  }
+
+  .payWithPPacc p {
+    font-size: 4.341611vw;
+    font-family: 'Lato-Regular';
+    text-align: center;
+    width: 80%;
+  }
+
+  .createAnewPP {
+    padding-left: 4vw;
+    padding-top: 2vw;
+  }
+
+  .createAnewPP h3 {
+    color: #595964;
+    font-size: 1.16110vw;
+    font-family: 'Lato-Bold';
+  }
+
+  .createAnewPP p {
+    font-size: 1.16110vw;
+    font-family: 'Lato-Light';
+  }
+
+  .createAnewPP p span {
+    color: #595964;
+    font-family: 'Lato-Bold';
+    cursor: pointer;
+  }
+
+  .learnMoreAboutPP {
+    padding-left: 4vw;
+    padding-top: 1vw;
+  }
+
+  .learnMoreAboutPP p {
+    font-family: 'Lato-Light';
+    font-size: 1.16110vw;
+  }
+
+  .learnMoreAboutPP p span {
+    color: #595964;
+    font-family: 'Lato-Bold';
+  }
+
+  .paymentInfoContainer {
+    margin-left: 9vw;
+  }
+
+  .country {
+    color: #595964;
+    display: flex;
+    align-items: center;
+    font-family: 'Lato-Bold';
+    font-size: 1.16110vw;
+  }
+
+  .country select {
+    margin-left: 1vw;
+    width: 10vw;
+    height: 1.5965vw;
+  }
+
+  .billMeLaterInputBox {
+    color: #595964;
+    display: flex;
+    align-items: center;
+    font-size: 1.0643vw;
+    font-family: 'Lato-Regular';
+  }
+
+  .billMeLaterInputBox button {
+    width: 4.3541vw;
+    height: 2.1286vw;
+    border: 1px solid #595965;
+    background: #71d697;
+    cursor: pointer;
+    color: #595964;
+    font-family: 'Lato-Bold';
+  }
+
+  .billmeTextBox p {
+    margin: 0;
+    margin-left: 2.6vw;
+    color: #595964;
+    font-size: 0.8708vw;
+    font-family: 'Lato-Bold';
+  }
+
+  .billmeTextBox a {
+    text-decoration: none;
+    color: #71d697;
+    cursor: pointer;
+  }
+
+  .cCardBox {
+    display: flex;
+    align-items: center;
+    font-size: 0.8708vw;
+    font-family: 'Lato-Bold';
+    color: #595964;
+  }
+
+  .cCardInputBox {
+    margin-left: -5vw;
+    display: flex;
+    align-items: center;
+    font-size: 0.8708vw;
+    font-family: 'Lato-Bold';
+    color: #595964;
+  }
+
+  .cCardInputBox p {
+    margin-right: 1vw;
+  }
+
+  .cCardInputBox input {
+    height: 1.5965vw;
+  }
+
+  .cCardInputBox button {
+    width: 4.3541vw;
+    height: 2.1286vw;
+    border: 1px solid #595965;
+    background: #71d697;
+    cursor: pointer;
+    color: #595964;
+    font-family: 'Lato-Bold';
+    margin-left: 1vw;
+  }
+
+  .ppSpr {
+    background-size: 100% 100%;
+    background-image: url('../images/gateway/ppSpr.jpg');
+    width: 24vw;
+    height: 4vw;
+    margin-left: -6vw;
+    cursor: pointer;
+  }
+
+  #paypal-button-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    min-height: 35px;
+    min-width: 200px;
+    max-width: 750px;
+    font-size: 0;
+    width: 88% !important;
+  }
+}

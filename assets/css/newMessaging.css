@@ -1,0 +1,130 @@
+.messagesContainer {
+  width: 100%;
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.messagesContainer h2 {
+  font-family: 'Lato-Light';
+  font-weight: 100;
+  color: rgba(103, 103, 103);
+}
+
+.messagesContainer hr {
+  background-color: rgb(223, 223, 223);
+  height: 1px;
+  border: 0
+}
+
+.messagesContainer button {
+  float: right;
+  border: none;
+  cursor: pointer;
+  background: #4ee29b;
+  color: white;
+  font-family: 'Lato-Bold';
+  font-size: 1.5vw;
+  padding: 0.5vw 1.5vw;
+  margin: 0.5vw 0 2vw 0;
+  transition: 0.4s ease;
+}
+
+.messagesContainer button:hover {
+  filter: brightness(1.1);
+}
+
+.unread {
+  background: #efe4d4;
+}
+
+main {
+  background: white;
+  padding-top: 5vw;
+  padding-bottom: 5vw;
+}
+
+.messagesTitlees {
+  width: 93.5vw;
+}
+
+table {
+  font-family: 'Lato-Regular';
+  /* border: 1px solid black; */
+  border-collapse: collapse;
+}
+
+.subject {
+  font-family: 'Lato-Black';
+  font-size: 1.5vw;
+  margin: 1vw 0;
+}
+
+.shortMessage {
+  font-size: 1.23vw;
+}
+
+thead {
+  /* border:1px solid yellow */
+}
+
+tr {
+  transition: 0.3s ease;
+  /* background: red; */
+}
+
+tr:hover {
+  box-shadow: 0px 0px 1.78125vw 0.15625vw rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+td {
+  height: 8vw;
+  /* border: 3px solid purple; */
+  border-bottom:1px solid rgba(230,230,230)
+}
+
+tr td:nth-child(1) {
+  width: 7vw;
+  padding: 0 1vw;
+}
+
+tr td:nth-child(2) {
+  width: 16vw;
+}
+
+tr td:nth-child(3) {
+  width: 56vw;
+}
+
+tr td:nth-child(4) {
+  width: 9vw
+}
+
+tr td:nth-child(5) {
+  width: 2.5vw;
+}
+
+.remove {
+  transition: 0.4s ease;
+  font-size: 1.3vw;
+  user-select: none;
+  cursor: pointer;
+  box-shadow: 0px 0px 0.78125vw 0.15625vw rgba(0, 0, 0, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.5vw;
+  height: 1.5vw;
+}
+
+.remove:hover {
+  box-shadow: 0px 0px 0.78125vw 0.15625vw rgba(0, 0, 0, 0.35);
+}
+
+td img {
+  max-width: 100%;
+  max-height: 100%;
+}

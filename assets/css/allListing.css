@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+.allListingContainer {
+  width: 87.54578vw;
+  /* border: 1px solid; */
+  margin-top: 9.52380vw;
+}
+
+.searchContainer {}
+
+.searchContainer form {
+  position: relative;
+}
+
+.searchInput {
+  width: 25%;
+  padding-left: 5%;
+  height: 3.516483vw;
+  background: #ededed;
+  border: none;
+  font-size: 1.1vw;
+  border: none;
+  outline: none;
+}
+
+.searchContainer button {
+  position: absolute;
+  height: 3.516483vw;
+  width: 3.516483vw;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.fa-search {
+  transition: 0.4s ease;
+  position: absolute;
+  top: 1vw;
+  left: 1vw;
+  font-size: 2vw;
+  color: rgba(220, 220, 220, 1);
+  opacity: 0.4;
+}
+
+.searchContainer button:hover .fa-search {
+  opacity: 1;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 1.3186vw;
+  margin-top: 1.3186vw;
+}
+
+.contentBox {
+  width: 30%;
+  /* border: 1px solid red; */
+}
+
+.imageBox {
+  position: relative;
+  overflow: hidden;
+  height: 10.695vw;
+  width: 100%;
+}
+
+.imageBox img {
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.imageBox:hover .overlayWithContent {
+  opacity: 1;
+}
+
+.overlayWithContent {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(92, 208, 163, 0.83);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: 0.4s ease;
+}
+
+.overlayWithContent p {
+  font-size: 1.3186vw;
+  color: white;
+  font-family: "Lato-Bold";
+}
+
+.buttonBox {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.8058vw;
+  margin-bottom: ;
+}
+
+.buttonBox button {
+  cursor: pointer;
+}
